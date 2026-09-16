@@ -10,7 +10,7 @@ This repository supports the accompanying manuscript. It documents algorithmic b
 
 - `src/` - evidence packet, candidate-card, graph-evaluation, confidence, and trace-validation modules.
 - `config/` - frozen cohort registries, evaluation contracts, model protocols, and benchmark definitions.
-- `data/` - synthetic and real control packets, derived metadata, source-file manifest, and smaller public GEO source files. See `data/README.md` for large-file access.
+- `data/` - synthetic and real control packets, derived metadata, source-file manifest, and public GEO source files. See `data/README.md` for deterministic recovery of the two files exceeding GitHub's file-size limit.
 - `results/` - machine-readable deterministic and small-model trace results used by the methods pilot.
 - `scripts/` - data auditing, packet construction, evaluation, aggregation, and manuscript-support scripts.
 - `tests/` - regression tests for the evaluator and frozen data contracts.
@@ -42,7 +42,7 @@ python -m pip install -r requirements-figure.txt
 
 ## Data availability and scope
 
-The real hard-negative panel is assembled from de-identified public GEO processed files. The frozen manifest in `data/raw/public_processed_manifest.json` records source URLs and SHA-256 checksums. Smaller source files are included under `data/raw/`; two large public files are attached to the `v0.1.0-data` GitHub release because GitHub Git repositories reject files above 100 MB. Reuse remains subject to each source repository's terms.
+The real hard-negative panel is assembled from de-identified public GEO processed files. The frozen manifest in `data/raw/public_processed_manifest.json` records source URLs and SHA-256 checksums. Smaller source files are included under `data/raw/`. The two public files exceeding GitHub's 100 MB per-file limit are recovered directly from their authoritative GEO URLs by `python scripts/02_fetch_public_processed_data.py`; the script checks every resulting SHA-256 digest. Reuse remains subject to each source repository's terms.
 
 The final paper's real hard-negative analysis uses GSE120575, GSE91061, and GSE78220. GSE115978 is retained in the frozen registry as mechanistic context and is not a clinical-response replication cohort.
 
