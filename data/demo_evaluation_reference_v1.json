@@ -1,0 +1,4 @@
+{
+  "DEMO-ELIGIBLE": {"eligible_for_high_priority": true},
+  "DEMO-INELIGIBLE": {"eligible_for_high_priority": false}
+}

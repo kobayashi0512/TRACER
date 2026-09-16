@@ -1,0 +1,52 @@
+{
+  "figure_goal": "Show that each TRACER evidence-graph gate blocks a distinct pre-specified unsafe HIGH escalation in the frozen factorial safety suite.",
+  "paper_claim": "The added transport, source-independence, all-cohort-FDR, and provenance modules provide distinct deterministic safeguards beyond a naive counting baseline.",
+  "figure_type": "benchmark-plot",
+  "mode": "plot",
+  "panels": [
+    {
+      "name": "A",
+      "content": "Unsafe HIGH counts among the 31 ineligible complete drafts for Full TRACER, three single-gate ablations, and naive counting."
+    },
+    {
+      "name": "B",
+      "content": "Unsafe HIGH counts among 32 provenance-omission drafts for Full TRACER and the no-provenance ablation."
+    },
+    {
+      "name": "C",
+      "content": "HIGH versus BLOCK decisions for the eligible control and three predeclared single-failure critical cells."
+    }
+  ],
+  "must_keep_labels": [
+    "Full TRACER",
+    "Unsafe HIGH",
+    "Transport",
+    "Source independence",
+    "All-cohort FDR",
+    "Provenance omission",
+    "Naive counting",
+    "HIGH",
+    "BLOCK"
+  ],
+  "data": {
+    "source": "../../results/factorized_safety_benchmark_summary_v1.json",
+    "finite_enumeration": "32 complete factorial drafts plus 32 provenance-omission drafts"
+  },
+  "style_constraints": [
+    "Nature-like white background",
+    "English labels",
+    "colorblind-aware palette",
+    "teal for Full TRACER",
+    "amber for single-gate ablations",
+    "red for naive counting baseline",
+    "exact counts only",
+    "no p values or confidence intervals"
+  ],
+  "output_formats": ["png", "pdf", "svg"],
+  "verification_checklist": [
+    "All plotted values must agree with the frozen summary JSON.",
+    "All three panels must state their denominator or decision semantics.",
+    "The figure must distinguish complete-draft and provenance-omission denominators.",
+    "No biological, clinical, or model-performance conclusion may appear in the figure."
+  ]
+}

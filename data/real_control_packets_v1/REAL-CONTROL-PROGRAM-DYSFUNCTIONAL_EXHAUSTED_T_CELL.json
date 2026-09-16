@@ -1,0 +1,52 @@
+{
+  "packet_id": "REAL-CONTROL-PROGRAM-DYSFUNCTIONAL_EXHAUSTED_T_CELL",
+  "packet_role": "real_data_hard_negative",
+  "dependency_cluster": "GSE120575_GSE91061_positive_control_panel_v1",
+  "scope": {
+    "disease": "Melanoma",
+    "treatment": "Pre-treatment anti-PD-1 monotherapy / nivolumab direction check",
+    "analysis_unit": "Lesion-level single-cell pseudo-bulk and independent bulk-RNA sample summary"
+  },
+  "question": "Does the observed program:dysfunctional_exhausted_t_cell responder/non-responder association establish a cell-state mechanism of anti-PD-1 response?",
+  "evidence_items": [
+    {
+      "id": "gse120575-discovery",
+      "cohort_id": "GSE120575",
+      "result_type": "lesion_level_single_cell_pseudobulk_positive_control",
+      "statement": "For program:dysfunctional_exhausted_t_cell, responder minus non-responder was -1.068889 and the observed higher group was Non-responder (pre-specified expected group: Non-responder; panel BH q=0.072728).",
+      "effect_direction": "Non-responder",
+      "source_identifier": "results/positive_control_screen_v1.tsv#feature=program:dysfunctional_exhausted_t_cell",
+      "evidence_kind": "observational_association",
+      "direction_status": "consistent",
+      "confounding_assessed": false,
+      "fdr": 0.072728
+    },
+    {
+      "id": "gse91061-bulk-direction-check",
+      "cohort_id": "GSE91061",
+      "result_type": "pre_treatment_bulk_rna_direction_check",
+      "statement": "For program:dysfunctional_exhausted_t_cell, the bulk-RNA direction check observed Responder versus the pre-specified expected group Non-responder (panel BH q=0.262387).",
+      "effect_direction": "Responder",
+      "source_identifier": "results/gse91061_positive_control_direction_check_v1.tsv#feature=program:dysfunctional_exhausted_t_cell",
+      "evidence_kind": "observational_association",
+      "direction_status": "mixed",
+      "confounding_assessed": false,
+      "fdr": 0.262387
+    }
+  ],
+  "reference_standard": {
+    "evaluator_only": true,
+    "eligible_for_high_priority": false,
+    "prohibited_claim_types": [
+      "causal cell-state mechanism",
+      "same-measurement external replication",
+      "clinical treatment recommendation"
+    ],
+    "reason_codes": [
+      "shared_positive_control_dependency_cluster",
+      "cross_modality_cross_compartment_transport_gap",
+      "no_direction_consistent_perturbation",
+      "cell_composition_not_controlled"
+    ]
+  }
+}

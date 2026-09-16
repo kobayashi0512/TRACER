@@ -1,0 +1,288 @@
+{
+  "schema": "icb-disambiguate-trace-quality-pilot-v1",
+  "interpretation": "Descriptive trace-quality audit on one frozen evidence packet and one run per model-condition. It is not a biological result, a model ranking, a calibration estimate, or a statistical comparison.",
+  "packet_ids": [
+    "ICB-CROSS-MODALITY-001"
+  ],
+  "n_traces": 12,
+  "by_model_condition": [
+    {
+      "model": "llama3.2:1b",
+      "condition": "free_form",
+      "n_traces": 1,
+      "n_parseable_candidate_json": 0,
+      "n_structurally_admissible": 0,
+      "n_tracer_admitted": 0,
+      "n_tracer_low_priority": 0
+    },
+    {
+      "model": "llama3.2:1b",
+      "condition": "gated_card",
+      "n_traces": 1,
+      "n_parseable_candidate_json": 0,
+      "n_structurally_admissible": 0,
+      "n_tracer_admitted": 0,
+      "n_tracer_low_priority": 0
+    },
+    {
+      "model": "llama3.2:1b",
+      "condition": "schema_constrained_card",
+      "n_traces": 1,
+      "n_parseable_candidate_json": 1,
+      "n_structurally_admissible": 0,
+      "n_tracer_admitted": 0,
+      "n_tracer_low_priority": 1
+    },
+    {
+      "model": "qwen2.5vl:3b",
+      "condition": "free_form",
+      "n_traces": 1,
+      "n_parseable_candidate_json": 0,
+      "n_structurally_admissible": 0,
+      "n_tracer_admitted": 0,
+      "n_tracer_low_priority": 0
+    },
+    {
+      "model": "qwen2.5vl:3b",
+      "condition": "gated_card",
+      "n_traces": 1,
+      "n_parseable_candidate_json": 1,
+      "n_structurally_admissible": 0,
+      "n_tracer_admitted": 0,
+      "n_tracer_low_priority": 1
+    },
+    {
+      "model": "qwen2.5vl:3b",
+      "condition": "schema_constrained_card",
+      "n_traces": 1,
+      "n_parseable_candidate_json": 1,
+      "n_structurally_admissible": 0,
+      "n_tracer_admitted": 0,
+      "n_tracer_low_priority": 1
+    },
+    {
+      "model": "qwen3-vl:30b-a3b-instruct-q4_K_M",
+      "condition": "free_form",
+      "n_traces": 1,
+      "n_parseable_candidate_json": 0,
+      "n_structurally_admissible": 0,
+      "n_tracer_admitted": 0,
+      "n_tracer_low_priority": 0
+    },
+    {
+      "model": "qwen3-vl:30b-a3b-instruct-q4_K_M",
+      "condition": "gated_card",
+      "n_traces": 1,
+      "n_parseable_candidate_json": 1,
+      "n_structurally_admissible": 0,
+      "n_tracer_admitted": 0,
+      "n_tracer_low_priority": 1
+    },
+    {
+      "model": "qwen3-vl:30b-a3b-instruct-q4_K_M",
+      "condition": "schema_constrained_card",
+      "n_traces": 1,
+      "n_parseable_candidate_json": 1,
+      "n_structurally_admissible": 1,
+      "n_tracer_admitted": 1,
+      "n_tracer_low_priority": 1
+    },
+    {
+      "model": "qwen3:0.6b",
+      "condition": "free_form",
+      "n_traces": 1,
+      "n_parseable_candidate_json": 0,
+      "n_structurally_admissible": 0,
+      "n_tracer_admitted": 0,
+      "n_tracer_low_priority": 0
+    },
+    {
+      "model": "qwen3:0.6b",
+      "condition": "gated_card",
+      "n_traces": 1,
+      "n_parseable_candidate_json": 1,
+      "n_structurally_admissible": 0,
+      "n_tracer_admitted": 0,
+      "n_tracer_low_priority": 1
+    },
+    {
+      "model": "qwen3:0.6b",
+      "condition": "schema_constrained_card",
+      "n_traces": 1,
+      "n_parseable_candidate_json": 1,
+      "n_structurally_admissible": 0,
+      "n_tracer_admitted": 0,
+      "n_tracer_low_priority": 1
+    }
+  ],
+  "records": [
+    {
+      "trace": "results/llm_runs/llama3_2_1b__ICB-CROSS-MODALITY-001__free_form__seed20260913.json",
+      "packet_id": "ICB-CROSS-MODALITY-001",
+      "model": "llama3.2:1b",
+      "condition": "free_form",
+      "candidate_json_parseable": false,
+      "structurally_admissible": false,
+      "tracer_admitted": false,
+      "tracer_level": null,
+      "tracer_priority_score": null,
+      "structural_error_count": null,
+      "draft_rejection_reason_count": null,
+      "parse_or_runtime_error": "Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "trace": "results/llm_runs/llama3_2_1b__ICB-CROSS-MODALITY-001__gated_card__seed20260913.json",
+      "packet_id": "ICB-CROSS-MODALITY-001",
+      "model": "llama3.2:1b",
+      "condition": "gated_card",
+      "candidate_json_parseable": false,
+      "structurally_admissible": false,
+      "tracer_admitted": false,
+      "tracer_level": null,
+      "tracer_priority_score": null,
+      "structural_error_count": null,
+      "draft_rejection_reason_count": null,
+      "parse_or_runtime_error": "Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "trace": "results/llm_runs/llama3_2_1b__ICB-CROSS-MODALITY-001__schema_constrained_card__seed20260913.json",
+      "packet_id": "ICB-CROSS-MODALITY-001",
+      "model": "llama3.2:1b",
+      "condition": "schema_constrained_card",
+      "candidate_json_parseable": true,
+      "structurally_admissible": false,
+      "tracer_admitted": false,
+      "tracer_level": "LOW",
+      "tracer_priority_score": 0.1,
+      "structural_error_count": 2,
+      "draft_rejection_reason_count": 2,
+      "parse_or_runtime_error": null
+    },
+    {
+      "trace": "results/llm_runs/qwen2_5vl_3b__ICB-CROSS-MODALITY-001__free_form__seed20260913.json",
+      "packet_id": "ICB-CROSS-MODALITY-001",
+      "model": "qwen2.5vl:3b",
+      "condition": "free_form",
+      "candidate_json_parseable": false,
+      "structurally_admissible": false,
+      "tracer_admitted": false,
+      "tracer_level": null,
+      "tracer_priority_score": null,
+      "structural_error_count": null,
+      "draft_rejection_reason_count": null,
+      "parse_or_runtime_error": "Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "trace": "results/llm_runs/qwen2_5vl_3b__ICB-CROSS-MODALITY-001__gated_card__seed20260913.json",
+      "packet_id": "ICB-CROSS-MODALITY-001",
+      "model": "qwen2.5vl:3b",
+      "condition": "gated_card",
+      "candidate_json_parseable": true,
+      "structurally_admissible": false,
+      "tracer_admitted": false,
+      "tracer_level": "LOW",
+      "tracer_priority_score": 0.1,
+      "structural_error_count": 10,
+      "draft_rejection_reason_count": 10,
+      "parse_or_runtime_error": null
+    },
+    {
+      "trace": "results/llm_runs/qwen2_5vl_3b__ICB-CROSS-MODALITY-001__schema_constrained_card__seed20260913.json",
+      "packet_id": "ICB-CROSS-MODALITY-001",
+      "model": "qwen2.5vl:3b",
+      "condition": "schema_constrained_card",
+      "candidate_json_parseable": true,
+      "structurally_admissible": false,
+      "tracer_admitted": false,
+      "tracer_level": "LOW",
+      "tracer_priority_score": 0.1,
+      "structural_error_count": 2,
+      "draft_rejection_reason_count": 2,
+      "parse_or_runtime_error": null
+    },
+    {
+      "trace": "results/llm_runs/qwen3_0_6b__ICB-CROSS-MODALITY-001__free_form__seed20260913.json",
+      "packet_id": "ICB-CROSS-MODALITY-001",
+      "model": "qwen3:0.6b",
+      "condition": "free_form",
+      "candidate_json_parseable": false,
+      "structurally_admissible": false,
+      "tracer_admitted": false,
+      "tracer_level": null,
+      "tracer_priority_score": null,
+      "structural_error_count": null,
+      "draft_rejection_reason_count": null,
+      "parse_or_runtime_error": "Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "trace": "results/llm_runs/qwen3_0_6b__ICB-CROSS-MODALITY-001__gated_card__seed20260913.json",
+      "packet_id": "ICB-CROSS-MODALITY-001",
+      "model": "qwen3:0.6b",
+      "condition": "gated_card",
+      "candidate_json_parseable": true,
+      "structurally_admissible": false,
+      "tracer_admitted": false,
+      "tracer_level": "LOW",
+      "tracer_priority_score": 0.1,
+      "structural_error_count": 8,
+      "draft_rejection_reason_count": 8,
+      "parse_or_runtime_error": null
+    },
+    {
+      "trace": "results/llm_runs/qwen3_0_6b__ICB-CROSS-MODALITY-001__schema_constrained_card__seed20260913.json",
+      "packet_id": "ICB-CROSS-MODALITY-001",
+      "model": "qwen3:0.6b",
+      "condition": "schema_constrained_card",
+      "candidate_json_parseable": true,
+      "structurally_admissible": false,
+      "tracer_admitted": false,
+      "tracer_level": "LOW",
+      "tracer_priority_score": 0.1,
+      "structural_error_count": 3,
+      "draft_rejection_reason_count": 3,
+      "parse_or_runtime_error": null
+    },
+    {
+      "trace": "results/llm_runs/qwen3vl_30b_a3b__ICB-CROSS-MODALITY-001__free_form__seed20260913.json",
+      "packet_id": "ICB-CROSS-MODALITY-001",
+      "model": "qwen3-vl:30b-a3b-instruct-q4_K_M",
+      "condition": "free_form",
+      "candidate_json_parseable": false,
+      "structurally_admissible": false,
+      "tracer_admitted": false,
+      "tracer_level": null,
+      "tracer_priority_score": null,
+      "structural_error_count": null,
+      "draft_rejection_reason_count": null,
+      "parse_or_runtime_error": "Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "trace": "results/llm_runs/qwen3vl_30b_a3b__ICB-CROSS-MODALITY-001__gated_card__seed20260913.json",
+      "packet_id": "ICB-CROSS-MODALITY-001",
+      "model": "qwen3-vl:30b-a3b-instruct-q4_K_M",
+      "condition": "gated_card",
+      "candidate_json_parseable": true,
+      "structurally_admissible": false,
+      "tracer_admitted": false,
+      "tracer_level": "LOW",
+      "tracer_priority_score": 0.1,
+      "structural_error_count": 5,
+      "draft_rejection_reason_count": 5,
+      "parse_or_runtime_error": null
+    },
+    {
+      "trace": "results/llm_runs/qwen3vl_30b_a3b__ICB-CROSS-MODALITY-001__schema_constrained_card__seed20260913.json",
+      "packet_id": "ICB-CROSS-MODALITY-001",
+      "model": "qwen3-vl:30b-a3b-instruct-q4_K_M",
+      "condition": "schema_constrained_card",
+      "candidate_json_parseable": true,
+      "structurally_admissible": true,
+      "tracer_admitted": true,
+      "tracer_level": "LOW",
+      "tracer_priority_score": 0.1,
+      "structural_error_count": 0,
+      "draft_rejection_reason_count": 0,
+      "parse_or_runtime_error": null
+    }
+  ]
+}

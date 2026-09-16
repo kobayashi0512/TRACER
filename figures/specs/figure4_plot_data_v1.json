@@ -1,0 +1,53 @@
+{
+  "source_summary": "/Users/tongyue/Documents/77f /项目文件_20260909/ai_oncology_epistemics/applications/icb_disambiguate/results/factorized_safety_benchmark_summary_v1.json",
+  "source_summary_sha256": "73a98ce4581f9ce0ac1438f99b02d2ba059ce98ffd5073e4c6fde2302cc6fdc3",
+  "values": {
+    "complete_draft_unsafe_high_counts": [
+      0,
+      1,
+      1,
+      1,
+      7
+    ],
+    "provenance_omission_unsafe_high_counts": [
+      0,
+      1
+    ],
+    "critical_matrix": [
+      [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    ]
+  },
+  "critical_packet_ids": {
+    "eligible_positive_control": "SYNTH-FCT-T1-I1-F1-P1-C1",
+    "cross_measurement_only_failure": "SYNTH-FCT-T0-I1-F1-P1-C1",
+    "same_source_only_failure": "SYNTH-FCT-T1-I0-F1-P1-C1",
+    "all_cohort_fdr_only_failure": "SYNTH-FCT-T1-I1-F0-P1-C1"
+  }
+}

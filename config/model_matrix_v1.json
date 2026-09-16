@@ -1,0 +1,70 @@
+{
+  "matrix_id": "icb-disambiguate-model-matrix-v1",
+  "purpose": "Pre-specified representative model matrix for the pilot. This is not a claim to exhaust all open-weight models.",
+  "inclusion_rule": "At least one model from each available family/role below; exact model tag, quantization, runtime, date, prompt hash, seed, and decoding parameters are logged per run.",
+  "roles": {
+    "tiny_open_general": "Open-weight instruction model at or below 1B parameters.",
+    "small_open_general": "Open-weight instruction model of roughly 1B to 8B parameters.",
+    "large_open_reference": "Open-weight model above the small tier but executable locally or through an approved endpoint.",
+    "biomedical_open": "Biomedical- or therapeutic-domain adapted generative model with terms permitting this research use.",
+    "closed_or_remote_reference": "Remote model with exact provider model/version and request date retained."
+  },
+  "models": [
+    {
+      "model_id": "qwen2.5vl:3b",
+      "role": "small_open_general",
+      "family": "Qwen2.5-VL",
+      "parameters_reported_by_runtime": "3.8B",
+      "runtime": "Ollama",
+      "status": "installed_and_pilot_run",
+      "license_observed": "Apache-2.0"
+    },
+    {
+      "model_id": "qwen3-vl:30b-a3b-instruct-q4_K_M",
+      "role": "large_open_reference",
+      "family": "Qwen3-VL MoE",
+      "parameters_reported_by_runtime": "31.1B",
+      "runtime": "Ollama",
+      "status": "installed_and_pilot_run",
+      "license_observed": "Apache-2.0"
+    },
+    {
+      "model_id": "qwen3:0.6b",
+      "role": "tiny_open_general",
+      "family": "Qwen3",
+      "parameters_reported_by_publisher": "0.6B",
+      "runtime": "Ollama",
+      "status": "installed_and_pilot_run"
+    },
+    {
+      "model_id": "llama3.2:1b",
+      "role": "tiny_open_general",
+      "family": "Llama 3.2",
+      "parameters_reported_by_publisher": "1.23B",
+      "runtime": "Ollama",
+      "status": "installed_and_pilot_run",
+      "license_observed": "Llama 3.2 Community License"
+    },
+    {
+      "model_id": "google/medgemma-4b-it",
+      "role": "biomedical_open",
+      "family": "MedGemma",
+      "parameters_reported_by_publisher": "4B",
+      "runtime": "not_selected",
+      "status": "pending_terms_acceptance_and_runtime_compatibility",
+      "license_observed": "Health AI Developer Foundations terms"
+    },
+    {
+      "model_id": "Kimi-remote-exact-version-TBD",
+      "role": "closed_or_remote_reference",
+      "family": "Kimi",
+      "runtime": "provider_API",
+      "status": "pending_provider_access_and_exact_version_freeze"
+    }
+  ],
+  "exclusions": [
+    "Models without an exact version/tag or documented terms of use.",
+    "Encoder-only biomedical models when the task requires generative hypothesis cards.",
+    "Models whose parameter scale cannot be run or accessed under the same frozen prompt/data protocol."
+  ]
+}

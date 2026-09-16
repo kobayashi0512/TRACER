@@ -1,0 +1,13 @@
+{
+  "registry_id": "icb-disambiguate-synthetic-benchmark-registry-v1",
+  "purpose": "Synthetic, non-biological cohort registry for algorithm stress tests. It must never be interpreted as patient data or a source of biomedical findings.",
+  "cohorts": {
+    "SYN-SC-A": {"measurement_level": "single_cell_rna", "compartment": "tumor_cd45_positive_cells", "baseline_ici_response_association_eligible": true, "same_measurement_replication_eligible": true},
+    "SYN-SC-B": {"measurement_level": "single_cell_rna", "compartment": "tumor_cd45_positive_cells", "baseline_ici_response_association_eligible": true, "same_measurement_replication_eligible": true},
+    "SYN-SC-C": {"measurement_level": "single_cell_rna", "compartment": "tumor_cd45_positive_cells", "baseline_ici_response_association_eligible": true, "same_measurement_replication_eligible": true},
+    "SYN-BULK": {"measurement_level": "bulk_rna", "compartment": "tumor_bulk", "baseline_ici_response_association_eligible": true, "same_measurement_replication_eligible": false},
+    "SYN-FUNCTION": {"measurement_level": "functional_assay", "compartment": "ex_vivo_tumor_immune_coculture", "baseline_ici_response_association_eligible": false, "same_measurement_replication_eligible": false},
+    "SYN-LIT-1": {"measurement_level": "literature", "compartment": "not_applicable", "baseline_ici_response_association_eligible": false, "same_measurement_replication_eligible": false},
+    "SYN-LIT-2": {"measurement_level": "literature", "compartment": "not_applicable", "baseline_ici_response_association_eligible": false, "same_measurement_replication_eligible": false}
+  }
+}

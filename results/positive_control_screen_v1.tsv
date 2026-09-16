@@ -1,0 +1,16 @@
+feature	feature_type	responder_mean	non_responder_mean	responder_minus_non_responder	mann_whitney_u	exact_randomization_p	expected_higher_group	observed_higher_group	direction_matches_positive_control	panel_bh_q
+gene:CCR7	gene	2.995831	0.938287	2.057544	30.0	0.016162	Responder	Responder	True	0.048486
+gene:CXCL13	gene	0.914424	2.523962	-1.609538	6.0	0.109091	Non-responder	Non-responder	True	0.136364
+gene:ENTPD1	gene	0.957218	2.704147	-1.74693	2.0	0.016162	Non-responder	Non-responder	True	0.048486
+gene:HAVCR2	gene	1.363701	3.442368	-2.078667	4.0	0.048485	Non-responder	Non-responder	True	0.072728
+gene:IL7R	gene	2.667116	2.509865	0.15725	17.0	0.933333	Responder	Responder	True	0.933333
+gene:LAG3	gene	0.778706	1.888009	-1.109303	3.0	0.028283	Non-responder	Non-responder	True	0.060606
+gene:LEF1	gene	1.104337	0.444933	0.659404	26.0	0.109091	Responder	Responder	True	0.136364
+gene:LTB	gene	2.677953	1.583759	1.094194	31.0	0.008081	Responder	Responder	True	0.048486
+gene:PDCD1	gene	1.775276	3.374357	-1.599081	4.0	0.048485	Non-responder	Non-responder	True	0.072728
+gene:SELL	gene	3.257581	1.784401	1.47318	30.0	0.016162	Responder	Responder	True	0.048486
+gene:TCF7	gene	2.384953	1.251478	1.133475	29.0	0.028283	Responder	Responder	True	0.060606
+gene:TIGIT	gene	2.97666	3.953946	-0.977287	8.0	0.214141	Non-responder	Non-responder	True	0.247086
+gene:TOX	gene	1.649736	2.190114	-0.540378	10.0	0.367677	Non-responder	Non-responder	True	0.39394
+program:memory_like_t_cell	program	0.84491	-0.422455	1.267365	30.0	0.016162	Responder	Responder	True	0.048486
+program:dysfunctional_exhausted_t_cell	program	-0.712593	0.356296	-1.068889	4.0	0.048485	Non-responder	Non-responder	True	0.072728

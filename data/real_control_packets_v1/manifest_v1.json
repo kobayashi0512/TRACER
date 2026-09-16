@@ -1,0 +1,112 @@
+{
+  "suite_id": "real-positive-control-hard-negative-suite-v1",
+  "purpose": "Auditable real-data hard-negative suite for evidence-governance testing. All entries share a source panel and are not statistically independent.",
+  "statistical_unit": "The entire dependency cluster, not individual feature packets.",
+  "packets": [
+    {
+      "packet_id": "REAL-CONTROL-GENE-CCR7",
+      "file": "REAL-CONTROL-GENE-CCR7.json",
+      "feature": "gene:CCR7",
+      "dependency_cluster": "GSE120575_GSE91061_positive_control_panel_v1",
+      "role": "real_data_hard_negative"
+    },
+    {
+      "packet_id": "REAL-CONTROL-GENE-CXCL13",
+      "file": "REAL-CONTROL-GENE-CXCL13.json",
+      "feature": "gene:CXCL13",
+      "dependency_cluster": "GSE120575_GSE91061_positive_control_panel_v1",
+      "role": "real_data_hard_negative"
+    },
+    {
+      "packet_id": "REAL-CONTROL-GENE-ENTPD1",
+      "file": "REAL-CONTROL-GENE-ENTPD1.json",
+      "feature": "gene:ENTPD1",
+      "dependency_cluster": "GSE120575_GSE91061_positive_control_panel_v1",
+      "role": "real_data_hard_negative"
+    },
+    {
+      "packet_id": "REAL-CONTROL-GENE-HAVCR2",
+      "file": "REAL-CONTROL-GENE-HAVCR2.json",
+      "feature": "gene:HAVCR2",
+      "dependency_cluster": "GSE120575_GSE91061_positive_control_panel_v1",
+      "role": "real_data_hard_negative"
+    },
+    {
+      "packet_id": "REAL-CONTROL-GENE-IL7R",
+      "file": "REAL-CONTROL-GENE-IL7R.json",
+      "feature": "gene:IL7R",
+      "dependency_cluster": "GSE120575_GSE91061_positive_control_panel_v1",
+      "role": "real_data_hard_negative"
+    },
+    {
+      "packet_id": "REAL-CONTROL-GENE-LAG3",
+      "file": "REAL-CONTROL-GENE-LAG3.json",
+      "feature": "gene:LAG3",
+      "dependency_cluster": "GSE120575_GSE91061_positive_control_panel_v1",
+      "role": "real_data_hard_negative"
+    },
+    {
+      "packet_id": "REAL-CONTROL-GENE-LEF1",
+      "file": "REAL-CONTROL-GENE-LEF1.json",
+      "feature": "gene:LEF1",
+      "dependency_cluster": "GSE120575_GSE91061_positive_control_panel_v1",
+      "role": "real_data_hard_negative"
+    },
+    {
+      "packet_id": "REAL-CONTROL-GENE-LTB",
+      "file": "REAL-CONTROL-GENE-LTB.json",
+      "feature": "gene:LTB",
+      "dependency_cluster": "GSE120575_GSE91061_positive_control_panel_v1",
+      "role": "real_data_hard_negative"
+    },
+    {
+      "packet_id": "REAL-CONTROL-GENE-PDCD1",
+      "file": "REAL-CONTROL-GENE-PDCD1.json",
+      "feature": "gene:PDCD1",
+      "dependency_cluster": "GSE120575_GSE91061_positive_control_panel_v1",
+      "role": "real_data_hard_negative"
+    },
+    {
+      "packet_id": "REAL-CONTROL-GENE-SELL",
+      "file": "REAL-CONTROL-GENE-SELL.json",
+      "feature": "gene:SELL",
+      "dependency_cluster": "GSE120575_GSE91061_positive_control_panel_v1",
+      "role": "real_data_hard_negative"
+    },
+    {
+      "packet_id": "REAL-CONTROL-GENE-TCF7",
+      "file": "REAL-CONTROL-GENE-TCF7.json",
+      "feature": "gene:TCF7",
+      "dependency_cluster": "GSE120575_GSE91061_positive_control_panel_v1",
+      "role": "real_data_hard_negative"
+    },
+    {
+      "packet_id": "REAL-CONTROL-GENE-TIGIT",
+      "file": "REAL-CONTROL-GENE-TIGIT.json",
+      "feature": "gene:TIGIT",
+      "dependency_cluster": "GSE120575_GSE91061_positive_control_panel_v1",
+      "role": "real_data_hard_negative"
+    },
+    {
+      "packet_id": "REAL-CONTROL-GENE-TOX",
+      "file": "REAL-CONTROL-GENE-TOX.json",
+      "feature": "gene:TOX",
+      "dependency_cluster": "GSE120575_GSE91061_positive_control_panel_v1",
+      "role": "real_data_hard_negative"
+    },
+    {
+      "packet_id": "REAL-CONTROL-PROGRAM-DYSFUNCTIONAL_EXHAUSTED_T_CELL",
+      "file": "REAL-CONTROL-PROGRAM-DYSFUNCTIONAL_EXHAUSTED_T_CELL.json",
+      "feature": "program:dysfunctional_exhausted_t_cell",
+      "dependency_cluster": "GSE120575_GSE91061_positive_control_panel_v1",
+      "role": "real_data_hard_negative"
+    },
+    {
+      "packet_id": "REAL-CONTROL-PROGRAM-MEMORY_LIKE_T_CELL",
+      "file": "REAL-CONTROL-PROGRAM-MEMORY_LIKE_T_CELL.json",
+      "feature": "program:memory_like_t_cell",
+      "dependency_cluster": "GSE120575_GSE91061_positive_control_panel_v1",
+      "role": "real_data_hard_negative"
+    }
+  ]
+}

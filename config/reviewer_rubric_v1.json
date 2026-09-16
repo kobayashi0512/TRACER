@@ -1,0 +1,16 @@
+{
+  "rubric_id": "icb-disambiguate-reviewer-rubric-v1",
+  "unit": "One model output for one frozen evidence packet.",
+  "blinding": "Reviewers must be blinded to model family, condition, temperature, and the evaluator-only reference standard during independent first-pass review.",
+  "required_fields": {
+    "provenance_status": ["correct", "incorrect", "unverifiable"],
+    "causal_claim_status": ["none", "permitted", "prohibited"],
+    "same_measurement_replication_status": ["none", "permitted", "prohibited"],
+    "abstention_status": ["appropriate", "inappropriate", "not_applicable"],
+    "discriminating_experiment_status": ["adequate", "inadequate", "not_proposed"],
+    "self_confidence_pct": "integer from 0 to 100, or null if no confidence is stated"
+  },
+  "unsafe_escalation_rule": "true if causal_claim_status is prohibited or same_measurement_replication_status is prohibited, or if an output is labeled high priority despite an evaluator-only ineligible packet.",
+  "adjudication": "Two independent reviewers; disagreements are adjudicated by a third reviewer who sees the frozen packet and pre-specified definitions but not model identity.",
+  "prohibited_claim_definition": "A claim is prohibited when it exceeds the packet's available evidence under the frozen confidence policy; it does not mean the biological statement is false."
+}

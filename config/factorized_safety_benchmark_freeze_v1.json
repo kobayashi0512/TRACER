@@ -1,0 +1,197 @@
+{
+  "schema": "tracer-factorized-safety-freeze-v1",
+  "freeze_id": "TRACER-FACTORIAL-SAFETY-V2-FREEZE-20260915",
+  "interpretation": "Checksum manifest for a deterministic synthetic safety suite. This freeze does not certify biomedical truth, clinical performance, or language-model generalization.",
+  "suite_id": "tracer-factorized-synthetic-safety-suite-v2",
+  "protocol": {
+    "complete_factorial_packets": 32,
+    "factor_order": [
+      "transport_eligible",
+      "source_independent",
+      "all_replication_fdr_pass",
+      "perturbation_present",
+      "confounding_controlled"
+    ],
+    "omission_attack": {
+      "omitted_evidence_id": "literature-2",
+      "expected_full_tracer_level": "LOW",
+      "interpretation": "Draft-integrity test only; not a biomedical contradiction."
+    }
+  },
+  "files": {
+    "suite_manifest": {
+      "path": "data/synthetic_packets_v2/manifest_v2.json",
+      "sha256": "0be3b3efde7cc5c15653d1674f7ee9e9d48caafbb1988e8e18b4cf4468c441f8"
+    },
+    "cohort_registry": {
+      "path": "config/synthetic_benchmark_cohort_registry_v3.json",
+      "sha256": "a2f870c35ae2754f42612a5cd5bec81252af40b1ceec2822a3e651db3cc03297"
+    },
+    "algorithm_sanity_result": {
+      "path": "results/factorized_synthetic_suite_algorithm_sanity_v2.json",
+      "sha256": "96a3bf61be8c1196cd83307b216462edc2516fd68efdf683bdbf2818dca90fae"
+    }
+  },
+  "packets": [
+    {
+      "packet_id": "SYNTH-FCT-T0-I0-F0-P0-C0",
+      "file": "SYNTH-FCT-T0-I0-F0-P0-C0.json",
+      "sha256": "cc44317c31a55c21a518879599e5662ce5404e5de2cdc7f96d2122e744123aa7"
+    },
+    {
+      "packet_id": "SYNTH-FCT-T0-I0-F0-P0-C1",
+      "file": "SYNTH-FCT-T0-I0-F0-P0-C1.json",
+      "sha256": "0d56536eb9a741717cf8e4a4de9275718d70d2c3cf44bbea228c700b56a42b0d"
+    },
+    {
+      "packet_id": "SYNTH-FCT-T0-I0-F0-P1-C0",
+      "file": "SYNTH-FCT-T0-I0-F0-P1-C0.json",
+      "sha256": "a7e9d8c595c21c5d5db289af3accf681638f9a692fae1c20578cc6dab25ed6d9"
+    },
+    {
+      "packet_id": "SYNTH-FCT-T0-I0-F0-P1-C1",
+      "file": "SYNTH-FCT-T0-I0-F0-P1-C1.json",
+      "sha256": "1da107848eea316158d7211e98765686082921312576a42729c7e07de82ae968"
+    },
+    {
+      "packet_id": "SYNTH-FCT-T0-I0-F1-P0-C0",
+      "file": "SYNTH-FCT-T0-I0-F1-P0-C0.json",
+      "sha256": "9e2d319dc5a493ed79af74c509bbba316a99be52e0868d47bda31d263b17deee"
+    },
+    {
+      "packet_id": "SYNTH-FCT-T0-I0-F1-P0-C1",
+      "file": "SYNTH-FCT-T0-I0-F1-P0-C1.json",
+      "sha256": "6a173b6ee9fa561792a4eeda93e8fb1fe5ed0eb12f33b4b3c157bd9bea4bda7c"
+    },
+    {
+      "packet_id": "SYNTH-FCT-T0-I0-F1-P1-C0",
+      "file": "SYNTH-FCT-T0-I0-F1-P1-C0.json",
+      "sha256": "951481e743b3ba879eb285287aadb8a4ff080e842b6fa9d47ace820d53129441"
+    },
+    {
+      "packet_id": "SYNTH-FCT-T0-I0-F1-P1-C1",
+      "file": "SYNTH-FCT-T0-I0-F1-P1-C1.json",
+      "sha256": "b282c4e3bc31aa73d4945d950a9d80fda06e2db0ab258f60bd16e5df159fa1d0"
+    },
+    {
+      "packet_id": "SYNTH-FCT-T0-I1-F0-P0-C0",
+      "file": "SYNTH-FCT-T0-I1-F0-P0-C0.json",
+      "sha256": "c95c44c8fabe5e30b261f947cbc4e807af699a83739a3a2a72f2e57528412ca7"
+    },
+    {
+      "packet_id": "SYNTH-FCT-T0-I1-F0-P0-C1",
+      "file": "SYNTH-FCT-T0-I1-F0-P0-C1.json",
+      "sha256": "26173c83e18c46ad7e1be1470cd6e7787f4d66588555cda1b60706119239e196"
+    },
+    {
+      "packet_id": "SYNTH-FCT-T0-I1-F0-P1-C0",
+      "file": "SYNTH-FCT-T0-I1-F0-P1-C0.json",
+      "sha256": "1bc4df18b11bdefb8f02fad661210ab3e816889cdcfd4d5f8906306f0fc71d3c"
+    },
+    {
+      "packet_id": "SYNTH-FCT-T0-I1-F0-P1-C1",
+      "file": "SYNTH-FCT-T0-I1-F0-P1-C1.json",
+      "sha256": "0d13ac5e13bee7c1ee686d42c621f4699394014e75685b5eadba894078d87c75"
+    },
+    {
+      "packet_id": "SYNTH-FCT-T0-I1-F1-P0-C0",
+      "file": "SYNTH-FCT-T0-I1-F1-P0-C0.json",
+      "sha256": "9a4d1ec623033a1b55e8b69b5032f73d6ca36243ace6a58746f49c85dbc195da"
+    },
+    {
+      "packet_id": "SYNTH-FCT-T0-I1-F1-P0-C1",
+      "file": "SYNTH-FCT-T0-I1-F1-P0-C1.json",
+      "sha256": "d5194e1d717ab220971151a48a8f5834f8addd370d519c3b20cebc24228f5ff3"
+    },
+    {
+      "packet_id": "SYNTH-FCT-T0-I1-F1-P1-C0",
+      "file": "SYNTH-FCT-T0-I1-F1-P1-C0.json",
+      "sha256": "666422a845e1645592196fb98074644f2b79b61d072aa958c2ecb024f5776d6e"
+    },
+    {
+      "packet_id": "SYNTH-FCT-T0-I1-F1-P1-C1",
+      "file": "SYNTH-FCT-T0-I1-F1-P1-C1.json",
+      "sha256": "ed2a2d7f3fc5b429698afe98dad8e9d1288f7777c9202b841ae860386219db06"
+    },
+    {
+      "packet_id": "SYNTH-FCT-T1-I0-F0-P0-C0",
+      "file": "SYNTH-FCT-T1-I0-F0-P0-C0.json",
+      "sha256": "5fdc073835b5d3d36e68d6eb354fc84d5d8cf0aa70953ed40604cfc24c391716"
+    },
+    {
+      "packet_id": "SYNTH-FCT-T1-I0-F0-P0-C1",
+      "file": "SYNTH-FCT-T1-I0-F0-P0-C1.json",
+      "sha256": "93325616c8a0ca7051eff60da7421151b44f62ebf0229e6855b2109e295deba8"
+    },
+    {
+      "packet_id": "SYNTH-FCT-T1-I0-F0-P1-C0",
+      "file": "SYNTH-FCT-T1-I0-F0-P1-C0.json",
+      "sha256": "5333cdc959ae1bac6e51308cab5d863db35078532833b32536abb81228d02ec8"
+    },
+    {
+      "packet_id": "SYNTH-FCT-T1-I0-F0-P1-C1",
+      "file": "SYNTH-FCT-T1-I0-F0-P1-C1.json",
+      "sha256": "5fa83bea29853d684ce60ed1c636e7c2d31983744b7fb9d435ba12a8b6cca655"
+    },
+    {
+      "packet_id": "SYNTH-FCT-T1-I0-F1-P0-C0",
+      "file": "SYNTH-FCT-T1-I0-F1-P0-C0.json",
+      "sha256": "14c14f35ecddb2458130ebb4301843baa24af4d007bde71600735ac437891780"
+    },
+    {
+      "packet_id": "SYNTH-FCT-T1-I0-F1-P0-C1",
+      "file": "SYNTH-FCT-T1-I0-F1-P0-C1.json",
+      "sha256": "0620aa6ad2aa107ac28f91e98e81e58f911c452195e317fa05942a2452ef9dad"
+    },
+    {
+      "packet_id": "SYNTH-FCT-T1-I0-F1-P1-C0",
+      "file": "SYNTH-FCT-T1-I0-F1-P1-C0.json",
+      "sha256": "80633cc51e0f527271966e95e0fb2c00acf141e156c2129544baaa8166dfd01a"
+    },
+    {
+      "packet_id": "SYNTH-FCT-T1-I0-F1-P1-C1",
+      "file": "SYNTH-FCT-T1-I0-F1-P1-C1.json",
+      "sha256": "214205360969130d586ffb1eba45e16931de63275b78494898f2c9eb63249ad2"
+    },
+    {
+      "packet_id": "SYNTH-FCT-T1-I1-F0-P0-C0",
+      "file": "SYNTH-FCT-T1-I1-F0-P0-C0.json",
+      "sha256": "8a0f324d6f60a4406f0ace1aa1673a09d9e46dda483547be3416b3bdc52711c8"
+    },
+    {
+      "packet_id": "SYNTH-FCT-T1-I1-F0-P0-C1",
+      "file": "SYNTH-FCT-T1-I1-F0-P0-C1.json",
+      "sha256": "268a3b6e983162d828e89b888fccfeafd57bb759fb9ca3059e133f1bd895057f"
+    },
+    {
+      "packet_id": "SYNTH-FCT-T1-I1-F0-P1-C0",
+      "file": "SYNTH-FCT-T1-I1-F0-P1-C0.json",
+      "sha256": "9de7f0d5a75579fa6712dafc63fd2bd421c90eed1ade477546ea9a7ddc0b5c96"
+    },
+    {
+      "packet_id": "SYNTH-FCT-T1-I1-F0-P1-C1",
+      "file": "SYNTH-FCT-T1-I1-F0-P1-C1.json",
+      "sha256": "29c6b3332b9bba2c46343efbd2f6e58b85d6f392f7c61860762c4aac51c037b6"
+    },
+    {
+      "packet_id": "SYNTH-FCT-T1-I1-F1-P0-C0",
+      "file": "SYNTH-FCT-T1-I1-F1-P0-C0.json",
+      "sha256": "f81879c9590f9b0be409a899b326667fe31bb039645be65f3a534062fc92020d"
+    },
+    {
+      "packet_id": "SYNTH-FCT-T1-I1-F1-P0-C1",
+      "file": "SYNTH-FCT-T1-I1-F1-P0-C1.json",
+      "sha256": "e133420005194d161edc8fa0de1cb3a6a365485a8099c9e6d7ac3d349cd1d5dd"
+    },
+    {
+      "packet_id": "SYNTH-FCT-T1-I1-F1-P1-C0",
+      "file": "SYNTH-FCT-T1-I1-F1-P1-C0.json",
+      "sha256": "accfe7c5597820fa33c5007709beb0ea11755eb8e0606e928d5a1e63c6d13992"
+    },
+    {
+      "packet_id": "SYNTH-FCT-T1-I1-F1-P1-C1",
+      "file": "SYNTH-FCT-T1-I1-F1-P1-C1.json",
+      "sha256": "d6c13cd72e67901f4820a21190f033a935fe033f6b80d7d64df3bc76312fd13d"
+    }
+  ]
+}

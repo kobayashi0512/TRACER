@@ -1,0 +1,43 @@
+{
+  "contract_id": "icb-disambiguate-candidate-card-v1",
+  "purpose": "Machine-checkable contract for an LLM-generated research hypothesis card. Passing the contract does not validate biology.",
+  "required_top_level_fields": [
+    "candidate_id",
+    "scope",
+    "hypotheses",
+    "evidence_sources",
+    "cross_cohort_replication",
+    "perturbation_support",
+    "orthogonal_evidence",
+    "curated_literature_evidence",
+    "confounding_robustness",
+    "discriminating_experiment"
+  ],
+  "scope_required_fields": ["disease", "treatment", "analysis_unit"],
+  "hypothesis_constraints": {
+    "min_count": 2,
+    "required_fields": ["id", "statement", "falsifiable_prediction"]
+  },
+  "evidence_source_required_fields": ["id", "source_type", "identifier", "supports_or_refutes"],
+  "cross_cohort_replication_required_fields": [
+    "independent_cohorts",
+    "cohort_ids",
+    "effect_direction_consistent",
+    "same_biological_compartment",
+    "same_measurement_level",
+    "discovery_fdr",
+    "validation_fdr"
+  ],
+  "discriminating_experiment_required_fields": [
+    "intervention",
+    "comparator",
+    "readout",
+    "prediction_if_hypothesis_a",
+    "prediction_if_hypothesis_b"
+  ],
+  "prohibited_interpretations": [
+    "Clinical treatment recommendation",
+    "Causal conclusion without perturbation evidence",
+    "Cross-modality result claimed as same-compartment replication"
+  ]
+}

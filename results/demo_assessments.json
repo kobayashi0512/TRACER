@@ -1,0 +1,37 @@
+[
+  {
+    "candidate_id": "DEMO-HIGH",
+    "priority_score": 1.0,
+    "level": "HIGH",
+    "ready_for_validation": true,
+    "causal_language_permitted": true,
+    "reasons": [
+      "Direction and FDR thresholds replicate across at least two independent cohorts.",
+      "At least one independent perturbation result supports the proposed direction.",
+      "At least two orthogonal evidence modalities agree in direction.",
+      "At least two independently curated sources support the constrained claim.",
+      "Batch and cell-composition confounding were both assessed.",
+      "A pre-specified experiment can discriminate the competing hypotheses."
+    ],
+    "hard_stops": [],
+    "interpretation": "Research-priority evidence assessment only; it is not a causal probability, clinical prediction, or treatment recommendation."
+  },
+  {
+    "candidate_id": "DEMO-LOW",
+    "priority_score": 0.0,
+    "level": "LOW",
+    "ready_for_validation": false,
+    "causal_language_permitted": false,
+    "reasons": [
+      "No qualifying multi-modal/orthogonal corroboration.",
+      "Literature support is missing, uncurated, or insufficiently independent."
+    ],
+    "hard_stops": [
+      "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+      "No direction-consistent perturbation evidence; causal language is prohibited.",
+      "Batch and/or cell-composition confounding has not been controlled.",
+      "No complete discriminating experiment with comparator and opposing predictions."
+    ],
+    "interpretation": "Research-priority evidence assessment only; it is not a causal probability, clinical prediction, or treatment recommendation."
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "panel_id": "gse120575-immune-state-positive-controls-v1",
+  "purpose": "Pipeline sanity check only. These are published immune-state signals, not discovery candidates.",
+  "source": "Sade-Feldman et al., Cell 2018 / GEO GSE120575; memory-like CD8/T-cell markers are associated with response and dysfunctional/exhausted states with non-response in the source study.",
+  "programs": {
+    "memory_like_t_cell": {
+      "genes": ["TCF7", "SELL", "CCR7", "LTB", "IL7R", "LEF1"],
+      "expected_higher_group": "Responder"
+    },
+    "dysfunctional_exhausted_t_cell": {
+      "genes": ["HAVCR2", "ENTPD1", "LAG3", "TIGIT", "PDCD1", "TOX", "CXCL13"],
+      "expected_higher_group": "Non-responder"
+    }
+  },
+  "gse91061_entrez_gene_ids": {
+    "TCF7": "6932",
+    "SELL": "6402",
+    "CCR7": "1236",
+    "LTB": "4050",
+    "IL7R": "3575",
+    "LEF1": "51176",
+    "HAVCR2": "84868",
+    "ENTPD1": "953",
+    "LAG3": "3902",
+    "TIGIT": "201633",
+    "PDCD1": "5133",
+    "TOX": "9760",
+    "CXCL13": "10563"
+  },
+  "analysis_limit": "Scores are composition-sensitive because the source matrix contains all CD45+ cells. Results do not establish a cell-intrinsic effect or a causal mechanism."
+}

@@ -1,0 +1,13 @@
+{
+  "packet_id": "SYNTH-CROSS-MODALITY-001",
+  "scope": {"disease": "Synthetic melanoma", "treatment": "Synthetic baseline anti-PD-1", "analysis_unit": "Lesion-level pseudo-bulk"},
+  "question": "Does apparently concordant evidence across single-cell and bulk assays count as replication of a cell-state signal?",
+  "evidence_items": [
+    {"id": "sc-discovery", "cohort_id": "SYN-SC-A", "result_type": "synthetic_single_cell_pseudobulk", "statement": "Single-cell discovery association is direction-consistent.", "effect_direction": "positive", "source_identifier": "synthetic://cross/sc-discovery", "evidence_kind": "observational_association", "direction_status": "consistent", "confounding_assessed": true, "fdr": 0.01},
+    {"id": "bulk-check", "cohort_id": "SYN-BULK", "result_type": "synthetic_bulk_rna", "statement": "Bulk direction is concordant but represents a different measurement level and compartment.", "effect_direction": "positive", "source_identifier": "synthetic://cross/bulk-check", "evidence_kind": "replication", "direction_status": "consistent", "confounding_assessed": true, "fdr": 0.02},
+    {"id": "functional", "cohort_id": "SYN-FUNCTION", "result_type": "synthetic_perturbation", "statement": "Functional perturbation supports the stated direction.", "effect_direction": "positive", "source_identifier": "synthetic://cross/functional", "evidence_kind": "perturbation", "direction_status": "consistent", "confounding_assessed": true, "fdr": null},
+    {"id": "literature-1", "cohort_id": "SYN-LIT-1", "result_type": "synthetic_curated_literature", "statement": "Independent curated source supports the constrained claim.", "effect_direction": "positive", "source_identifier": "synthetic://cross/literature-1", "evidence_kind": "literature", "direction_status": "consistent", "confounding_assessed": true, "fdr": null},
+    {"id": "literature-2", "cohort_id": "SYN-LIT-2", "result_type": "synthetic_curated_literature", "statement": "A second independent curated source supports the constrained claim.", "effect_direction": "positive", "source_identifier": "synthetic://cross/literature-2", "evidence_kind": "literature", "direction_status": "consistent", "confounding_assessed": true, "fdr": null}
+  ],
+  "reference_standard": {"evaluator_only": true, "eligible_for_high_priority": false, "prohibited_claim_types": ["same-measurement replication", "cell-intrinsic conclusion"], "reason_codes": ["cross_modality_cross_compartment"]}
+}

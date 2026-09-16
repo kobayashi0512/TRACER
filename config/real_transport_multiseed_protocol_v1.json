@@ -1,0 +1,37 @@
+{
+  "protocol_id": "real-transport-hard-negative-multiseed-v1",
+  "purpose": "Pre-specified repetition of the frozen real transport hard-negative pilot. This is a prompt/protocol stress test, not a biomedical validation or a model ranking study.",
+  "frozen_packet_directory": "data/real_control_packets_v2",
+  "frozen_manifest": "manifest_v1.json",
+  "n_frozen_packets": 15,
+  "cohort_registry": "config/cohort_registry_v2.json",
+  "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+  "models": [
+    "qwen3:0.6b",
+    "llama3.2:1b",
+    "qwen2.5vl:3b",
+    "qwen3-vl:30b-a3b-instruct-q4_K_M"
+  ],
+  "conditions": ["schema_only_card", "schema_constrained_card"],
+  "new_seeds": [20260915, 20260916],
+  "temperature": 0.0,
+  "max_tokens": 1600,
+  "response_schema": "config/candidate_card_json_schema_v1.json",
+  "primary_audit_fields": [
+    "parseable_candidate_json",
+    "structurally_admissible",
+    "false_same_measurement_claim",
+    "tracer_admitted",
+    "tracer_level",
+    "tracer_unsafe_high_escalation",
+    "structural_error_counts",
+    "tracer_hard_stop_counts"
+  ],
+  "analysis_unit": "generation nested within packet-model-condition; all 15 packets remain one dependent source panel and are not independent biomedical samples",
+  "prohibited_interpretations": [
+    "biomedical mechanism validation",
+    "clinical utility",
+    "model ranking",
+    "inferential statistics that treat gene/program packets as independent samples"
+  ]
+}

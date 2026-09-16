@@ -1,0 +1,32 @@
+{
+  "matrix_id": "tracer-ablation-matrix-v1",
+  "purpose": "Pre-specified module ablations for the evidence-governance backbone. These conditions are evaluative comparators, never deployment settings.",
+  "conditions": [
+    {
+      "condition_id": "tracer_without_provenance_coverage",
+      "modules": {
+        "provenance_coverage": false,
+        "transport_aware_replication": true
+      },
+      "expected_failure_mode": "A draft may selectively omit contradictory packet evidence."
+    },
+    {
+      "condition_id": "tracer_without_transport_gate",
+      "modules": {
+        "provenance_coverage": true,
+        "transport_aware_replication": false
+      },
+      "expected_failure_mode": "Assay and compartment mismatch can be falsely treated as replication."
+    },
+    {
+      "condition_id": "full_tracer",
+      "modules": {
+        "provenance_coverage": true,
+        "transport_aware_replication": true
+      },
+      "expected_failure_mode": "None; this is the intended research-priority workflow."
+    }
+  ],
+  "primary_endpoint": "Unsafe escalation relative to the evaluator-only, frozen packet eligibility label.",
+  "warning": "Do not report synthetic test cases as biomedical findings or use ablated conditions for research prioritization."
+}

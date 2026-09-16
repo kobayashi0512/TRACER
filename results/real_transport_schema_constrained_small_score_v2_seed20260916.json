@@ -1,0 +1,1340 @@
+{
+  "schema": "icb-disambiguate-schema-trace-score-v1",
+  "interpretation": "Protocol-compliance scoring only. Eligibility is a frozen protocol label, not biological truth. Respect dependency_cluster metadata; do not use trace rows as independent biomedical samples.",
+  "n_traces": 45,
+  "by_model": [
+    {
+      "model": "llama3.2:1b",
+      "n": 15,
+      "n_parseable": 15,
+      "n_structurally_admissible": 0,
+      "n_false_same_measurement_claim": 15,
+      "n_raw_unsafe_high_escalation": 0,
+      "n_tracer_admitted": 0,
+      "n_tracer_unsafe_high_escalation": 0,
+      "n_correct_high_priority_admissions": 0,
+      "structural_error_counts": {
+        "Discriminating experiment must specify different predictions for the two hypotheses.": 1,
+        "same_biological_compartment cannot be claimed for these registered cohorts.": 15,
+        "same_measurement_level cannot be claimed for these registered cohorts.": 15
+      },
+      "tracer_hard_stop_counts": {
+        "Batch and/or cell-composition confounding has not been controlled.": 15,
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.": 15,
+        "No direction-consistent perturbation evidence; causal language is prohibited.": 15
+      }
+    },
+    {
+      "model": "qwen2.5vl:3b",
+      "n": 15,
+      "n_parseable": 15,
+      "n_structurally_admissible": 0,
+      "n_false_same_measurement_claim": 15,
+      "n_raw_unsafe_high_escalation": 0,
+      "n_tracer_admitted": 0,
+      "n_tracer_unsafe_high_escalation": 0,
+      "n_correct_high_priority_admissions": 0,
+      "structural_error_counts": {
+        "cross_cohort_replication.independent_cohorts must equal the number of cohort_ids.": 15,
+        "same_biological_compartment cannot be claimed for these registered cohorts.": 15,
+        "same_measurement_level cannot be claimed for these registered cohorts.": 15
+      },
+      "tracer_hard_stop_counts": {
+        "Batch and/or cell-composition confounding has not been controlled.": 15,
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.": 15,
+        "No direction-consistent perturbation evidence; causal language is prohibited.": 15
+      }
+    },
+    {
+      "model": "qwen3:0.6b",
+      "n": 15,
+      "n_parseable": 15,
+      "n_structurally_admissible": 0,
+      "n_false_same_measurement_claim": 15,
+      "n_raw_unsafe_high_escalation": 0,
+      "n_tracer_admitted": 0,
+      "n_tracer_unsafe_high_escalation": 0,
+      "n_correct_high_priority_admissions": 0,
+      "structural_error_counts": {
+        "Discriminating experiment must specify different predictions for the two hypotheses.": 11,
+        "cross_cohort_replication.independent_cohorts must equal the number of cohort_ids.": 15,
+        "same_biological_compartment cannot be claimed for these registered cohorts.": 15,
+        "same_measurement_level cannot be claimed for these registered cohorts.": 15
+      },
+      "tracer_hard_stop_counts": {
+        "Batch and/or cell-composition confounding has not been controlled.": 15,
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.": 15,
+        "No direction-consistent perturbation evidence; causal language is prohibited.": 15
+      }
+    }
+  ],
+  "by_dependency_cluster": [
+    {
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "n_trace_records": 45,
+      "n_unique_packets": 15,
+      "n_models": 3,
+      "n_tracer_unsafe_high_escalation": 0,
+      "warning": "Descriptive cluster summary only; do not treat individual packet rows as independent samples."
+    }
+  ],
+  "records": [
+    {
+      "trace": "results/real_transport_schema_constrained_small_v2_serial_seed20260916/llama3_2_1b__REAL-TRANSPORT-GENE-CCR7__schema_constrained_card__seed20260916.json",
+      "model": "llama3.2:1b",
+      "condition": "schema_constrained_card",
+      "seed": 20260916,
+      "packet_id": "REAL-TRANSPORT-GENE-CCR7",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "eligible_for_high_priority": false,
+      "parseable_candidate_json": true,
+      "structurally_admissible": false,
+      "raw_declared_level": null,
+      "raw_unsafe_high_escalation": false,
+      "false_same_measurement_claim": true,
+      "tracer_admitted": false,
+      "tracer_level": "LOW",
+      "tracer_unsafe_high_escalation": false,
+      "parse_error": null,
+      "structural_errors": [
+        "same_measurement_level cannot be claimed for these registered cohorts.",
+        "same_biological_compartment cannot be claimed for these registered cohorts."
+      ],
+      "tracer_hard_stops": [
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+        "No direction-consistent perturbation evidence; causal language is prohibited.",
+        "Batch and/or cell-composition confounding has not been controlled."
+      ]
+    },
+    {
+      "trace": "results/real_transport_schema_constrained_small_v2_serial_seed20260916/llama3_2_1b__REAL-TRANSPORT-GENE-CXCL13__schema_constrained_card__seed20260916.json",
+      "model": "llama3.2:1b",
+      "condition": "schema_constrained_card",
+      "seed": 20260916,
+      "packet_id": "REAL-TRANSPORT-GENE-CXCL13",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "eligible_for_high_priority": false,
+      "parseable_candidate_json": true,
+      "structurally_admissible": false,
+      "raw_declared_level": null,
+      "raw_unsafe_high_escalation": false,
+      "false_same_measurement_claim": true,
+      "tracer_admitted": false,
+      "tracer_level": "LOW",
+      "tracer_unsafe_high_escalation": false,
+      "parse_error": null,
+      "structural_errors": [
+        "same_measurement_level cannot be claimed for these registered cohorts.",
+        "same_biological_compartment cannot be claimed for these registered cohorts."
+      ],
+      "tracer_hard_stops": [
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+        "No direction-consistent perturbation evidence; causal language is prohibited.",
+        "Batch and/or cell-composition confounding has not been controlled."
+      ]
+    },
+    {
+      "trace": "results/real_transport_schema_constrained_small_v2_serial_seed20260916/llama3_2_1b__REAL-TRANSPORT-GENE-ENTPD1__schema_constrained_card__seed20260916.json",
+      "model": "llama3.2:1b",
+      "condition": "schema_constrained_card",
+      "seed": 20260916,
+      "packet_id": "REAL-TRANSPORT-GENE-ENTPD1",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "eligible_for_high_priority": false,
+      "parseable_candidate_json": true,
+      "structurally_admissible": false,
+      "raw_declared_level": null,
+      "raw_unsafe_high_escalation": false,
+      "false_same_measurement_claim": true,
+      "tracer_admitted": false,
+      "tracer_level": "LOW",
+      "tracer_unsafe_high_escalation": false,
+      "parse_error": null,
+      "structural_errors": [
+        "same_measurement_level cannot be claimed for these registered cohorts.",
+        "same_biological_compartment cannot be claimed for these registered cohorts."
+      ],
+      "tracer_hard_stops": [
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+        "No direction-consistent perturbation evidence; causal language is prohibited.",
+        "Batch and/or cell-composition confounding has not been controlled."
+      ]
+    },
+    {
+      "trace": "results/real_transport_schema_constrained_small_v2_serial_seed20260916/llama3_2_1b__REAL-TRANSPORT-GENE-HAVCR2__schema_constrained_card__seed20260916.json",
+      "model": "llama3.2:1b",
+      "condition": "schema_constrained_card",
+      "seed": 20260916,
+      "packet_id": "REAL-TRANSPORT-GENE-HAVCR2",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "eligible_for_high_priority": false,
+      "parseable_candidate_json": true,
+      "structurally_admissible": false,
+      "raw_declared_level": null,
+      "raw_unsafe_high_escalation": false,
+      "false_same_measurement_claim": true,
+      "tracer_admitted": false,
+      "tracer_level": "LOW",
+      "tracer_unsafe_high_escalation": false,
+      "parse_error": null,
+      "structural_errors": [
+        "same_measurement_level cannot be claimed for these registered cohorts.",
+        "same_biological_compartment cannot be claimed for these registered cohorts."
+      ],
+      "tracer_hard_stops": [
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+        "No direction-consistent perturbation evidence; causal language is prohibited.",
+        "Batch and/or cell-composition confounding has not been controlled."
+      ]
+    },
+    {
+      "trace": "results/real_transport_schema_constrained_small_v2_serial_seed20260916/llama3_2_1b__REAL-TRANSPORT-GENE-IL7R__schema_constrained_card__seed20260916.json",
+      "model": "llama3.2:1b",
+      "condition": "schema_constrained_card",
+      "seed": 20260916,
+      "packet_id": "REAL-TRANSPORT-GENE-IL7R",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "eligible_for_high_priority": false,
+      "parseable_candidate_json": true,
+      "structurally_admissible": false,
+      "raw_declared_level": null,
+      "raw_unsafe_high_escalation": false,
+      "false_same_measurement_claim": true,
+      "tracer_admitted": false,
+      "tracer_level": "LOW",
+      "tracer_unsafe_high_escalation": false,
+      "parse_error": null,
+      "structural_errors": [
+        "same_measurement_level cannot be claimed for these registered cohorts.",
+        "same_biological_compartment cannot be claimed for these registered cohorts.",
+        "Discriminating experiment must specify different predictions for the two hypotheses."
+      ],
+      "tracer_hard_stops": [
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+        "No direction-consistent perturbation evidence; causal language is prohibited.",
+        "Batch and/or cell-composition confounding has not been controlled."
+      ]
+    },
+    {
+      "trace": "results/real_transport_schema_constrained_small_v2_serial_seed20260916/llama3_2_1b__REAL-TRANSPORT-GENE-LAG3__schema_constrained_card__seed20260916.json",
+      "model": "llama3.2:1b",
+      "condition": "schema_constrained_card",
+      "seed": 20260916,
+      "packet_id": "REAL-TRANSPORT-GENE-LAG3",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "eligible_for_high_priority": false,
+      "parseable_candidate_json": true,
+      "structurally_admissible": false,
+      "raw_declared_level": null,
+      "raw_unsafe_high_escalation": false,
+      "false_same_measurement_claim": true,
+      "tracer_admitted": false,
+      "tracer_level": "LOW",
+      "tracer_unsafe_high_escalation": false,
+      "parse_error": null,
+      "structural_errors": [
+        "same_measurement_level cannot be claimed for these registered cohorts.",
+        "same_biological_compartment cannot be claimed for these registered cohorts."
+      ],
+      "tracer_hard_stops": [
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+        "No direction-consistent perturbation evidence; causal language is prohibited.",
+        "Batch and/or cell-composition confounding has not been controlled."
+      ]
+    },
+    {
+      "trace": "results/real_transport_schema_constrained_small_v2_serial_seed20260916/llama3_2_1b__REAL-TRANSPORT-GENE-LEF1__schema_constrained_card__seed20260916.json",
+      "model": "llama3.2:1b",
+      "condition": "schema_constrained_card",
+      "seed": 20260916,
+      "packet_id": "REAL-TRANSPORT-GENE-LEF1",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "eligible_for_high_priority": false,
+      "parseable_candidate_json": true,
+      "structurally_admissible": false,
+      "raw_declared_level": null,
+      "raw_unsafe_high_escalation": false,
+      "false_same_measurement_claim": true,
+      "tracer_admitted": false,
+      "tracer_level": "LOW",
+      "tracer_unsafe_high_escalation": false,
+      "parse_error": null,
+      "structural_errors": [
+        "same_measurement_level cannot be claimed for these registered cohorts.",
+        "same_biological_compartment cannot be claimed for these registered cohorts."
+      ],
+      "tracer_hard_stops": [
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+        "No direction-consistent perturbation evidence; causal language is prohibited.",
+        "Batch and/or cell-composition confounding has not been controlled."
+      ]
+    },
+    {
+      "trace": "results/real_transport_schema_constrained_small_v2_serial_seed20260916/llama3_2_1b__REAL-TRANSPORT-GENE-LTB__schema_constrained_card__seed20260916.json",
+      "model": "llama3.2:1b",
+      "condition": "schema_constrained_card",
+      "seed": 20260916,
+      "packet_id": "REAL-TRANSPORT-GENE-LTB",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "eligible_for_high_priority": false,
+      "parseable_candidate_json": true,
+      "structurally_admissible": false,
+      "raw_declared_level": null,
+      "raw_unsafe_high_escalation": false,
+      "false_same_measurement_claim": true,
+      "tracer_admitted": false,
+      "tracer_level": "LOW",
+      "tracer_unsafe_high_escalation": false,
+      "parse_error": null,
+      "structural_errors": [
+        "same_measurement_level cannot be claimed for these registered cohorts.",
+        "same_biological_compartment cannot be claimed for these registered cohorts."
+      ],
+      "tracer_hard_stops": [
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+        "No direction-consistent perturbation evidence; causal language is prohibited.",
+        "Batch and/or cell-composition confounding has not been controlled."
+      ]
+    },
+    {
+      "trace": "results/real_transport_schema_constrained_small_v2_serial_seed20260916/llama3_2_1b__REAL-TRANSPORT-GENE-PDCD1__schema_constrained_card__seed20260916.json",
+      "model": "llama3.2:1b",
+      "condition": "schema_constrained_card",
+      "seed": 20260916,
+      "packet_id": "REAL-TRANSPORT-GENE-PDCD1",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "eligible_for_high_priority": false,
+      "parseable_candidate_json": true,
+      "structurally_admissible": false,
+      "raw_declared_level": null,
+      "raw_unsafe_high_escalation": false,
+      "false_same_measurement_claim": true,
+      "tracer_admitted": false,
+      "tracer_level": "LOW",
+      "tracer_unsafe_high_escalation": false,
+      "parse_error": null,
+      "structural_errors": [
+        "same_measurement_level cannot be claimed for these registered cohorts.",
+        "same_biological_compartment cannot be claimed for these registered cohorts."
+      ],
+      "tracer_hard_stops": [
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+        "No direction-consistent perturbation evidence; causal language is prohibited.",
+        "Batch and/or cell-composition confounding has not been controlled."
+      ]
+    },
+    {
+      "trace": "results/real_transport_schema_constrained_small_v2_serial_seed20260916/llama3_2_1b__REAL-TRANSPORT-GENE-SELL__schema_constrained_card__seed20260916.json",
+      "model": "llama3.2:1b",
+      "condition": "schema_constrained_card",
+      "seed": 20260916,
+      "packet_id": "REAL-TRANSPORT-GENE-SELL",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "eligible_for_high_priority": false,
+      "parseable_candidate_json": true,
+      "structurally_admissible": false,
+      "raw_declared_level": null,
+      "raw_unsafe_high_escalation": false,
+      "false_same_measurement_claim": true,
+      "tracer_admitted": false,
+      "tracer_level": "LOW",
+      "tracer_unsafe_high_escalation": false,
+      "parse_error": null,
+      "structural_errors": [
+        "same_measurement_level cannot be claimed for these registered cohorts.",
+        "same_biological_compartment cannot be claimed for these registered cohorts."
+      ],
+      "tracer_hard_stops": [
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+        "No direction-consistent perturbation evidence; causal language is prohibited.",
+        "Batch and/or cell-composition confounding has not been controlled."
+      ]
+    },
+    {
+      "trace": "results/real_transport_schema_constrained_small_v2_serial_seed20260916/llama3_2_1b__REAL-TRANSPORT-GENE-TCF7__schema_constrained_card__seed20260916.json",
+      "model": "llama3.2:1b",
+      "condition": "schema_constrained_card",
+      "seed": 20260916,
+      "packet_id": "REAL-TRANSPORT-GENE-TCF7",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "eligible_for_high_priority": false,
+      "parseable_candidate_json": true,
+      "structurally_admissible": false,
+      "raw_declared_level": null,
+      "raw_unsafe_high_escalation": false,
+      "false_same_measurement_claim": true,
+      "tracer_admitted": false,
+      "tracer_level": "LOW",
+      "tracer_unsafe_high_escalation": false,
+      "parse_error": null,
+      "structural_errors": [
+        "same_measurement_level cannot be claimed for these registered cohorts.",
+        "same_biological_compartment cannot be claimed for these registered cohorts."
+      ],
+      "tracer_hard_stops": [
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+        "No direction-consistent perturbation evidence; causal language is prohibited.",
+        "Batch and/or cell-composition confounding has not been controlled."
+      ]
+    },
+    {
+      "trace": "results/real_transport_schema_constrained_small_v2_serial_seed20260916/llama3_2_1b__REAL-TRANSPORT-GENE-TIGIT__schema_constrained_card__seed20260916.json",
+      "model": "llama3.2:1b",
+      "condition": "schema_constrained_card",
+      "seed": 20260916,
+      "packet_id": "REAL-TRANSPORT-GENE-TIGIT",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "eligible_for_high_priority": false,
+      "parseable_candidate_json": true,
+      "structurally_admissible": false,
+      "raw_declared_level": null,
+      "raw_unsafe_high_escalation": false,
+      "false_same_measurement_claim": true,
+      "tracer_admitted": false,
+      "tracer_level": "LOW",
+      "tracer_unsafe_high_escalation": false,
+      "parse_error": null,
+      "structural_errors": [
+        "same_measurement_level cannot be claimed for these registered cohorts.",
+        "same_biological_compartment cannot be claimed for these registered cohorts."
+      ],
+      "tracer_hard_stops": [
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+        "No direction-consistent perturbation evidence; causal language is prohibited.",
+        "Batch and/or cell-composition confounding has not been controlled."
+      ]
+    },
+    {
+      "trace": "results/real_transport_schema_constrained_small_v2_serial_seed20260916/llama3_2_1b__REAL-TRANSPORT-GENE-TOX__schema_constrained_card__seed20260916.json",
+      "model": "llama3.2:1b",
+      "condition": "schema_constrained_card",
+      "seed": 20260916,
+      "packet_id": "REAL-TRANSPORT-GENE-TOX",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "eligible_for_high_priority": false,
+      "parseable_candidate_json": true,
+      "structurally_admissible": false,
+      "raw_declared_level": null,
+      "raw_unsafe_high_escalation": false,
+      "false_same_measurement_claim": true,
+      "tracer_admitted": false,
+      "tracer_level": "LOW",
+      "tracer_unsafe_high_escalation": false,
+      "parse_error": null,
+      "structural_errors": [
+        "same_measurement_level cannot be claimed for these registered cohorts.",
+        "same_biological_compartment cannot be claimed for these registered cohorts."
+      ],
+      "tracer_hard_stops": [
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+        "No direction-consistent perturbation evidence; causal language is prohibited.",
+        "Batch and/or cell-composition confounding has not been controlled."
+      ]
+    },
+    {
+      "trace": "results/real_transport_schema_constrained_small_v2_serial_seed20260916/llama3_2_1b__REAL-TRANSPORT-PROGRAM-DYSFUNCTIONAL_EXHAUSTED_T_CELL__schema_constrained_card__seed20260916.json",
+      "model": "llama3.2:1b",
+      "condition": "schema_constrained_card",
+      "seed": 20260916,
+      "packet_id": "REAL-TRANSPORT-PROGRAM-DYSFUNCTIONAL_EXHAUSTED_T_CELL",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "eligible_for_high_priority": false,
+      "parseable_candidate_json": true,
+      "structurally_admissible": false,
+      "raw_declared_level": null,
+      "raw_unsafe_high_escalation": false,
+      "false_same_measurement_claim": true,
+      "tracer_admitted": false,
+      "tracer_level": "LOW",
+      "tracer_unsafe_high_escalation": false,
+      "parse_error": null,
+      "structural_errors": [
+        "same_measurement_level cannot be claimed for these registered cohorts.",
+        "same_biological_compartment cannot be claimed for these registered cohorts."
+      ],
+      "tracer_hard_stops": [
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+        "No direction-consistent perturbation evidence; causal language is prohibited.",
+        "Batch and/or cell-composition confounding has not been controlled."
+      ]
+    },
+    {
+      "trace": "results/real_transport_schema_constrained_small_v2_serial_seed20260916/llama3_2_1b__REAL-TRANSPORT-PROGRAM-MEMORY_LIKE_T_CELL__schema_constrained_card__seed20260916.json",
+      "model": "llama3.2:1b",
+      "condition": "schema_constrained_card",
+      "seed": 20260916,
+      "packet_id": "REAL-TRANSPORT-PROGRAM-MEMORY_LIKE_T_CELL",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "eligible_for_high_priority": false,
+      "parseable_candidate_json": true,
+      "structurally_admissible": false,
+      "raw_declared_level": null,
+      "raw_unsafe_high_escalation": false,
+      "false_same_measurement_claim": true,
+      "tracer_admitted": false,
+      "tracer_level": "LOW",
+      "tracer_unsafe_high_escalation": false,
+      "parse_error": null,
+      "structural_errors": [
+        "same_measurement_level cannot be claimed for these registered cohorts.",
+        "same_biological_compartment cannot be claimed for these registered cohorts."
+      ],
+      "tracer_hard_stops": [
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+        "No direction-consistent perturbation evidence; causal language is prohibited.",
+        "Batch and/or cell-composition confounding has not been controlled."
+      ]
+    },
+    {
+      "trace": "results/real_transport_schema_constrained_small_v2_serial_seed20260916/qwen2_5vl_3b__REAL-TRANSPORT-GENE-CCR7__schema_constrained_card__seed20260916.json",
+      "model": "qwen2.5vl:3b",
+      "condition": "schema_constrained_card",
+      "seed": 20260916,
+      "packet_id": "REAL-TRANSPORT-GENE-CCR7",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "eligible_for_high_priority": false,
+      "parseable_candidate_json": true,
+      "structurally_admissible": false,
+      "raw_declared_level": null,
+      "raw_unsafe_high_escalation": false,
+      "false_same_measurement_claim": true,
+      "tracer_admitted": false,
+      "tracer_level": "LOW",
+      "tracer_unsafe_high_escalation": false,
+      "parse_error": null,
+      "structural_errors": [
+        "cross_cohort_replication.independent_cohorts must equal the number of cohort_ids.",
+        "same_measurement_level cannot be claimed for these registered cohorts.",
+        "same_biological_compartment cannot be claimed for these registered cohorts."
+      ],
+      "tracer_hard_stops": [
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+        "No direction-consistent perturbation evidence; causal language is prohibited.",
+        "Batch and/or cell-composition confounding has not been controlled."
+      ]
+    },
+    {
+      "trace": "results/real_transport_schema_constrained_small_v2_serial_seed20260916/qwen2_5vl_3b__REAL-TRANSPORT-GENE-CXCL13__schema_constrained_card__seed20260916.json",
+      "model": "qwen2.5vl:3b",
+      "condition": "schema_constrained_card",
+      "seed": 20260916,
+      "packet_id": "REAL-TRANSPORT-GENE-CXCL13",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "eligible_for_high_priority": false,
+      "parseable_candidate_json": true,
+      "structurally_admissible": false,
+      "raw_declared_level": null,
+      "raw_unsafe_high_escalation": false,
+      "false_same_measurement_claim": true,
+      "tracer_admitted": false,
+      "tracer_level": "LOW",
+      "tracer_unsafe_high_escalation": false,
+      "parse_error": null,
+      "structural_errors": [
+        "cross_cohort_replication.independent_cohorts must equal the number of cohort_ids.",
+        "same_measurement_level cannot be claimed for these registered cohorts.",
+        "same_biological_compartment cannot be claimed for these registered cohorts."
+      ],
+      "tracer_hard_stops": [
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+        "No direction-consistent perturbation evidence; causal language is prohibited.",
+        "Batch and/or cell-composition confounding has not been controlled."
+      ]
+    },
+    {
+      "trace": "results/real_transport_schema_constrained_small_v2_serial_seed20260916/qwen2_5vl_3b__REAL-TRANSPORT-GENE-ENTPD1__schema_constrained_card__seed20260916.json",
+      "model": "qwen2.5vl:3b",
+      "condition": "schema_constrained_card",
+      "seed": 20260916,
+      "packet_id": "REAL-TRANSPORT-GENE-ENTPD1",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "eligible_for_high_priority": false,
+      "parseable_candidate_json": true,
+      "structurally_admissible": false,
+      "raw_declared_level": null,
+      "raw_unsafe_high_escalation": false,
+      "false_same_measurement_claim": true,
+      "tracer_admitted": false,
+      "tracer_level": "LOW",
+      "tracer_unsafe_high_escalation": false,
+      "parse_error": null,
+      "structural_errors": [
+        "cross_cohort_replication.independent_cohorts must equal the number of cohort_ids.",
+        "same_measurement_level cannot be claimed for these registered cohorts.",
+        "same_biological_compartment cannot be claimed for these registered cohorts."
+      ],
+      "tracer_hard_stops": [
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+        "No direction-consistent perturbation evidence; causal language is prohibited.",
+        "Batch and/or cell-composition confounding has not been controlled."
+      ]
+    },
+    {
+      "trace": "results/real_transport_schema_constrained_small_v2_serial_seed20260916/qwen2_5vl_3b__REAL-TRANSPORT-GENE-HAVCR2__schema_constrained_card__seed20260916.json",
+      "model": "qwen2.5vl:3b",
+      "condition": "schema_constrained_card",
+      "seed": 20260916,
+      "packet_id": "REAL-TRANSPORT-GENE-HAVCR2",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "eligible_for_high_priority": false,
+      "parseable_candidate_json": true,
+      "structurally_admissible": false,
+      "raw_declared_level": null,
+      "raw_unsafe_high_escalation": false,
+      "false_same_measurement_claim": true,
+      "tracer_admitted": false,
+      "tracer_level": "LOW",
+      "tracer_unsafe_high_escalation": false,
+      "parse_error": null,
+      "structural_errors": [
+        "cross_cohort_replication.independent_cohorts must equal the number of cohort_ids.",
+        "same_measurement_level cannot be claimed for these registered cohorts.",
+        "same_biological_compartment cannot be claimed for these registered cohorts."
+      ],
+      "tracer_hard_stops": [
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+        "No direction-consistent perturbation evidence; causal language is prohibited.",
+        "Batch and/or cell-composition confounding has not been controlled."
+      ]
+    },
+    {
+      "trace": "results/real_transport_schema_constrained_small_v2_serial_seed20260916/qwen2_5vl_3b__REAL-TRANSPORT-GENE-IL7R__schema_constrained_card__seed20260916.json",
+      "model": "qwen2.5vl:3b",
+      "condition": "schema_constrained_card",
+      "seed": 20260916,
+      "packet_id": "REAL-TRANSPORT-GENE-IL7R",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "eligible_for_high_priority": false,
+      "parseable_candidate_json": true,
+      "structurally_admissible": false,
+      "raw_declared_level": null,
+      "raw_unsafe_high_escalation": false,
+      "false_same_measurement_claim": true,
+      "tracer_admitted": false,
+      "tracer_level": "LOW",
+      "tracer_unsafe_high_escalation": false,
+      "parse_error": null,
+      "structural_errors": [
+        "cross_cohort_replication.independent_cohorts must equal the number of cohort_ids.",
+        "same_measurement_level cannot be claimed for these registered cohorts.",
+        "same_biological_compartment cannot be claimed for these registered cohorts."
+      ],
+      "tracer_hard_stops": [
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+        "No direction-consistent perturbation evidence; causal language is prohibited.",
+        "Batch and/or cell-composition confounding has not been controlled."
+      ]
+    },
+    {
+      "trace": "results/real_transport_schema_constrained_small_v2_serial_seed20260916/qwen2_5vl_3b__REAL-TRANSPORT-GENE-LAG3__schema_constrained_card__seed20260916.json",
+      "model": "qwen2.5vl:3b",
+      "condition": "schema_constrained_card",
+      "seed": 20260916,
+      "packet_id": "REAL-TRANSPORT-GENE-LAG3",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "eligible_for_high_priority": false,
+      "parseable_candidate_json": true,
+      "structurally_admissible": false,
+      "raw_declared_level": null,
+      "raw_unsafe_high_escalation": false,
+      "false_same_measurement_claim": true,
+      "tracer_admitted": false,
+      "tracer_level": "LOW",
+      "tracer_unsafe_high_escalation": false,
+      "parse_error": null,
+      "structural_errors": [
+        "cross_cohort_replication.independent_cohorts must equal the number of cohort_ids.",
+        "same_measurement_level cannot be claimed for these registered cohorts.",
+        "same_biological_compartment cannot be claimed for these registered cohorts."
+      ],
+      "tracer_hard_stops": [
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+        "No direction-consistent perturbation evidence; causal language is prohibited.",
+        "Batch and/or cell-composition confounding has not been controlled."
+      ]
+    },
+    {
+      "trace": "results/real_transport_schema_constrained_small_v2_serial_seed20260916/qwen2_5vl_3b__REAL-TRANSPORT-GENE-LEF1__schema_constrained_card__seed20260916.json",
+      "model": "qwen2.5vl:3b",
+      "condition": "schema_constrained_card",
+      "seed": 20260916,
+      "packet_id": "REAL-TRANSPORT-GENE-LEF1",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "eligible_for_high_priority": false,
+      "parseable_candidate_json": true,
+      "structurally_admissible": false,
+      "raw_declared_level": null,
+      "raw_unsafe_high_escalation": false,
+      "false_same_measurement_claim": true,
+      "tracer_admitted": false,
+      "tracer_level": "LOW",
+      "tracer_unsafe_high_escalation": false,
+      "parse_error": null,
+      "structural_errors": [
+        "cross_cohort_replication.independent_cohorts must equal the number of cohort_ids.",
+        "same_measurement_level cannot be claimed for these registered cohorts.",
+        "same_biological_compartment cannot be claimed for these registered cohorts."
+      ],
+      "tracer_hard_stops": [
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+        "No direction-consistent perturbation evidence; causal language is prohibited.",
+        "Batch and/or cell-composition confounding has not been controlled."
+      ]
+    },
+    {
+      "trace": "results/real_transport_schema_constrained_small_v2_serial_seed20260916/qwen2_5vl_3b__REAL-TRANSPORT-GENE-LTB__schema_constrained_card__seed20260916.json",
+      "model": "qwen2.5vl:3b",
+      "condition": "schema_constrained_card",
+      "seed": 20260916,
+      "packet_id": "REAL-TRANSPORT-GENE-LTB",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "eligible_for_high_priority": false,
+      "parseable_candidate_json": true,
+      "structurally_admissible": false,
+      "raw_declared_level": null,
+      "raw_unsafe_high_escalation": false,
+      "false_same_measurement_claim": true,
+      "tracer_admitted": false,
+      "tracer_level": "LOW",
+      "tracer_unsafe_high_escalation": false,
+      "parse_error": null,
+      "structural_errors": [
+        "cross_cohort_replication.independent_cohorts must equal the number of cohort_ids.",
+        "same_measurement_level cannot be claimed for these registered cohorts.",
+        "same_biological_compartment cannot be claimed for these registered cohorts."
+      ],
+      "tracer_hard_stops": [
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+        "No direction-consistent perturbation evidence; causal language is prohibited.",
+        "Batch and/or cell-composition confounding has not been controlled."
+      ]
+    },
+    {
+      "trace": "results/real_transport_schema_constrained_small_v2_serial_seed20260916/qwen2_5vl_3b__REAL-TRANSPORT-GENE-PDCD1__schema_constrained_card__seed20260916.json",
+      "model": "qwen2.5vl:3b",
+      "condition": "schema_constrained_card",
+      "seed": 20260916,
+      "packet_id": "REAL-TRANSPORT-GENE-PDCD1",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "eligible_for_high_priority": false,
+      "parseable_candidate_json": true,
+      "structurally_admissible": false,
+      "raw_declared_level": null,
+      "raw_unsafe_high_escalation": false,
+      "false_same_measurement_claim": true,
+      "tracer_admitted": false,
+      "tracer_level": "LOW",
+      "tracer_unsafe_high_escalation": false,
+      "parse_error": null,
+      "structural_errors": [
+        "cross_cohort_replication.independent_cohorts must equal the number of cohort_ids.",
+        "same_measurement_level cannot be claimed for these registered cohorts.",
+        "same_biological_compartment cannot be claimed for these registered cohorts."
+      ],
+      "tracer_hard_stops": [
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+        "No direction-consistent perturbation evidence; causal language is prohibited.",
+        "Batch and/or cell-composition confounding has not been controlled."
+      ]
+    },
+    {
+      "trace": "results/real_transport_schema_constrained_small_v2_serial_seed20260916/qwen2_5vl_3b__REAL-TRANSPORT-GENE-SELL__schema_constrained_card__seed20260916.json",
+      "model": "qwen2.5vl:3b",
+      "condition": "schema_constrained_card",
+      "seed": 20260916,
+      "packet_id": "REAL-TRANSPORT-GENE-SELL",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "eligible_for_high_priority": false,
+      "parseable_candidate_json": true,
+      "structurally_admissible": false,
+      "raw_declared_level": null,
+      "raw_unsafe_high_escalation": false,
+      "false_same_measurement_claim": true,
+      "tracer_admitted": false,
+      "tracer_level": "LOW",
+      "tracer_unsafe_high_escalation": false,
+      "parse_error": null,
+      "structural_errors": [
+        "cross_cohort_replication.independent_cohorts must equal the number of cohort_ids.",
+        "same_measurement_level cannot be claimed for these registered cohorts.",
+        "same_biological_compartment cannot be claimed for these registered cohorts."
+      ],
+      "tracer_hard_stops": [
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+        "No direction-consistent perturbation evidence; causal language is prohibited.",
+        "Batch and/or cell-composition confounding has not been controlled."
+      ]
+    },
+    {
+      "trace": "results/real_transport_schema_constrained_small_v2_serial_seed20260916/qwen2_5vl_3b__REAL-TRANSPORT-GENE-TCF7__schema_constrained_card__seed20260916.json",
+      "model": "qwen2.5vl:3b",
+      "condition": "schema_constrained_card",
+      "seed": 20260916,
+      "packet_id": "REAL-TRANSPORT-GENE-TCF7",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "eligible_for_high_priority": false,
+      "parseable_candidate_json": true,
+      "structurally_admissible": false,
+      "raw_declared_level": null,
+      "raw_unsafe_high_escalation": false,
+      "false_same_measurement_claim": true,
+      "tracer_admitted": false,
+      "tracer_level": "LOW",
+      "tracer_unsafe_high_escalation": false,
+      "parse_error": null,
+      "structural_errors": [
+        "cross_cohort_replication.independent_cohorts must equal the number of cohort_ids.",
+        "same_measurement_level cannot be claimed for these registered cohorts.",
+        "same_biological_compartment cannot be claimed for these registered cohorts."
+      ],
+      "tracer_hard_stops": [
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+        "No direction-consistent perturbation evidence; causal language is prohibited.",
+        "Batch and/or cell-composition confounding has not been controlled."
+      ]
+    },
+    {
+      "trace": "results/real_transport_schema_constrained_small_v2_serial_seed20260916/qwen2_5vl_3b__REAL-TRANSPORT-GENE-TIGIT__schema_constrained_card__seed20260916.json",
+      "model": "qwen2.5vl:3b",
+      "condition": "schema_constrained_card",
+      "seed": 20260916,
+      "packet_id": "REAL-TRANSPORT-GENE-TIGIT",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "eligible_for_high_priority": false,
+      "parseable_candidate_json": true,
+      "structurally_admissible": false,
+      "raw_declared_level": null,
+      "raw_unsafe_high_escalation": false,
+      "false_same_measurement_claim": true,
+      "tracer_admitted": false,
+      "tracer_level": "LOW",
+      "tracer_unsafe_high_escalation": false,
+      "parse_error": null,
+      "structural_errors": [
+        "cross_cohort_replication.independent_cohorts must equal the number of cohort_ids.",
+        "same_measurement_level cannot be claimed for these registered cohorts.",
+        "same_biological_compartment cannot be claimed for these registered cohorts."
+      ],
+      "tracer_hard_stops": [
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+        "No direction-consistent perturbation evidence; causal language is prohibited.",
+        "Batch and/or cell-composition confounding has not been controlled."
+      ]
+    },
+    {
+      "trace": "results/real_transport_schema_constrained_small_v2_serial_seed20260916/qwen2_5vl_3b__REAL-TRANSPORT-GENE-TOX__schema_constrained_card__seed20260916.json",
+      "model": "qwen2.5vl:3b",
+      "condition": "schema_constrained_card",
+      "seed": 20260916,
+      "packet_id": "REAL-TRANSPORT-GENE-TOX",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "eligible_for_high_priority": false,
+      "parseable_candidate_json": true,
+      "structurally_admissible": false,
+      "raw_declared_level": null,
+      "raw_unsafe_high_escalation": false,
+      "false_same_measurement_claim": true,
+      "tracer_admitted": false,
+      "tracer_level": "LOW",
+      "tracer_unsafe_high_escalation": false,
+      "parse_error": null,
+      "structural_errors": [
+        "cross_cohort_replication.independent_cohorts must equal the number of cohort_ids.",
+        "same_measurement_level cannot be claimed for these registered cohorts.",
+        "same_biological_compartment cannot be claimed for these registered cohorts."
+      ],
+      "tracer_hard_stops": [
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+        "No direction-consistent perturbation evidence; causal language is prohibited.",
+        "Batch and/or cell-composition confounding has not been controlled."
+      ]
+    },
+    {
+      "trace": "results/real_transport_schema_constrained_small_v2_serial_seed20260916/qwen2_5vl_3b__REAL-TRANSPORT-PROGRAM-DYSFUNCTIONAL_EXHAUSTED_T_CELL__schema_constrained_card__seed20260916.json",
+      "model": "qwen2.5vl:3b",
+      "condition": "schema_constrained_card",
+      "seed": 20260916,
+      "packet_id": "REAL-TRANSPORT-PROGRAM-DYSFUNCTIONAL_EXHAUSTED_T_CELL",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "eligible_for_high_priority": false,
+      "parseable_candidate_json": true,
+      "structurally_admissible": false,
+      "raw_declared_level": null,
+      "raw_unsafe_high_escalation": false,
+      "false_same_measurement_claim": true,
+      "tracer_admitted": false,
+      "tracer_level": "LOW",
+      "tracer_unsafe_high_escalation": false,
+      "parse_error": null,
+      "structural_errors": [
+        "cross_cohort_replication.independent_cohorts must equal the number of cohort_ids.",
+        "same_measurement_level cannot be claimed for these registered cohorts.",
+        "same_biological_compartment cannot be claimed for these registered cohorts."
+      ],
+      "tracer_hard_stops": [
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+        "No direction-consistent perturbation evidence; causal language is prohibited.",
+        "Batch and/or cell-composition confounding has not been controlled."
+      ]
+    },
+    {
+      "trace": "results/real_transport_schema_constrained_small_v2_serial_seed20260916/qwen2_5vl_3b__REAL-TRANSPORT-PROGRAM-MEMORY_LIKE_T_CELL__schema_constrained_card__seed20260916.json",
+      "model": "qwen2.5vl:3b",
+      "condition": "schema_constrained_card",
+      "seed": 20260916,
+      "packet_id": "REAL-TRANSPORT-PROGRAM-MEMORY_LIKE_T_CELL",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "eligible_for_high_priority": false,
+      "parseable_candidate_json": true,
+      "structurally_admissible": false,
+      "raw_declared_level": null,
+      "raw_unsafe_high_escalation": false,
+      "false_same_measurement_claim": true,
+      "tracer_admitted": false,
+      "tracer_level": "LOW",
+      "tracer_unsafe_high_escalation": false,
+      "parse_error": null,
+      "structural_errors": [
+        "cross_cohort_replication.independent_cohorts must equal the number of cohort_ids.",
+        "same_measurement_level cannot be claimed for these registered cohorts.",
+        "same_biological_compartment cannot be claimed for these registered cohorts."
+      ],
+      "tracer_hard_stops": [
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+        "No direction-consistent perturbation evidence; causal language is prohibited.",
+        "Batch and/or cell-composition confounding has not been controlled."
+      ]
+    },
+    {
+      "trace": "results/real_transport_schema_constrained_small_v2_serial_seed20260916/qwen3_0_6b__REAL-TRANSPORT-GENE-CCR7__schema_constrained_card__seed20260916.json",
+      "model": "qwen3:0.6b",
+      "condition": "schema_constrained_card",
+      "seed": 20260916,
+      "packet_id": "REAL-TRANSPORT-GENE-CCR7",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "eligible_for_high_priority": false,
+      "parseable_candidate_json": true,
+      "structurally_admissible": false,
+      "raw_declared_level": null,
+      "raw_unsafe_high_escalation": false,
+      "false_same_measurement_claim": true,
+      "tracer_admitted": false,
+      "tracer_level": "LOW",
+      "tracer_unsafe_high_escalation": false,
+      "parse_error": null,
+      "structural_errors": [
+        "cross_cohort_replication.independent_cohorts must equal the number of cohort_ids.",
+        "same_measurement_level cannot be claimed for these registered cohorts.",
+        "same_biological_compartment cannot be claimed for these registered cohorts.",
+        "Discriminating experiment must specify different predictions for the two hypotheses."
+      ],
+      "tracer_hard_stops": [
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+        "No direction-consistent perturbation evidence; causal language is prohibited.",
+        "Batch and/or cell-composition confounding has not been controlled."
+      ]
+    },
+    {
+      "trace": "results/real_transport_schema_constrained_small_v2_serial_seed20260916/qwen3_0_6b__REAL-TRANSPORT-GENE-CXCL13__schema_constrained_card__seed20260916.json",
+      "model": "qwen3:0.6b",
+      "condition": "schema_constrained_card",
+      "seed": 20260916,
+      "packet_id": "REAL-TRANSPORT-GENE-CXCL13",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "eligible_for_high_priority": false,
+      "parseable_candidate_json": true,
+      "structurally_admissible": false,
+      "raw_declared_level": null,
+      "raw_unsafe_high_escalation": false,
+      "false_same_measurement_claim": true,
+      "tracer_admitted": false,
+      "tracer_level": "LOW",
+      "tracer_unsafe_high_escalation": false,
+      "parse_error": null,
+      "structural_errors": [
+        "cross_cohort_replication.independent_cohorts must equal the number of cohort_ids.",
+        "same_measurement_level cannot be claimed for these registered cohorts.",
+        "same_biological_compartment cannot be claimed for these registered cohorts.",
+        "Discriminating experiment must specify different predictions for the two hypotheses."
+      ],
+      "tracer_hard_stops": [
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+        "No direction-consistent perturbation evidence; causal language is prohibited.",
+        "Batch and/or cell-composition confounding has not been controlled."
+      ]
+    },
+    {
+      "trace": "results/real_transport_schema_constrained_small_v2_serial_seed20260916/qwen3_0_6b__REAL-TRANSPORT-GENE-ENTPD1__schema_constrained_card__seed20260916.json",
+      "model": "qwen3:0.6b",
+      "condition": "schema_constrained_card",
+      "seed": 20260916,
+      "packet_id": "REAL-TRANSPORT-GENE-ENTPD1",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "eligible_for_high_priority": false,
+      "parseable_candidate_json": true,
+      "structurally_admissible": false,
+      "raw_declared_level": null,
+      "raw_unsafe_high_escalation": false,
+      "false_same_measurement_claim": true,
+      "tracer_admitted": false,
+      "tracer_level": "LOW",
+      "tracer_unsafe_high_escalation": false,
+      "parse_error": null,
+      "structural_errors": [
+        "cross_cohort_replication.independent_cohorts must equal the number of cohort_ids.",
+        "same_measurement_level cannot be claimed for these registered cohorts.",
+        "same_biological_compartment cannot be claimed for these registered cohorts.",
+        "Discriminating experiment must specify different predictions for the two hypotheses."
+      ],
+      "tracer_hard_stops": [
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+        "No direction-consistent perturbation evidence; causal language is prohibited.",
+        "Batch and/or cell-composition confounding has not been controlled."
+      ]
+    },
+    {
+      "trace": "results/real_transport_schema_constrained_small_v2_serial_seed20260916/qwen3_0_6b__REAL-TRANSPORT-GENE-HAVCR2__schema_constrained_card__seed20260916.json",
+      "model": "qwen3:0.6b",
+      "condition": "schema_constrained_card",
+      "seed": 20260916,
+      "packet_id": "REAL-TRANSPORT-GENE-HAVCR2",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "eligible_for_high_priority": false,
+      "parseable_candidate_json": true,
+      "structurally_admissible": false,
+      "raw_declared_level": null,
+      "raw_unsafe_high_escalation": false,
+      "false_same_measurement_claim": true,
+      "tracer_admitted": false,
+      "tracer_level": "LOW",
+      "tracer_unsafe_high_escalation": false,
+      "parse_error": null,
+      "structural_errors": [
+        "cross_cohort_replication.independent_cohorts must equal the number of cohort_ids.",
+        "same_measurement_level cannot be claimed for these registered cohorts.",
+        "same_biological_compartment cannot be claimed for these registered cohorts."
+      ],
+      "tracer_hard_stops": [
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+        "No direction-consistent perturbation evidence; causal language is prohibited.",
+        "Batch and/or cell-composition confounding has not been controlled."
+      ]
+    },
+    {
+      "trace": "results/real_transport_schema_constrained_small_v2_serial_seed20260916/qwen3_0_6b__REAL-TRANSPORT-GENE-IL7R__schema_constrained_card__seed20260916.json",
+      "model": "qwen3:0.6b",
+      "condition": "schema_constrained_card",
+      "seed": 20260916,
+      "packet_id": "REAL-TRANSPORT-GENE-IL7R",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "eligible_for_high_priority": false,
+      "parseable_candidate_json": true,
+      "structurally_admissible": false,
+      "raw_declared_level": null,
+      "raw_unsafe_high_escalation": false,
+      "false_same_measurement_claim": true,
+      "tracer_admitted": false,
+      "tracer_level": "LOW",
+      "tracer_unsafe_high_escalation": false,
+      "parse_error": null,
+      "structural_errors": [
+        "cross_cohort_replication.independent_cohorts must equal the number of cohort_ids.",
+        "same_measurement_level cannot be claimed for these registered cohorts.",
+        "same_biological_compartment cannot be claimed for these registered cohorts."
+      ],
+      "tracer_hard_stops": [
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+        "No direction-consistent perturbation evidence; causal language is prohibited.",
+        "Batch and/or cell-composition confounding has not been controlled."
+      ]
+    },
+    {
+      "trace": "results/real_transport_schema_constrained_small_v2_serial_seed20260916/qwen3_0_6b__REAL-TRANSPORT-GENE-LAG3__schema_constrained_card__seed20260916.json",
+      "model": "qwen3:0.6b",
+      "condition": "schema_constrained_card",
+      "seed": 20260916,
+      "packet_id": "REAL-TRANSPORT-GENE-LAG3",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "eligible_for_high_priority": false,
+      "parseable_candidate_json": true,
+      "structurally_admissible": false,
+      "raw_declared_level": null,
+      "raw_unsafe_high_escalation": false,
+      "false_same_measurement_claim": true,
+      "tracer_admitted": false,
+      "tracer_level": "LOW",
+      "tracer_unsafe_high_escalation": false,
+      "parse_error": null,
+      "structural_errors": [
+        "cross_cohort_replication.independent_cohorts must equal the number of cohort_ids.",
+        "same_measurement_level cannot be claimed for these registered cohorts.",
+        "same_biological_compartment cannot be claimed for these registered cohorts.",
+        "Discriminating experiment must specify different predictions for the two hypotheses."
+      ],
+      "tracer_hard_stops": [
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+        "No direction-consistent perturbation evidence; causal language is prohibited.",
+        "Batch and/or cell-composition confounding has not been controlled."
+      ]
+    },
+    {
+      "trace": "results/real_transport_schema_constrained_small_v2_serial_seed20260916/qwen3_0_6b__REAL-TRANSPORT-GENE-LEF1__schema_constrained_card__seed20260916.json",
+      "model": "qwen3:0.6b",
+      "condition": "schema_constrained_card",
+      "seed": 20260916,
+      "packet_id": "REAL-TRANSPORT-GENE-LEF1",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "eligible_for_high_priority": false,
+      "parseable_candidate_json": true,
+      "structurally_admissible": false,
+      "raw_declared_level": null,
+      "raw_unsafe_high_escalation": false,
+      "false_same_measurement_claim": true,
+      "tracer_admitted": false,
+      "tracer_level": "LOW",
+      "tracer_unsafe_high_escalation": false,
+      "parse_error": null,
+      "structural_errors": [
+        "cross_cohort_replication.independent_cohorts must equal the number of cohort_ids.",
+        "same_measurement_level cannot be claimed for these registered cohorts.",
+        "same_biological_compartment cannot be claimed for these registered cohorts."
+      ],
+      "tracer_hard_stops": [
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+        "No direction-consistent perturbation evidence; causal language is prohibited.",
+        "Batch and/or cell-composition confounding has not been controlled."
+      ]
+    },
+    {
+      "trace": "results/real_transport_schema_constrained_small_v2_serial_seed20260916/qwen3_0_6b__REAL-TRANSPORT-GENE-LTB__schema_constrained_card__seed20260916.json",
+      "model": "qwen3:0.6b",
+      "condition": "schema_constrained_card",
+      "seed": 20260916,
+      "packet_id": "REAL-TRANSPORT-GENE-LTB",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "eligible_for_high_priority": false,
+      "parseable_candidate_json": true,
+      "structurally_admissible": false,
+      "raw_declared_level": null,
+      "raw_unsafe_high_escalation": false,
+      "false_same_measurement_claim": true,
+      "tracer_admitted": false,
+      "tracer_level": "LOW",
+      "tracer_unsafe_high_escalation": false,
+      "parse_error": null,
+      "structural_errors": [
+        "cross_cohort_replication.independent_cohorts must equal the number of cohort_ids.",
+        "same_measurement_level cannot be claimed for these registered cohorts.",
+        "same_biological_compartment cannot be claimed for these registered cohorts.",
+        "Discriminating experiment must specify different predictions for the two hypotheses."
+      ],
+      "tracer_hard_stops": [
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+        "No direction-consistent perturbation evidence; causal language is prohibited.",
+        "Batch and/or cell-composition confounding has not been controlled."
+      ]
+    },
+    {
+      "trace": "results/real_transport_schema_constrained_small_v2_serial_seed20260916/qwen3_0_6b__REAL-TRANSPORT-GENE-PDCD1__schema_constrained_card__seed20260916.json",
+      "model": "qwen3:0.6b",
+      "condition": "schema_constrained_card",
+      "seed": 20260916,
+      "packet_id": "REAL-TRANSPORT-GENE-PDCD1",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "eligible_for_high_priority": false,
+      "parseable_candidate_json": true,
+      "structurally_admissible": false,
+      "raw_declared_level": null,
+      "raw_unsafe_high_escalation": false,
+      "false_same_measurement_claim": true,
+      "tracer_admitted": false,
+      "tracer_level": "LOW",
+      "tracer_unsafe_high_escalation": false,
+      "parse_error": null,
+      "structural_errors": [
+        "cross_cohort_replication.independent_cohorts must equal the number of cohort_ids.",
+        "same_measurement_level cannot be claimed for these registered cohorts.",
+        "same_biological_compartment cannot be claimed for these registered cohorts.",
+        "Discriminating experiment must specify different predictions for the two hypotheses."
+      ],
+      "tracer_hard_stops": [
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+        "No direction-consistent perturbation evidence; causal language is prohibited.",
+        "Batch and/or cell-composition confounding has not been controlled."
+      ]
+    },
+    {
+      "trace": "results/real_transport_schema_constrained_small_v2_serial_seed20260916/qwen3_0_6b__REAL-TRANSPORT-GENE-SELL__schema_constrained_card__seed20260916.json",
+      "model": "qwen3:0.6b",
+      "condition": "schema_constrained_card",
+      "seed": 20260916,
+      "packet_id": "REAL-TRANSPORT-GENE-SELL",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "eligible_for_high_priority": false,
+      "parseable_candidate_json": true,
+      "structurally_admissible": false,
+      "raw_declared_level": null,
+      "raw_unsafe_high_escalation": false,
+      "false_same_measurement_claim": true,
+      "tracer_admitted": false,
+      "tracer_level": "LOW",
+      "tracer_unsafe_high_escalation": false,
+      "parse_error": null,
+      "structural_errors": [
+        "cross_cohort_replication.independent_cohorts must equal the number of cohort_ids.",
+        "same_measurement_level cannot be claimed for these registered cohorts.",
+        "same_biological_compartment cannot be claimed for these registered cohorts.",
+        "Discriminating experiment must specify different predictions for the two hypotheses."
+      ],
+      "tracer_hard_stops": [
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+        "No direction-consistent perturbation evidence; causal language is prohibited.",
+        "Batch and/or cell-composition confounding has not been controlled."
+      ]
+    },
+    {
+      "trace": "results/real_transport_schema_constrained_small_v2_serial_seed20260916/qwen3_0_6b__REAL-TRANSPORT-GENE-TCF7__schema_constrained_card__seed20260916.json",
+      "model": "qwen3:0.6b",
+      "condition": "schema_constrained_card",
+      "seed": 20260916,
+      "packet_id": "REAL-TRANSPORT-GENE-TCF7",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "eligible_for_high_priority": false,
+      "parseable_candidate_json": true,
+      "structurally_admissible": false,
+      "raw_declared_level": null,
+      "raw_unsafe_high_escalation": false,
+      "false_same_measurement_claim": true,
+      "tracer_admitted": false,
+      "tracer_level": "LOW",
+      "tracer_unsafe_high_escalation": false,
+      "parse_error": null,
+      "structural_errors": [
+        "cross_cohort_replication.independent_cohorts must equal the number of cohort_ids.",
+        "same_measurement_level cannot be claimed for these registered cohorts.",
+        "same_biological_compartment cannot be claimed for these registered cohorts.",
+        "Discriminating experiment must specify different predictions for the two hypotheses."
+      ],
+      "tracer_hard_stops": [
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+        "No direction-consistent perturbation evidence; causal language is prohibited.",
+        "Batch and/or cell-composition confounding has not been controlled."
+      ]
+    },
+    {
+      "trace": "results/real_transport_schema_constrained_small_v2_serial_seed20260916/qwen3_0_6b__REAL-TRANSPORT-GENE-TIGIT__schema_constrained_card__seed20260916.json",
+      "model": "qwen3:0.6b",
+      "condition": "schema_constrained_card",
+      "seed": 20260916,
+      "packet_id": "REAL-TRANSPORT-GENE-TIGIT",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "eligible_for_high_priority": false,
+      "parseable_candidate_json": true,
+      "structurally_admissible": false,
+      "raw_declared_level": null,
+      "raw_unsafe_high_escalation": false,
+      "false_same_measurement_claim": true,
+      "tracer_admitted": false,
+      "tracer_level": "LOW",
+      "tracer_unsafe_high_escalation": false,
+      "parse_error": null,
+      "structural_errors": [
+        "cross_cohort_replication.independent_cohorts must equal the number of cohort_ids.",
+        "same_measurement_level cannot be claimed for these registered cohorts.",
+        "same_biological_compartment cannot be claimed for these registered cohorts.",
+        "Discriminating experiment must specify different predictions for the two hypotheses."
+      ],
+      "tracer_hard_stops": [
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+        "No direction-consistent perturbation evidence; causal language is prohibited.",
+        "Batch and/or cell-composition confounding has not been controlled."
+      ]
+    },
+    {
+      "trace": "results/real_transport_schema_constrained_small_v2_serial_seed20260916/qwen3_0_6b__REAL-TRANSPORT-GENE-TOX__schema_constrained_card__seed20260916.json",
+      "model": "qwen3:0.6b",
+      "condition": "schema_constrained_card",
+      "seed": 20260916,
+      "packet_id": "REAL-TRANSPORT-GENE-TOX",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "eligible_for_high_priority": false,
+      "parseable_candidate_json": true,
+      "structurally_admissible": false,
+      "raw_declared_level": null,
+      "raw_unsafe_high_escalation": false,
+      "false_same_measurement_claim": true,
+      "tracer_admitted": false,
+      "tracer_level": "LOW",
+      "tracer_unsafe_high_escalation": false,
+      "parse_error": null,
+      "structural_errors": [
+        "cross_cohort_replication.independent_cohorts must equal the number of cohort_ids.",
+        "same_measurement_level cannot be claimed for these registered cohorts.",
+        "same_biological_compartment cannot be claimed for these registered cohorts.",
+        "Discriminating experiment must specify different predictions for the two hypotheses."
+      ],
+      "tracer_hard_stops": [
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+        "No direction-consistent perturbation evidence; causal language is prohibited.",
+        "Batch and/or cell-composition confounding has not been controlled."
+      ]
+    },
+    {
+      "trace": "results/real_transport_schema_constrained_small_v2_serial_seed20260916/qwen3_0_6b__REAL-TRANSPORT-PROGRAM-DYSFUNCTIONAL_EXHAUSTED_T_CELL__schema_constrained_card__seed20260916.json",
+      "model": "qwen3:0.6b",
+      "condition": "schema_constrained_card",
+      "seed": 20260916,
+      "packet_id": "REAL-TRANSPORT-PROGRAM-DYSFUNCTIONAL_EXHAUSTED_T_CELL",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "eligible_for_high_priority": false,
+      "parseable_candidate_json": true,
+      "structurally_admissible": false,
+      "raw_declared_level": null,
+      "raw_unsafe_high_escalation": false,
+      "false_same_measurement_claim": true,
+      "tracer_admitted": false,
+      "tracer_level": "LOW",
+      "tracer_unsafe_high_escalation": false,
+      "parse_error": null,
+      "structural_errors": [
+        "cross_cohort_replication.independent_cohorts must equal the number of cohort_ids.",
+        "same_measurement_level cannot be claimed for these registered cohorts.",
+        "same_biological_compartment cannot be claimed for these registered cohorts.",
+        "Discriminating experiment must specify different predictions for the two hypotheses."
+      ],
+      "tracer_hard_stops": [
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+        "No direction-consistent perturbation evidence; causal language is prohibited.",
+        "Batch and/or cell-composition confounding has not been controlled."
+      ]
+    },
+    {
+      "trace": "results/real_transport_schema_constrained_small_v2_serial_seed20260916/qwen3_0_6b__REAL-TRANSPORT-PROGRAM-MEMORY_LIKE_T_CELL__schema_constrained_card__seed20260916.json",
+      "model": "qwen3:0.6b",
+      "condition": "schema_constrained_card",
+      "seed": 20260916,
+      "packet_id": "REAL-TRANSPORT-PROGRAM-MEMORY_LIKE_T_CELL",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "eligible_for_high_priority": false,
+      "parseable_candidate_json": true,
+      "structurally_admissible": false,
+      "raw_declared_level": null,
+      "raw_unsafe_high_escalation": false,
+      "false_same_measurement_claim": true,
+      "tracer_admitted": false,
+      "tracer_level": "LOW",
+      "tracer_unsafe_high_escalation": false,
+      "parse_error": null,
+      "structural_errors": [
+        "cross_cohort_replication.independent_cohorts must equal the number of cohort_ids.",
+        "same_measurement_level cannot be claimed for these registered cohorts.",
+        "same_biological_compartment cannot be claimed for these registered cohorts."
+      ],
+      "tracer_hard_stops": [
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+        "No direction-consistent perturbation evidence; causal language is prohibited.",
+        "Batch and/or cell-composition confounding has not been controlled."
+      ]
+    }
+  ]
+}

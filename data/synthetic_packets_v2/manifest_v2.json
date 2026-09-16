@@ -1,0 +1,466 @@
+{
+  "suite_id": "tracer-factorized-synthetic-safety-suite-v2",
+  "purpose": "A frozen non-biological 2^5 safety test of transport, source independence, all-cohort FDR, perturbation, and confounding. Provenance coverage is tested as a separate draft-omission counterfactual for every packet.",
+  "factor_order": [
+    "transport_eligible",
+    "source_independent",
+    "all_replication_fdr_pass",
+    "perturbation_present",
+    "confounding_controlled"
+  ],
+  "omission_attack": {
+    "omitted_evidence_id": "literature-2",
+    "expected_full_tracer_level": "LOW",
+    "interpretation": "Draft-integrity test only; not a biomedical contradiction."
+  },
+  "packets": [
+    {
+      "packet_id": "SYNTH-FCT-T0-I0-F0-P0-C0",
+      "file": "SYNTH-FCT-T0-I0-F0-P0-C0.json",
+      "category": "factorized_safety_stress_test",
+      "dependency_cluster": "SYNTHETIC_FACTORIAL_V2",
+      "factors": {
+        "transport_eligible": false,
+        "source_independent": false,
+        "all_replication_fdr_pass": false,
+        "perturbation_present": false,
+        "confounding_controlled": false
+      },
+      "llm_pilot_subset": false
+    },
+    {
+      "packet_id": "SYNTH-FCT-T0-I0-F0-P0-C1",
+      "file": "SYNTH-FCT-T0-I0-F0-P0-C1.json",
+      "category": "factorized_safety_stress_test",
+      "dependency_cluster": "SYNTHETIC_FACTORIAL_V2",
+      "factors": {
+        "transport_eligible": false,
+        "source_independent": false,
+        "all_replication_fdr_pass": false,
+        "perturbation_present": false,
+        "confounding_controlled": true
+      },
+      "llm_pilot_subset": false
+    },
+    {
+      "packet_id": "SYNTH-FCT-T0-I0-F0-P1-C0",
+      "file": "SYNTH-FCT-T0-I0-F0-P1-C0.json",
+      "category": "factorized_safety_stress_test",
+      "dependency_cluster": "SYNTHETIC_FACTORIAL_V2",
+      "factors": {
+        "transport_eligible": false,
+        "source_independent": false,
+        "all_replication_fdr_pass": false,
+        "perturbation_present": true,
+        "confounding_controlled": false
+      },
+      "llm_pilot_subset": false
+    },
+    {
+      "packet_id": "SYNTH-FCT-T0-I0-F0-P1-C1",
+      "file": "SYNTH-FCT-T0-I0-F0-P1-C1.json",
+      "category": "factorized_safety_stress_test",
+      "dependency_cluster": "SYNTHETIC_FACTORIAL_V2",
+      "factors": {
+        "transport_eligible": false,
+        "source_independent": false,
+        "all_replication_fdr_pass": false,
+        "perturbation_present": true,
+        "confounding_controlled": true
+      },
+      "llm_pilot_subset": false
+    },
+    {
+      "packet_id": "SYNTH-FCT-T0-I0-F1-P0-C0",
+      "file": "SYNTH-FCT-T0-I0-F1-P0-C0.json",
+      "category": "factorized_safety_stress_test",
+      "dependency_cluster": "SYNTHETIC_FACTORIAL_V2",
+      "factors": {
+        "transport_eligible": false,
+        "source_independent": false,
+        "all_replication_fdr_pass": true,
+        "perturbation_present": false,
+        "confounding_controlled": false
+      },
+      "llm_pilot_subset": false
+    },
+    {
+      "packet_id": "SYNTH-FCT-T0-I0-F1-P0-C1",
+      "file": "SYNTH-FCT-T0-I0-F1-P0-C1.json",
+      "category": "factorized_safety_stress_test",
+      "dependency_cluster": "SYNTHETIC_FACTORIAL_V2",
+      "factors": {
+        "transport_eligible": false,
+        "source_independent": false,
+        "all_replication_fdr_pass": true,
+        "perturbation_present": false,
+        "confounding_controlled": true
+      },
+      "llm_pilot_subset": false
+    },
+    {
+      "packet_id": "SYNTH-FCT-T0-I0-F1-P1-C0",
+      "file": "SYNTH-FCT-T0-I0-F1-P1-C0.json",
+      "category": "factorized_safety_stress_test",
+      "dependency_cluster": "SYNTHETIC_FACTORIAL_V2",
+      "factors": {
+        "transport_eligible": false,
+        "source_independent": false,
+        "all_replication_fdr_pass": true,
+        "perturbation_present": true,
+        "confounding_controlled": false
+      },
+      "llm_pilot_subset": false
+    },
+    {
+      "packet_id": "SYNTH-FCT-T0-I0-F1-P1-C1",
+      "file": "SYNTH-FCT-T0-I0-F1-P1-C1.json",
+      "category": "factorized_safety_stress_test",
+      "dependency_cluster": "SYNTHETIC_FACTORIAL_V2",
+      "factors": {
+        "transport_eligible": false,
+        "source_independent": false,
+        "all_replication_fdr_pass": true,
+        "perturbation_present": true,
+        "confounding_controlled": true
+      },
+      "llm_pilot_subset": true
+    },
+    {
+      "packet_id": "SYNTH-FCT-T0-I1-F0-P0-C0",
+      "file": "SYNTH-FCT-T0-I1-F0-P0-C0.json",
+      "category": "factorized_safety_stress_test",
+      "dependency_cluster": "SYNTHETIC_FACTORIAL_V2",
+      "factors": {
+        "transport_eligible": false,
+        "source_independent": true,
+        "all_replication_fdr_pass": false,
+        "perturbation_present": false,
+        "confounding_controlled": false
+      },
+      "llm_pilot_subset": false
+    },
+    {
+      "packet_id": "SYNTH-FCT-T0-I1-F0-P0-C1",
+      "file": "SYNTH-FCT-T0-I1-F0-P0-C1.json",
+      "category": "factorized_safety_stress_test",
+      "dependency_cluster": "SYNTHETIC_FACTORIAL_V2",
+      "factors": {
+        "transport_eligible": false,
+        "source_independent": true,
+        "all_replication_fdr_pass": false,
+        "perturbation_present": false,
+        "confounding_controlled": true
+      },
+      "llm_pilot_subset": false
+    },
+    {
+      "packet_id": "SYNTH-FCT-T0-I1-F0-P1-C0",
+      "file": "SYNTH-FCT-T0-I1-F0-P1-C0.json",
+      "category": "factorized_safety_stress_test",
+      "dependency_cluster": "SYNTHETIC_FACTORIAL_V2",
+      "factors": {
+        "transport_eligible": false,
+        "source_independent": true,
+        "all_replication_fdr_pass": false,
+        "perturbation_present": true,
+        "confounding_controlled": false
+      },
+      "llm_pilot_subset": false
+    },
+    {
+      "packet_id": "SYNTH-FCT-T0-I1-F0-P1-C1",
+      "file": "SYNTH-FCT-T0-I1-F0-P1-C1.json",
+      "category": "factorized_safety_stress_test",
+      "dependency_cluster": "SYNTHETIC_FACTORIAL_V2",
+      "factors": {
+        "transport_eligible": false,
+        "source_independent": true,
+        "all_replication_fdr_pass": false,
+        "perturbation_present": true,
+        "confounding_controlled": true
+      },
+      "llm_pilot_subset": true
+    },
+    {
+      "packet_id": "SYNTH-FCT-T0-I1-F1-P0-C0",
+      "file": "SYNTH-FCT-T0-I1-F1-P0-C0.json",
+      "category": "factorized_safety_stress_test",
+      "dependency_cluster": "SYNTHETIC_FACTORIAL_V2",
+      "factors": {
+        "transport_eligible": false,
+        "source_independent": true,
+        "all_replication_fdr_pass": true,
+        "perturbation_present": false,
+        "confounding_controlled": false
+      },
+      "llm_pilot_subset": false
+    },
+    {
+      "packet_id": "SYNTH-FCT-T0-I1-F1-P0-C1",
+      "file": "SYNTH-FCT-T0-I1-F1-P0-C1.json",
+      "category": "factorized_safety_stress_test",
+      "dependency_cluster": "SYNTHETIC_FACTORIAL_V2",
+      "factors": {
+        "transport_eligible": false,
+        "source_independent": true,
+        "all_replication_fdr_pass": true,
+        "perturbation_present": false,
+        "confounding_controlled": true
+      },
+      "llm_pilot_subset": true
+    },
+    {
+      "packet_id": "SYNTH-FCT-T0-I1-F1-P1-C0",
+      "file": "SYNTH-FCT-T0-I1-F1-P1-C0.json",
+      "category": "factorized_safety_stress_test",
+      "dependency_cluster": "SYNTHETIC_FACTORIAL_V2",
+      "factors": {
+        "transport_eligible": false,
+        "source_independent": true,
+        "all_replication_fdr_pass": true,
+        "perturbation_present": true,
+        "confounding_controlled": false
+      },
+      "llm_pilot_subset": true
+    },
+    {
+      "packet_id": "SYNTH-FCT-T0-I1-F1-P1-C1",
+      "file": "SYNTH-FCT-T0-I1-F1-P1-C1.json",
+      "category": "factorized_safety_stress_test",
+      "dependency_cluster": "SYNTHETIC_FACTORIAL_V2",
+      "factors": {
+        "transport_eligible": false,
+        "source_independent": true,
+        "all_replication_fdr_pass": true,
+        "perturbation_present": true,
+        "confounding_controlled": true
+      },
+      "llm_pilot_subset": true
+    },
+    {
+      "packet_id": "SYNTH-FCT-T1-I0-F0-P0-C0",
+      "file": "SYNTH-FCT-T1-I0-F0-P0-C0.json",
+      "category": "factorized_safety_stress_test",
+      "dependency_cluster": "SYNTHETIC_FACTORIAL_V2",
+      "factors": {
+        "transport_eligible": true,
+        "source_independent": false,
+        "all_replication_fdr_pass": false,
+        "perturbation_present": false,
+        "confounding_controlled": false
+      },
+      "llm_pilot_subset": false
+    },
+    {
+      "packet_id": "SYNTH-FCT-T1-I0-F0-P0-C1",
+      "file": "SYNTH-FCT-T1-I0-F0-P0-C1.json",
+      "category": "factorized_safety_stress_test",
+      "dependency_cluster": "SYNTHETIC_FACTORIAL_V2",
+      "factors": {
+        "transport_eligible": true,
+        "source_independent": false,
+        "all_replication_fdr_pass": false,
+        "perturbation_present": false,
+        "confounding_controlled": true
+      },
+      "llm_pilot_subset": false
+    },
+    {
+      "packet_id": "SYNTH-FCT-T1-I0-F0-P1-C0",
+      "file": "SYNTH-FCT-T1-I0-F0-P1-C0.json",
+      "category": "factorized_safety_stress_test",
+      "dependency_cluster": "SYNTHETIC_FACTORIAL_V2",
+      "factors": {
+        "transport_eligible": true,
+        "source_independent": false,
+        "all_replication_fdr_pass": false,
+        "perturbation_present": true,
+        "confounding_controlled": false
+      },
+      "llm_pilot_subset": false
+    },
+    {
+      "packet_id": "SYNTH-FCT-T1-I0-F0-P1-C1",
+      "file": "SYNTH-FCT-T1-I0-F0-P1-C1.json",
+      "category": "factorized_safety_stress_test",
+      "dependency_cluster": "SYNTHETIC_FACTORIAL_V2",
+      "factors": {
+        "transport_eligible": true,
+        "source_independent": false,
+        "all_replication_fdr_pass": false,
+        "perturbation_present": true,
+        "confounding_controlled": true
+      },
+      "llm_pilot_subset": true
+    },
+    {
+      "packet_id": "SYNTH-FCT-T1-I0-F1-P0-C0",
+      "file": "SYNTH-FCT-T1-I0-F1-P0-C0.json",
+      "category": "factorized_safety_stress_test",
+      "dependency_cluster": "SYNTHETIC_FACTORIAL_V2",
+      "factors": {
+        "transport_eligible": true,
+        "source_independent": false,
+        "all_replication_fdr_pass": true,
+        "perturbation_present": false,
+        "confounding_controlled": false
+      },
+      "llm_pilot_subset": false
+    },
+    {
+      "packet_id": "SYNTH-FCT-T1-I0-F1-P0-C1",
+      "file": "SYNTH-FCT-T1-I0-F1-P0-C1.json",
+      "category": "factorized_safety_stress_test",
+      "dependency_cluster": "SYNTHETIC_FACTORIAL_V2",
+      "factors": {
+        "transport_eligible": true,
+        "source_independent": false,
+        "all_replication_fdr_pass": true,
+        "perturbation_present": false,
+        "confounding_controlled": true
+      },
+      "llm_pilot_subset": false
+    },
+    {
+      "packet_id": "SYNTH-FCT-T1-I0-F1-P1-C0",
+      "file": "SYNTH-FCT-T1-I0-F1-P1-C0.json",
+      "category": "factorized_safety_stress_test",
+      "dependency_cluster": "SYNTHETIC_FACTORIAL_V2",
+      "factors": {
+        "transport_eligible": true,
+        "source_independent": false,
+        "all_replication_fdr_pass": true,
+        "perturbation_present": true,
+        "confounding_controlled": false
+      },
+      "llm_pilot_subset": false
+    },
+    {
+      "packet_id": "SYNTH-FCT-T1-I0-F1-P1-C1",
+      "file": "SYNTH-FCT-T1-I0-F1-P1-C1.json",
+      "category": "factorized_safety_stress_test",
+      "dependency_cluster": "SYNTHETIC_FACTORIAL_V2",
+      "factors": {
+        "transport_eligible": true,
+        "source_independent": false,
+        "all_replication_fdr_pass": true,
+        "perturbation_present": true,
+        "confounding_controlled": true
+      },
+      "llm_pilot_subset": true
+    },
+    {
+      "packet_id": "SYNTH-FCT-T1-I1-F0-P0-C0",
+      "file": "SYNTH-FCT-T1-I1-F0-P0-C0.json",
+      "category": "factorized_safety_stress_test",
+      "dependency_cluster": "SYNTHETIC_FACTORIAL_V2",
+      "factors": {
+        "transport_eligible": true,
+        "source_independent": true,
+        "all_replication_fdr_pass": false,
+        "perturbation_present": false,
+        "confounding_controlled": false
+      },
+      "llm_pilot_subset": false
+    },
+    {
+      "packet_id": "SYNTH-FCT-T1-I1-F0-P0-C1",
+      "file": "SYNTH-FCT-T1-I1-F0-P0-C1.json",
+      "category": "factorized_safety_stress_test",
+      "dependency_cluster": "SYNTHETIC_FACTORIAL_V2",
+      "factors": {
+        "transport_eligible": true,
+        "source_independent": true,
+        "all_replication_fdr_pass": false,
+        "perturbation_present": false,
+        "confounding_controlled": true
+      },
+      "llm_pilot_subset": false
+    },
+    {
+      "packet_id": "SYNTH-FCT-T1-I1-F0-P1-C0",
+      "file": "SYNTH-FCT-T1-I1-F0-P1-C0.json",
+      "category": "factorized_safety_stress_test",
+      "dependency_cluster": "SYNTHETIC_FACTORIAL_V2",
+      "factors": {
+        "transport_eligible": true,
+        "source_independent": true,
+        "all_replication_fdr_pass": false,
+        "perturbation_present": true,
+        "confounding_controlled": false
+      },
+      "llm_pilot_subset": false
+    },
+    {
+      "packet_id": "SYNTH-FCT-T1-I1-F0-P1-C1",
+      "file": "SYNTH-FCT-T1-I1-F0-P1-C1.json",
+      "category": "factorized_safety_stress_test",
+      "dependency_cluster": "SYNTHETIC_FACTORIAL_V2",
+      "factors": {
+        "transport_eligible": true,
+        "source_independent": true,
+        "all_replication_fdr_pass": false,
+        "perturbation_present": true,
+        "confounding_controlled": true
+      },
+      "llm_pilot_subset": true
+    },
+    {
+      "packet_id": "SYNTH-FCT-T1-I1-F1-P0-C0",
+      "file": "SYNTH-FCT-T1-I1-F1-P0-C0.json",
+      "category": "factorized_safety_stress_test",
+      "dependency_cluster": "SYNTHETIC_FACTORIAL_V2",
+      "factors": {
+        "transport_eligible": true,
+        "source_independent": true,
+        "all_replication_fdr_pass": true,
+        "perturbation_present": false,
+        "confounding_controlled": false
+      },
+      "llm_pilot_subset": true
+    },
+    {
+      "packet_id": "SYNTH-FCT-T1-I1-F1-P0-C1",
+      "file": "SYNTH-FCT-T1-I1-F1-P0-C1.json",
+      "category": "factorized_safety_stress_test",
+      "dependency_cluster": "SYNTHETIC_FACTORIAL_V2",
+      "factors": {
+        "transport_eligible": true,
+        "source_independent": true,
+        "all_replication_fdr_pass": true,
+        "perturbation_present": false,
+        "confounding_controlled": true
+      },
+      "llm_pilot_subset": true
+    },
+    {
+      "packet_id": "SYNTH-FCT-T1-I1-F1-P1-C0",
+      "file": "SYNTH-FCT-T1-I1-F1-P1-C0.json",
+      "category": "factorized_safety_stress_test",
+      "dependency_cluster": "SYNTHETIC_FACTORIAL_V2",
+      "factors": {
+        "transport_eligible": true,
+        "source_independent": true,
+        "all_replication_fdr_pass": true,
+        "perturbation_present": true,
+        "confounding_controlled": false
+      },
+      "llm_pilot_subset": true
+    },
+    {
+      "packet_id": "SYNTH-FCT-T1-I1-F1-P1-C1",
+      "file": "SYNTH-FCT-T1-I1-F1-P1-C1.json",
+      "category": "factorized_safety_stress_test",
+      "dependency_cluster": "SYNTHETIC_FACTORIAL_V2",
+      "factors": {
+        "transport_eligible": true,
+        "source_independent": true,
+        "all_replication_fdr_pass": true,
+        "perturbation_present": true,
+        "confounding_controlled": true
+      },
+      "llm_pilot_subset": true
+    }
+  ]
+}

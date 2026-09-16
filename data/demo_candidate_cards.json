@@ -1,0 +1,50 @@
+[
+  {
+    "candidate_id": "DEMO-HIGH",
+    "hypothesis": "Synthetic mechanism A is prioritized over synthetic mechanism B.",
+    "cross_cohort_replication": {
+      "independent_cohorts": 2,
+      "effect_direction_consistent": true,
+      "same_biological_compartment": true,
+      "same_measurement_level": true,
+      "discovery_fdr": 0.01,
+      "validation_fdr": 0.03
+    },
+    "perturbation_support": {
+      "tested": true,
+      "direction_consistent": true,
+      "independent_studies": 1
+    },
+    "orthogonal_evidence": {"modalities": 2, "direction_consistent": true},
+    "curated_literature_evidence": {"independent_sources": 2, "supports_claim": true},
+    "confounding_robustness": {"batch_controlled": true, "composition_controlled": true},
+    "discriminating_experiment": {
+      "intervention": "Synthetic perturbation",
+      "comparator": "Matched vehicle/control perturbation",
+      "readout": "Pre-specified immune-killing readout",
+      "prediction_if_hypothesis_a": "Direction A",
+      "prediction_if_hypothesis_b": "Direction B"
+    }
+  },
+  {
+    "candidate_id": "DEMO-LOW",
+    "hypothesis": "Synthetic single-cohort marker with unresolved confounding.",
+    "cross_cohort_replication": {
+      "independent_cohorts": 1,
+      "effect_direction_consistent": true,
+      "same_biological_compartment": false,
+      "same_measurement_level": false,
+      "discovery_fdr": 0.02,
+      "validation_fdr": null
+    },
+    "perturbation_support": {
+      "tested": false,
+      "direction_consistent": false,
+      "independent_studies": 0
+    },
+    "orthogonal_evidence": {"modalities": 0, "direction_consistent": false},
+    "curated_literature_evidence": {"independent_sources": 0, "supports_claim": false},
+    "confounding_robustness": {"batch_controlled": false, "composition_controlled": false},
+    "discriminating_experiment": {}
+  }
+]

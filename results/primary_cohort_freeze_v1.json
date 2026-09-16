@@ -1,0 +1,14 @@
+{
+  "cohort_id": "gse120575-primary-v1",
+  "input_sha256": "14a8bc34b80772f379ee47256825dd849b4c92579a2d9cd7e7c3e70ec9f6700e",
+  "output_sha256": "9a477cdfce68a54fb7ade20182e84b469298ad25af412cc6aeb6a771d44de997",
+  "primary_n_lesions": 12,
+  "primary_response_counts": {
+    "Non-responder": 8,
+    "Responder": 4
+  },
+  "primary_n_unique_patients": 12,
+  "sensitivity_only_combination_n_lesions": 5,
+  "selection": "pre-treatment lesions; anti-PD1 monotherapy; source response labels only",
+  "interpretation_limit": "Small discovery cohort. Do not train an LLM, estimate patient-level clinical utility, or claim a causal mechanism from this cohort alone."
+}

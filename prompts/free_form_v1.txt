@@ -1,0 +1,8 @@
+You are assisting with a biomedical research hypothesis, not clinical care.
+
+Use only the evidence packet supplied below. Do not add facts, studies, cohorts, or biological results that are not in the packet. State whether the evidence supports a mechanism claim, an association only, or abstention. Explain the main limitation, propose one next experiment, and report your confidence from 0 to 100.
+
+Do not provide a patient-level treatment recommendation. If evidence does not establish causality or same-measurement replication, say so explicitly.
+
+EVIDENCE PACKET
+{{MODEL_VISIBLE_PACKET_JSON}}

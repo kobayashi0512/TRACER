@@ -1,0 +1,293 @@
+{
+  "schema": "icb-disambiguate-tracer-ablation-run-v1",
+  "matrix_id": "tracer-ablation-matrix-v1",
+  "card": "/Users/tongyue/Documents/77f /项目文件_20260909/ai_oncology_epistemics/applications/icb_disambiguate/data/demo_candidate_card_current_evidence_v1.json",
+  "packet": "/Users/tongyue/Documents/77f /项目文件_20260909/ai_oncology_epistemics/applications/icb_disambiguate/data/demo_evidence_packet_cross_modality_v1.json",
+  "results": [
+    {
+      "condition_id": "tracer_without_provenance_coverage",
+      "modules": {
+        "provenance_coverage": false,
+        "transport_aware_replication": true
+      },
+      "evaluation": {
+        "assessment": {
+          "candidate_id": "CONTROL-MEMORY-EXHAUSTION-TRANSPORT",
+          "priority_score": 0.1,
+          "level": "LOW",
+          "ready_for_validation": false,
+          "causal_language_permitted": false,
+          "reasons": [
+            "No qualifying multi-modal/orthogonal corroboration.",
+            "Literature support is missing, uncurated, or insufficiently independent.",
+            "A pre-specified experiment can discriminate the competing hypotheses."
+          ],
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+            "No direction-consistent perturbation evidence; causal language is prohibited.",
+            "Batch and/or cell-composition confounding has not been controlled."
+          ],
+          "interpretation": "Evidence-graph-derived research priority, not a causal probability, clinical prediction, or treatment recommendation.",
+          "operational_decision": "ADMIT_FOR_HUMAN_REVIEW"
+        },
+        "canonical_card": {
+          "candidate_id": "CONTROL-MEMORY-EXHAUSTION-TRANSPORT",
+          "cross_cohort_replication": {
+            "independent_cohorts": 2,
+            "cohort_ids": [
+              "GSE120575",
+              "GSE91061"
+            ],
+            "effect_direction_consistent": false,
+            "same_biological_compartment": false,
+            "same_measurement_level": false,
+            "discovery_fdr": 0.0485,
+            "validation_fdr": null
+          },
+          "perturbation_support": {
+            "tested": false,
+            "direction_consistent": false,
+            "independent_studies": 0
+          },
+          "orthogonal_evidence": {
+            "modalities": 2,
+            "direction_consistent": false
+          },
+          "curated_literature_evidence": {
+            "independent_sources": 0,
+            "supports_claim": false
+          },
+          "confounding_robustness": {
+            "batch_controlled": false,
+            "composition_controlled": false
+          },
+          "discriminating_experiment": {
+            "intervention": "Cell-type-aware pseudo-bulk reanalysis of the frozen primary cohort",
+            "comparator": "All-CD45 lesion pseudo-bulk versus within-cell-type lesion pseudo-bulk",
+            "readout": "Direction and magnitude of pre-registered memory and exhaustion program scores",
+            "prediction_if_hypothesis_a": "Program separation attenuates after composition-aware aggregation.",
+            "prediction_if_hypothesis_b": "Program separation remains directionally concordant within at least one prespecified immune cell type."
+          }
+        },
+        "graph": {
+          "grounded_source_count": 2,
+          "replication_source_count": 2,
+          "packet_source_count": 2,
+          "cohort_ids": [
+            "GSE120575",
+            "GSE91061"
+          ],
+          "measurement_levels": [
+            "bulk_rna",
+            "single_cell_rna"
+          ],
+          "compartments": [
+            "tumor_bulk",
+            "tumor_cd45_positive_cells"
+          ],
+          "baseline_response_eligible": true,
+          "modules": {
+            "provenance_coverage": false,
+            "transport_aware_replication": true
+          },
+          "transport_eligible": false,
+          "provenance_errors": [],
+          "uncited_packet_source_ids": [],
+          "draft_causal_language_detected": false
+        },
+        "draft_admissible_for_review": true,
+        "draft_rejection_reasons": []
+      }
+    },
+    {
+      "condition_id": "tracer_without_transport_gate",
+      "modules": {
+        "provenance_coverage": true,
+        "transport_aware_replication": false
+      },
+      "evaluation": {
+        "assessment": {
+          "candidate_id": "CONTROL-MEMORY-EXHAUSTION-TRANSPORT",
+          "priority_score": 0.1,
+          "level": "LOW",
+          "ready_for_validation": false,
+          "causal_language_permitted": false,
+          "reasons": [
+            "No qualifying multi-modal/orthogonal corroboration.",
+            "Literature support is missing, uncurated, or insufficiently independent.",
+            "A pre-specified experiment can discriminate the competing hypotheses."
+          ],
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+            "No direction-consistent perturbation evidence; causal language is prohibited.",
+            "Batch and/or cell-composition confounding has not been controlled."
+          ],
+          "interpretation": "Evidence-graph-derived research priority, not a causal probability, clinical prediction, or treatment recommendation.",
+          "operational_decision": "ADMIT_FOR_HUMAN_REVIEW"
+        },
+        "canonical_card": {
+          "candidate_id": "CONTROL-MEMORY-EXHAUSTION-TRANSPORT",
+          "cross_cohort_replication": {
+            "independent_cohorts": 2,
+            "cohort_ids": [
+              "GSE120575",
+              "GSE91061"
+            ],
+            "effect_direction_consistent": false,
+            "same_biological_compartment": true,
+            "same_measurement_level": true,
+            "discovery_fdr": 0.0485,
+            "validation_fdr": null
+          },
+          "perturbation_support": {
+            "tested": false,
+            "direction_consistent": false,
+            "independent_studies": 0
+          },
+          "orthogonal_evidence": {
+            "modalities": 2,
+            "direction_consistent": false
+          },
+          "curated_literature_evidence": {
+            "independent_sources": 0,
+            "supports_claim": false
+          },
+          "confounding_robustness": {
+            "batch_controlled": false,
+            "composition_controlled": false
+          },
+          "discriminating_experiment": {
+            "intervention": "Cell-type-aware pseudo-bulk reanalysis of the frozen primary cohort",
+            "comparator": "All-CD45 lesion pseudo-bulk versus within-cell-type lesion pseudo-bulk",
+            "readout": "Direction and magnitude of pre-registered memory and exhaustion program scores",
+            "prediction_if_hypothesis_a": "Program separation attenuates after composition-aware aggregation.",
+            "prediction_if_hypothesis_b": "Program separation remains directionally concordant within at least one prespecified immune cell type."
+          }
+        },
+        "graph": {
+          "grounded_source_count": 2,
+          "replication_source_count": 2,
+          "packet_source_count": 2,
+          "cohort_ids": [
+            "GSE120575",
+            "GSE91061"
+          ],
+          "measurement_levels": [
+            "bulk_rna",
+            "single_cell_rna"
+          ],
+          "compartments": [
+            "tumor_bulk",
+            "tumor_cd45_positive_cells"
+          ],
+          "baseline_response_eligible": true,
+          "modules": {
+            "provenance_coverage": true,
+            "transport_aware_replication": false
+          },
+          "transport_eligible": true,
+          "provenance_errors": [],
+          "uncited_packet_source_ids": [],
+          "draft_causal_language_detected": false
+        },
+        "draft_admissible_for_review": true,
+        "draft_rejection_reasons": []
+      }
+    },
+    {
+      "condition_id": "full_tracer",
+      "modules": {
+        "provenance_coverage": true,
+        "transport_aware_replication": true
+      },
+      "evaluation": {
+        "assessment": {
+          "candidate_id": "CONTROL-MEMORY-EXHAUSTION-TRANSPORT",
+          "priority_score": 0.1,
+          "level": "LOW",
+          "ready_for_validation": false,
+          "causal_language_permitted": false,
+          "reasons": [
+            "No qualifying multi-modal/orthogonal corroboration.",
+            "Literature support is missing, uncurated, or insufficiently independent.",
+            "A pre-specified experiment can discriminate the competing hypotheses."
+          ],
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+            "No direction-consistent perturbation evidence; causal language is prohibited.",
+            "Batch and/or cell-composition confounding has not been controlled."
+          ],
+          "interpretation": "Evidence-graph-derived research priority, not a causal probability, clinical prediction, or treatment recommendation.",
+          "operational_decision": "ADMIT_FOR_HUMAN_REVIEW"
+        },
+        "canonical_card": {
+          "candidate_id": "CONTROL-MEMORY-EXHAUSTION-TRANSPORT",
+          "cross_cohort_replication": {
+            "independent_cohorts": 2,
+            "cohort_ids": [
+              "GSE120575",
+              "GSE91061"
+            ],
+            "effect_direction_consistent": false,
+            "same_biological_compartment": false,
+            "same_measurement_level": false,
+            "discovery_fdr": 0.0485,
+            "validation_fdr": null
+          },
+          "perturbation_support": {
+            "tested": false,
+            "direction_consistent": false,
+            "independent_studies": 0
+          },
+          "orthogonal_evidence": {
+            "modalities": 2,
+            "direction_consistent": false
+          },
+          "curated_literature_evidence": {
+            "independent_sources": 0,
+            "supports_claim": false
+          },
+          "confounding_robustness": {
+            "batch_controlled": false,
+            "composition_controlled": false
+          },
+          "discriminating_experiment": {
+            "intervention": "Cell-type-aware pseudo-bulk reanalysis of the frozen primary cohort",
+            "comparator": "All-CD45 lesion pseudo-bulk versus within-cell-type lesion pseudo-bulk",
+            "readout": "Direction and magnitude of pre-registered memory and exhaustion program scores",
+            "prediction_if_hypothesis_a": "Program separation attenuates after composition-aware aggregation.",
+            "prediction_if_hypothesis_b": "Program separation remains directionally concordant within at least one prespecified immune cell type."
+          }
+        },
+        "graph": {
+          "grounded_source_count": 2,
+          "replication_source_count": 2,
+          "packet_source_count": 2,
+          "cohort_ids": [
+            "GSE120575",
+            "GSE91061"
+          ],
+          "measurement_levels": [
+            "bulk_rna",
+            "single_cell_rna"
+          ],
+          "compartments": [
+            "tumor_bulk",
+            "tumor_cd45_positive_cells"
+          ],
+          "baseline_response_eligible": true,
+          "modules": {
+            "provenance_coverage": true,
+            "transport_aware_replication": true
+          },
+          "transport_eligible": false,
+          "provenance_errors": [],
+          "uncited_packet_source_ids": [],
+          "draft_causal_language_detected": false
+        },
+        "draft_admissible_for_review": true,
+        "draft_rejection_reasons": []
+      }
+    }
+  ]
+}

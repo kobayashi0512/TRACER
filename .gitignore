@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.pytest_cache/
+
+# Large public GEO source files are released as GitHub release assets.
+data/raw/GSE120575_Sade_Feldman_melanoma_single_cells_TPM_GEO.txt.gz
+data/raw/GSE115978_tpm.csv.gz
+
+# Local render and temporary outputs.
+manuscript/_render_*/
+*.pdf

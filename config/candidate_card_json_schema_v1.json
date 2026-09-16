@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ICB-Disambiguate candidate card v1",
+  "type": "object",
+  "required": [
+    "candidate_id",
+    "scope",
+    "hypotheses",
+    "evidence_sources",
+    "cross_cohort_replication",
+    "perturbation_support",
+    "orthogonal_evidence",
+    "curated_literature_evidence",
+    "confounding_robustness",
+    "discriminating_experiment"
+  ],
+  "properties": {
+    "candidate_id": {"type": "string", "minLength": 1},
+    "scope": {
+      "type": "object",
+      "required": ["disease", "treatment", "analysis_unit"],
+      "properties": {
+        "disease": {"type": "string", "minLength": 1},
+        "treatment": {"type": "string", "minLength": 1},
+        "analysis_unit": {"type": "string", "minLength": 1}
+      }
+    },
+    "hypotheses": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "required": ["id", "statement", "falsifiable_prediction"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "statement": {"type": "string", "minLength": 1},
+          "falsifiable_prediction": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "evidence_sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "source_type", "identifier", "supports_or_refutes"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "source_type": {"type": "string", "minLength": 1},
+          "identifier": {"type": "string", "minLength": 1},
+          "supports_or_refutes": {"type": "string", "enum": ["supports", "refutes", "mixed", "context_only"]}
+        }
+      }
+    },
+    "cross_cohort_replication": {
+      "type": "object",
+      "required": ["independent_cohorts", "cohort_ids", "effect_direction_consistent", "same_biological_compartment", "same_measurement_level", "discovery_fdr", "validation_fdr"],
+      "properties": {
+        "independent_cohorts": {"type": "integer", "minimum": 0},
+        "cohort_ids": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+        "effect_direction_consistent": {"type": "boolean"},
+        "same_biological_compartment": {"type": "boolean"},
+        "same_measurement_level": {"type": "boolean"},
+        "discovery_fdr": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+        "validation_fdr": {"type": ["number", "null"], "minimum": 0, "maximum": 1}
+      }
+    },
+    "perturbation_support": {
+      "type": "object",
+      "required": ["tested", "direction_consistent", "independent_studies"],
+      "properties": {
+        "tested": {"type": "boolean"},
+        "direction_consistent": {"type": "boolean"},
+        "independent_studies": {"type": "integer", "minimum": 0}
+      }
+    },
+    "orthogonal_evidence": {
+      "type": "object",
+      "required": ["modalities", "direction_consistent"],
+      "properties": {
+        "modalities": {"type": "integer", "minimum": 0},
+        "direction_consistent": {"type": "boolean"}
+      }
+    },
+    "curated_literature_evidence": {
+      "type": "object",
+      "required": ["independent_sources", "supports_claim"],
+      "properties": {
+        "independent_sources": {"type": "integer", "minimum": 0},
+        "supports_claim": {"type": "boolean"}
+      }
+    },
+    "confounding_robustness": {
+      "type": "object",
+      "required": ["batch_controlled", "composition_controlled"],
+      "properties": {
+        "batch_controlled": {"type": "boolean"},
+        "composition_controlled": {"type": "boolean"}
+      }
+    },
+    "discriminating_experiment": {
+      "type": "object",
+      "required": ["intervention", "comparator", "readout", "prediction_if_hypothesis_a", "prediction_if_hypothesis_b"],
+      "properties": {
+        "intervention": {"type": "string", "minLength": 1},
+        "comparator": {"type": "string", "minLength": 1},
+        "readout": {"type": "string", "minLength": 1},
+        "prediction_if_hypothesis_a": {"type": "string", "minLength": 1},
+        "prediction_if_hypothesis_b": {"type": "string", "minLength": 1}
+      }
+    }
+  }
+}

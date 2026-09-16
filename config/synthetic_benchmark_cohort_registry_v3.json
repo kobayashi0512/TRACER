@@ -1,0 +1,22 @@
+{
+  "registry_id": "icb-disambiguate-synthetic-benchmark-registry-v3",
+  "supersedes": "icb-disambiguate-synthetic-benchmark-registry-v2",
+  "purpose": "Synthetic, non-biological registry for factorial TRACER stress tests. Source-independence groups are test fixtures, not patient-overlap evidence and not biomedical data.",
+  "cohorts": {
+    "SYN-SC-A": {"measurement_level": "single_cell_rna", "compartment": "tumor_cd45_positive_cells", "baseline_ici_response_association_eligible": true, "same_measurement_replication_eligible": true, "source_independence_group": "synthetic_study_a"},
+    "SYN-SC-B": {"measurement_level": "single_cell_rna", "compartment": "tumor_cd45_positive_cells", "baseline_ici_response_association_eligible": true, "same_measurement_replication_eligible": true, "source_independence_group": "synthetic_study_b"},
+    "SYN-SC-C": {"measurement_level": "single_cell_rna", "compartment": "tumor_cd45_positive_cells", "baseline_ici_response_association_eligible": true, "same_measurement_replication_eligible": true, "source_independence_group": "synthetic_study_c"},
+    "SYN-SC-REUSE-1": {"measurement_level": "single_cell_rna", "compartment": "tumor_cd45_positive_cells", "baseline_ici_response_association_eligible": true, "same_measurement_replication_eligible": true, "source_independence_group": "synthetic_reused_single_cell_source"},
+    "SYN-SC-REUSE-2": {"measurement_level": "single_cell_rna", "compartment": "tumor_cd45_positive_cells", "baseline_ici_response_association_eligible": true, "same_measurement_replication_eligible": true, "source_independence_group": "synthetic_reused_single_cell_source"},
+    "SYN-SC-REUSE-3": {"measurement_level": "single_cell_rna", "compartment": "tumor_cd45_positive_cells", "baseline_ici_response_association_eligible": true, "same_measurement_replication_eligible": true, "source_independence_group": "synthetic_reused_single_cell_source"},
+    "SYN-BULK-A": {"measurement_level": "bulk_rna", "compartment": "tumor_bulk", "baseline_ici_response_association_eligible": true, "same_measurement_replication_eligible": false, "source_independence_group": "synthetic_bulk_study_a"},
+    "SYN-BULK-B": {"measurement_level": "bulk_rna", "compartment": "tumor_bulk", "baseline_ici_response_association_eligible": true, "same_measurement_replication_eligible": false, "source_independence_group": "synthetic_bulk_study_b"},
+    "SYN-BULK-C": {"measurement_level": "bulk_rna", "compartment": "tumor_bulk", "baseline_ici_response_association_eligible": true, "same_measurement_replication_eligible": false, "source_independence_group": "synthetic_bulk_study_c"},
+    "SYN-BULK-REUSE-1": {"measurement_level": "bulk_rna", "compartment": "tumor_bulk", "baseline_ici_response_association_eligible": true, "same_measurement_replication_eligible": false, "source_independence_group": "synthetic_reused_bulk_source"},
+    "SYN-BULK-REUSE-2": {"measurement_level": "bulk_rna", "compartment": "tumor_bulk", "baseline_ici_response_association_eligible": true, "same_measurement_replication_eligible": false, "source_independence_group": "synthetic_reused_bulk_source"},
+    "SYN-BULK-REUSE-3": {"measurement_level": "bulk_rna", "compartment": "tumor_bulk", "baseline_ici_response_association_eligible": true, "same_measurement_replication_eligible": false, "source_independence_group": "synthetic_reused_bulk_source"},
+    "SYN-FUNCTION": {"measurement_level": "functional_assay", "compartment": "ex_vivo_tumor_immune_coculture", "baseline_ici_response_association_eligible": false, "same_measurement_replication_eligible": false, "source_independence_group": "synthetic_functional_study"},
+    "SYN-LIT-1": {"measurement_level": "literature", "compartment": "not_applicable", "baseline_ici_response_association_eligible": false, "same_measurement_replication_eligible": false, "source_independence_group": "synthetic_literature_1"},
+    "SYN-LIT-2": {"measurement_level": "literature", "compartment": "not_applicable", "baseline_ici_response_association_eligible": false, "same_measurement_replication_eligible": false, "source_independence_group": "synthetic_literature_2"}
+  }
+}

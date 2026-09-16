@@ -1,0 +1,13 @@
+{
+  "packet_id": "SYNTH-CONFOUNDING-001",
+  "scope": {"disease": "Synthetic melanoma", "treatment": "Synthetic baseline anti-PD-1", "analysis_unit": "Lesion-level pseudo-bulk"},
+  "question": "Can otherwise complete evidence be prioritized when cell-composition confounding remains unresolved?",
+  "evidence_items": [
+    {"id": "sc-discovery", "cohort_id": "SYN-SC-A", "result_type": "synthetic_single_cell_pseudobulk", "statement": "Discovery cohort association is direction-consistent but composition is not controlled.", "effect_direction": "positive", "source_identifier": "synthetic://confounding/sc-discovery", "evidence_kind": "observational_association", "direction_status": "consistent", "confounding_assessed": false, "fdr": 0.01},
+    {"id": "sc-replication", "cohort_id": "SYN-SC-B", "result_type": "synthetic_single_cell_pseudobulk", "statement": "Independent replication is direction-consistent but composition is not controlled.", "effect_direction": "positive", "source_identifier": "synthetic://confounding/sc-replication", "evidence_kind": "replication", "direction_status": "consistent", "confounding_assessed": false, "fdr": 0.02},
+    {"id": "functional", "cohort_id": "SYN-FUNCTION", "result_type": "synthetic_perturbation", "statement": "Functional perturbation supports the stated direction.", "effect_direction": "positive", "source_identifier": "synthetic://confounding/functional", "evidence_kind": "perturbation", "direction_status": "consistent", "confounding_assessed": true, "fdr": null},
+    {"id": "literature-1", "cohort_id": "SYN-LIT-1", "result_type": "synthetic_curated_literature", "statement": "Independent curated source supports the constrained claim.", "effect_direction": "positive", "source_identifier": "synthetic://confounding/literature-1", "evidence_kind": "literature", "direction_status": "consistent", "confounding_assessed": true, "fdr": null},
+    {"id": "literature-2", "cohort_id": "SYN-LIT-2", "result_type": "synthetic_curated_literature", "statement": "A second independent curated source supports the constrained claim.", "effect_direction": "positive", "source_identifier": "synthetic://confounding/literature-2", "evidence_kind": "literature", "direction_status": "consistent", "confounding_assessed": true, "fdr": null}
+  ],
+  "reference_standard": {"evaluator_only": true, "eligible_for_high_priority": false, "prohibited_claim_types": ["confounding-robust conclusion"], "reason_codes": ["cell_composition_not_controlled"]}
+}

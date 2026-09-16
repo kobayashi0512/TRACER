@@ -1,0 +1,72 @@
+{
+  "schema": "icb-disambiguate-synthetic-suite-sanity-v1",
+  "interpretation": "Synthetic algorithm verification only; not a biological, clinical, or model-performance result.",
+  "n_packets": 6,
+  "n_expected_high_priority_matches": 6,
+  "results": [
+    {
+      "packet_id": "SYNTH-HIGH-001",
+      "category": "complete_eligible_positive_control",
+      "expected_high_priority": true,
+      "observed_level": "HIGH",
+      "matches_expected_high_priority": true,
+      "draft_admissible_for_review": true,
+      "hard_stops": []
+    },
+    {
+      "packet_id": "SYNTH-CROSS-MODALITY-001",
+      "category": "transport_failure",
+      "expected_high_priority": false,
+      "observed_level": "LOW",
+      "matches_expected_high_priority": true,
+      "draft_admissible_for_review": true,
+      "hard_stops": [
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant."
+      ]
+    },
+    {
+      "packet_id": "SYNTH-SELECTIVE-OMISSION-001",
+      "category": "provenance_coverage_failure",
+      "expected_high_priority": false,
+      "observed_level": "LOW",
+      "matches_expected_high_priority": true,
+      "draft_admissible_for_review": true,
+      "hard_stops": [
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant."
+      ]
+    },
+    {
+      "packet_id": "SYNTH-NO-PERTURBATION-001",
+      "category": "causal_evidence_failure",
+      "expected_high_priority": false,
+      "observed_level": "MODERATE",
+      "matches_expected_high_priority": true,
+      "draft_admissible_for_review": true,
+      "hard_stops": [
+        "No direction-consistent perturbation evidence; causal language is prohibited."
+      ]
+    },
+    {
+      "packet_id": "SYNTH-CONFOUNDING-001",
+      "category": "confounding_failure",
+      "expected_high_priority": false,
+      "observed_level": "LOW",
+      "matches_expected_high_priority": true,
+      "draft_admissible_for_review": true,
+      "hard_stops": [
+        "Batch and/or cell-composition confounding has not been controlled."
+      ]
+    },
+    {
+      "packet_id": "SYNTH-SINGLE-COHORT-001",
+      "category": "replication_failure",
+      "expected_high_priority": false,
+      "observed_level": "LOW",
+      "matches_expected_high_priority": true,
+      "draft_admissible_for_review": true,
+      "hard_stops": [
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "packet_id": "SYNTH-FCT-T1-I0-F1-P1-C0",
+  "dependency_cluster": "SYNTHETIC_FACTORIAL_V2",
+  "scope": {
+    "disease": "Synthetic melanoma",
+    "treatment": "Synthetic baseline anti-PD-1",
+    "analysis_unit": "Lesion-level synthetic aggregate"
+  },
+  "question": "Should this synthetic signal enter a pre-specified experimental follow-up queue?",
+  "evidence_items": [
+    {
+      "id": "obs-1",
+      "cohort_id": "SYN-SC-REUSE-1",
+      "result_type": "synthetic_single_cell_pseudobulk",
+      "statement": "Baseline synthetic association has positive direction in cohort one.",
+      "effect_direction": "positive",
+      "source_identifier": "synthetic://factorized-v2/SYNTH-FCT-T1-I0-F1-P1-C0/obs-1",
+      "evidence_kind": "observational_association",
+      "direction_status": "consistent",
+      "confounding_assessed": false,
+      "fdr": 0.01
+    },
+    {
+      "id": "obs-2",
+      "cohort_id": "SYN-SC-REUSE-2",
+      "result_type": "synthetic_single_cell_pseudobulk",
+      "statement": "Baseline synthetic association has the same positive direction in cohort two.",
+      "effect_direction": "positive",
+      "source_identifier": "synthetic://factorized-v2/SYNTH-FCT-T1-I0-F1-P1-C0/obs-2",
+      "evidence_kind": "replication",
+      "direction_status": "consistent",
+      "confounding_assessed": false,
+      "fdr": 0.02
+    },
+    {
+      "id": "obs-3",
+      "cohort_id": "SYN-SC-REUSE-3",
+      "result_type": "synthetic_single_cell_pseudobulk",
+      "statement": "Baseline synthetic association has the same positive direction in cohort three.",
+      "effect_direction": "positive",
+      "source_identifier": "synthetic://factorized-v2/SYNTH-FCT-T1-I0-F1-P1-C0/obs-3",
+      "evidence_kind": "replication",
+      "direction_status": "consistent",
+      "confounding_assessed": false,
+      "fdr": 0.02
+    },
+    {
+      "id": "functional",
+      "cohort_id": "SYN-FUNCTION",
+      "result_type": "synthetic_perturbation",
+      "statement": "A synthetic functional perturbation agrees with the observed direction.",
+      "effect_direction": "positive",
+      "source_identifier": "synthetic://factorized-v2/SYNTH-FCT-T1-I0-F1-P1-C0/functional",
+      "evidence_kind": "perturbation",
+      "direction_status": "consistent",
+      "confounding_assessed": false,
+      "fdr": null
+    },
+    {
+      "id": "literature-1",
+      "cohort_id": "SYN-LIT-1",
+      "result_type": "synthetic_curated_literature",
+      "statement": "A synthetic curated contextual source agrees with the constrained statement.",
+      "effect_direction": "positive",
+      "source_identifier": "synthetic://factorized-v2/SYNTH-FCT-T1-I0-F1-P1-C0/literature-1",
+      "evidence_kind": "literature",
+      "direction_status": "consistent",
+      "confounding_assessed": true,
+      "fdr": null
+    },
+    {
+      "id": "literature-2",
+      "cohort_id": "SYN-LIT-2",
+      "result_type": "synthetic_curated_literature",
+      "statement": "A synthetic curated contextual source agrees with the constrained statement.",
+      "effect_direction": "positive",
+      "source_identifier": "synthetic://factorized-v2/SYNTH-FCT-T1-I0-F1-P1-C0/literature-2",
+      "evidence_kind": "literature",
+      "direction_status": "consistent",
+      "confounding_assessed": true,
+      "fdr": null
+    }
+  ],
+  "reference_standard": {
+    "evaluator_only": true,
+    "eligible_for_high_priority": false,
+    "prohibited_claim_types": [
+      "causal proof",
+      "clinical recommendation"
+    ],
+    "reason_codes": [
+      "one_or_more_protocol_factors_fail"
+    ]
+  }
+}

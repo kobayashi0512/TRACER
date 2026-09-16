@@ -1,0 +1,8 @@
+evaluation_set,method,unsafe_HIGH,eligible_retention,exact_priority_decision,unsafe_packet_ids
+complete frozen draft,Full TRACER,0/31 (0.0%),1/1 (100.0%),32/32 (100.0%),
+complete frozen draft,TRACER without transport gate,1/31 (3.2%),1/1 (100.0%),31/32 (96.9%),SYNTH-FCT-T0-I1-F1-P1-C1
+complete frozen draft,TRACER without source-independence gate,1/31 (3.2%),1/1 (100.0%),31/32 (96.9%),SYNTH-FCT-T1-I0-F1-P1-C1
+complete frozen draft,TRACER without all-cohort FDR gate,1/31 (3.2%),1/1 (100.0%),31/32 (96.9%),SYNTH-FCT-T1-I1-F0-P1-C1
+complete frozen draft,Naive counting baseline,7/31 (22.6%),1/1 (100.0%),25/32 (78.1%),SYNTH-FCT-T0-I0-F0-P1-C1;SYNTH-FCT-T0-I0-F1-P1-C1;SYNTH-FCT-T0-I1-F0-P1-C1;SYNTH-FCT-T0-I1-F1-P1-C1;SYNTH-FCT-T1-I0-F0-P1-C1;SYNTH-FCT-T1-I0-F1-P1-C1;SYNTH-FCT-T1-I1-F0-P1-C1
+provenance-omission attack,Full TRACER,0/32 (0.0%),not applicable: every omission draft is ineligible by protocol,32/32 (100.0%),
+provenance-omission attack,TRACER without provenance coverage,1/32 (3.1%),not applicable: every omission draft is ineligible by protocol,31/32 (96.9%),SYNTH-FCT-T1-I1-F1-P1-C1

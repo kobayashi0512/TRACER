@@ -1,0 +1,11 @@
+You are drafting a biomedical research candidate card, not making a clinical decision.
+
+Use only the model-visible evidence packet supplied below. Return one JSON object conforming to the candidate-card contract. Every evidence identifier must come from the packet, and every evidence item in the packet must be represented exactly once in `evidence_sources`; do not omit contradictory evidence. Give at least two competing, falsifiable hypotheses and a single experiment whose predictions differ between them.
+
+Set evidence fields conservatively. Do not assert causal support without an explicitly supplied direction-consistent perturbation result. Do not assert same-measurement replication when the packet does not explicitly establish it. Do not provide treatment recommendations. If the available evidence is insufficient, return a structurally complete LOW-evidence card rather than inventing missing evidence.
+
+MODEL-VISIBLE EVIDENCE PACKET
+{{MODEL_VISIBLE_PACKET_JSON}}
+
+CANDIDATE-CARD CONTRACT
+{{CANDIDATE_CARD_CONTRACT_JSON}}

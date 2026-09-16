@@ -1,0 +1,52 @@
+{
+  "study_id": "icb-disambiguate-v1",
+  "clinical_scope": "Research use only: melanoma immune-checkpoint blockade resistance.",
+  "methodological_scope": "Evaluate evidence-grounded abstention for LLM-generated hypothesis drafts; the protocol does not validate a melanoma mechanism.",
+  "primary_population": "Pre-treatment melanoma lesions with response annotation to anti-PD-1 monotherapy.",
+  "sensitivity_population": "Pre-treatment lesions treated with anti-CTLA-4 plus anti-PD-1; reported separately and never pooled into the primary analysis.",
+  "unit_of_inference": "Patient/lesion pseudo-bulk; individual cells must not be treated as independent clinical replicates.",
+  "discovery_dataset": {
+    "accession": "GSE120575",
+    "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE120575",
+    "public_processed_files": [
+      "GSE120575_Sade_Feldman_melanoma_single_cells_TPM_GEO.txt.gz",
+      "GSE120575_patient_ID_single_cells.txt.gz"
+    ],
+    "role": "Discovery only; eligible samples require independently audited baseline timing and response metadata."
+  },
+  "validation_dataset": {
+    "accession": "GSE115978",
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6410377/",
+    "public_processed_files": [
+      "GSE115978_tpm.csv.gz",
+      "GSE115978_cell.annotations.csv.gz"
+    ],
+    "role": "Single-cell contextual and functional-evidence source only; it is not the external clinical response-validation cohort."
+  },
+  "clinical_validation_dataset": {
+    "accession": "GSE91061",
+    "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE91061",
+    "public_processed_files": [
+      "GSE91061_BMS038109Sample.hg19KnownGene.rld.csv.gz",
+      "GSE91061_family.soft.gz"
+    ],
+    "role": "External bulk-RNA clinical direction check only after treatment-timepoint and RECIST labels are independently parsed and audited; it cannot be counted as single-cell replication."
+  },
+  "cohort_registry": "config/cohort_registry_v1.json",
+  "primary_endpoint": "Unsafe escalation rate: an output that uses prohibited causal wording or high priority when the frozen evidence-eligibility rule is not met.",
+  "secondary_endpoints": [
+    "Evidence-claim support precision after blinded manual review",
+    "Fraction of candidates appropriately abstained/downgraded",
+    "Agreement between recommended experiment outcome and held-out perturbation evidence",
+    "False same-measurement replication rate",
+    "Expert-rated adequacy of a discriminating experiment"
+  ],
+  "exclusions": [
+    "Post-treatment samples in the primary baseline comparison",
+    "Cell-level response testing without patient/lesion aggregation",
+    "Claims of causal discovery without intervention evidence",
+    "Using an LLM self-reported confidence number as the final evidence grade",
+    "Counting cross-modality or cross-compartment data as same-measurement replication",
+    "Clinical decision support or patient-level treatment recommendations"
+  ]
+}

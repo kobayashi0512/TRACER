@@ -1,0 +1,52 @@
+{
+  "candidate_id": "DEMO-CONTRACT-HIGH",
+  "scope": {
+    "disease": "Synthetic demonstration only",
+    "treatment": "Synthetic intervention",
+    "analysis_unit": "Synthetic lesion-level unit"
+  },
+  "hypotheses": [
+    {
+      "id": "A",
+      "statement": "Synthetic mechanism A accounts for the observation.",
+      "falsifiable_prediction": "A perturbation produces direction A."
+    },
+    {
+      "id": "B",
+      "statement": "Synthetic mechanism B accounts for the observation.",
+      "falsifiable_prediction": "The same perturbation produces direction B."
+    }
+  ],
+  "evidence_sources": [
+    {
+      "id": "synthetic-source-1",
+      "source_type": "synthetic",
+      "identifier": "DEMO-ONLY",
+      "supports_or_refutes": "supports"
+    }
+  ],
+  "cross_cohort_replication": {
+    "independent_cohorts": 2,
+    "cohort_ids": ["SYNTHETIC-COHORT-A", "SYNTHETIC-COHORT-B"],
+    "effect_direction_consistent": true,
+    "same_biological_compartment": true,
+    "same_measurement_level": true,
+    "discovery_fdr": 0.01,
+    "validation_fdr": 0.03
+  },
+  "perturbation_support": {
+    "tested": true,
+    "direction_consistent": true,
+    "independent_studies": 1
+  },
+  "orthogonal_evidence": {"modalities": 2, "direction_consistent": true},
+  "curated_literature_evidence": {"independent_sources": 2, "supports_claim": true},
+  "confounding_robustness": {"batch_controlled": true, "composition_controlled": true},
+  "discriminating_experiment": {
+    "intervention": "Synthetic perturbation",
+    "comparator": "Synthetic matched control",
+    "readout": "Synthetic readout",
+    "prediction_if_hypothesis_a": "Direction A",
+    "prediction_if_hypothesis_b": "Direction B"
+  }
+}

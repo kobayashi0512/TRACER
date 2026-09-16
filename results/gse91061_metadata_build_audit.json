@@ -1,0 +1,15 @@
+{
+  "source": "GSE91061 GEO SOFT metadata and rld expression header",
+  "n_matrix_samples": 109,
+  "n_metadata_samples": 109,
+  "matrix_metadata_ids_match": true,
+  "pre_treatment_evaluable_n": 49,
+  "pre_treatment_evaluable_response_counts": {
+    "Non-responder": 39,
+    "Responder": 10
+  },
+  "excluded_pre_treatment_unknown_response_n": 2,
+  "all_metadata_path": "data/derived/gse91061_sample_metadata.tsv",
+  "validation_cohort_path": "data/derived/gse91061_pre_treatment_validation_v1.tsv",
+  "interpretation_limit": "This independent bulk cohort may validate a pre-specified expression-direction signal only. It cannot validate cell type, cell-cell interaction, causality, or a trained predictor."
+}

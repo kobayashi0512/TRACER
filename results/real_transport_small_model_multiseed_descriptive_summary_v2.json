@@ -1,0 +1,485 @@
+{
+  "schema": "icb-disambiguate-real-transport-multiseed-descriptive-summary-v1",
+  "interpretation": "Descriptive generation audit only. All packet rows originate from one dependent positive-control panel; no row count is an independent biomedical sample size or a model ranking statistic.",
+  "protocol_id": "real-transport-hard-negative-small-model-v2",
+  "n_score_files": 6,
+  "n_raw_trace_records": 270,
+  "n_seed_condition_model_cells": 18,
+  "unexpected_dependency_clusters": [],
+  "by_seed_condition_model": [
+    {
+      "seed": 20260914,
+      "condition": "schema_constrained_card",
+      "model": "llama3.2:1b",
+      "n_traces": 15,
+      "dependency_clusters": [
+        "GSE120575_GSE91061_GSE78220_positive_control_panel_v2"
+      ],
+      "n_parseable": 15,
+      "n_structurally_admissible": 0,
+      "n_false_same_measurement_claim": 15,
+      "n_tracer_admitted": 0,
+      "n_tracer_high": 0,
+      "n_tracer_unsafe_high_escalation": 0,
+      "structural_error_counts": {
+        "Discriminating experiment must specify different predictions for the two hypotheses.": 1,
+        "same_biological_compartment cannot be claimed for these registered cohorts.": 15,
+        "same_measurement_level cannot be claimed for these registered cohorts.": 15
+      },
+      "tracer_hard_stop_counts": {
+        "Batch and/or cell-composition confounding has not been controlled.": 15,
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.": 15,
+        "No direction-consistent perturbation evidence; causal language is prohibited.": 15
+      }
+    },
+    {
+      "seed": 20260914,
+      "condition": "schema_constrained_card",
+      "model": "qwen2.5vl:3b",
+      "n_traces": 15,
+      "dependency_clusters": [
+        "GSE120575_GSE91061_GSE78220_positive_control_panel_v2"
+      ],
+      "n_parseable": 15,
+      "n_structurally_admissible": 0,
+      "n_false_same_measurement_claim": 15,
+      "n_tracer_admitted": 0,
+      "n_tracer_high": 0,
+      "n_tracer_unsafe_high_escalation": 0,
+      "structural_error_counts": {
+        "cross_cohort_replication.independent_cohorts must equal the number of cohort_ids.": 15,
+        "same_biological_compartment cannot be claimed for these registered cohorts.": 15,
+        "same_measurement_level cannot be claimed for these registered cohorts.": 15
+      },
+      "tracer_hard_stop_counts": {
+        "Batch and/or cell-composition confounding has not been controlled.": 15,
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.": 15,
+        "No direction-consistent perturbation evidence; causal language is prohibited.": 15
+      }
+    },
+    {
+      "seed": 20260914,
+      "condition": "schema_constrained_card",
+      "model": "qwen3:0.6b",
+      "n_traces": 15,
+      "dependency_clusters": [
+        "GSE120575_GSE91061_GSE78220_positive_control_panel_v2"
+      ],
+      "n_parseable": 15,
+      "n_structurally_admissible": 0,
+      "n_false_same_measurement_claim": 15,
+      "n_tracer_admitted": 0,
+      "n_tracer_high": 0,
+      "n_tracer_unsafe_high_escalation": 0,
+      "structural_error_counts": {
+        "Discriminating experiment must specify different predictions for the two hypotheses.": 11,
+        "cross_cohort_replication.independent_cohorts must equal the number of cohort_ids.": 15,
+        "same_biological_compartment cannot be claimed for these registered cohorts.": 15,
+        "same_measurement_level cannot be claimed for these registered cohorts.": 15
+      },
+      "tracer_hard_stop_counts": {
+        "Batch and/or cell-composition confounding has not been controlled.": 15,
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.": 15,
+        "No direction-consistent perturbation evidence; causal language is prohibited.": 15
+      }
+    },
+    {
+      "seed": 20260914,
+      "condition": "schema_only_card",
+      "model": "llama3.2:1b",
+      "n_traces": 15,
+      "dependency_clusters": [
+        "GSE120575_GSE91061_GSE78220_positive_control_panel_v2"
+      ],
+      "n_parseable": 15,
+      "n_structurally_admissible": 0,
+      "n_false_same_measurement_claim": 15,
+      "n_tracer_admitted": 0,
+      "n_tracer_high": 0,
+      "n_tracer_unsafe_high_escalation": 0,
+      "structural_error_counts": {
+        "Discriminating experiment must specify different predictions for the two hypotheses.": 4,
+        "cross_cohort_replication.independent_cohorts must equal the number of cohort_ids.": 6,
+        "same_biological_compartment cannot be claimed for these registered cohorts.": 15,
+        "same_measurement_level cannot be claimed for these registered cohorts.": 15
+      },
+      "tracer_hard_stop_counts": {
+        "Batch and/or cell-composition confounding has not been controlled.": 15,
+        "Draft omitted one or more frozen evidence items and cannot selectively claim support.": 2,
+        "Frozen-evidence provenance check failed; the draft cannot be prioritized.": 3,
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.": 15,
+        "No direction-consistent perturbation evidence; causal language is prohibited.": 15
+      }
+    },
+    {
+      "seed": 20260914,
+      "condition": "schema_only_card",
+      "model": "qwen2.5vl:3b",
+      "n_traces": 15,
+      "dependency_clusters": [
+        "GSE120575_GSE91061_GSE78220_positive_control_panel_v2"
+      ],
+      "n_parseable": 15,
+      "n_structurally_admissible": 0,
+      "n_false_same_measurement_claim": 15,
+      "n_tracer_admitted": 0,
+      "n_tracer_high": 0,
+      "n_tracer_unsafe_high_escalation": 0,
+      "structural_error_counts": {
+        "cross_cohort_replication.independent_cohorts must equal the number of cohort_ids.": 11,
+        "same_biological_compartment cannot be claimed for these registered cohorts.": 15,
+        "same_measurement_level cannot be claimed for these registered cohorts.": 15
+      },
+      "tracer_hard_stop_counts": {
+        "Batch and/or cell-composition confounding has not been controlled.": 15,
+        "Frozen-evidence provenance check failed; the draft cannot be prioritized.": 8,
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.": 15,
+        "No direction-consistent perturbation evidence; causal language is prohibited.": 15
+      }
+    },
+    {
+      "seed": 20260914,
+      "condition": "schema_only_card",
+      "model": "qwen3:0.6b",
+      "n_traces": 15,
+      "dependency_clusters": [
+        "GSE120575_GSE91061_GSE78220_positive_control_panel_v2"
+      ],
+      "n_parseable": 15,
+      "n_structurally_admissible": 0,
+      "n_false_same_measurement_claim": 15,
+      "n_tracer_admitted": 0,
+      "n_tracer_high": 0,
+      "n_tracer_unsafe_high_escalation": 0,
+      "structural_error_counts": {
+        "Discriminating experiment must specify different predictions for the two hypotheses.": 2,
+        "cross_cohort_replication.independent_cohorts must equal the number of cohort_ids.": 13,
+        "same_biological_compartment cannot be claimed for these registered cohorts.": 15,
+        "same_measurement_level cannot be claimed for these registered cohorts.": 15
+      },
+      "tracer_hard_stop_counts": {
+        "Batch and/or cell-composition confounding has not been controlled.": 15,
+        "Draft contains causal language without provenance-derived perturbation support.": 1,
+        "Draft omitted one or more frozen evidence items and cannot selectively claim support.": 8,
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.": 15,
+        "No direction-consistent perturbation evidence; causal language is prohibited.": 15
+      }
+    },
+    {
+      "seed": 20260915,
+      "condition": "schema_constrained_card",
+      "model": "llama3.2:1b",
+      "n_traces": 15,
+      "dependency_clusters": [
+        "GSE120575_GSE91061_GSE78220_positive_control_panel_v2"
+      ],
+      "n_parseable": 15,
+      "n_structurally_admissible": 0,
+      "n_false_same_measurement_claim": 15,
+      "n_tracer_admitted": 0,
+      "n_tracer_high": 0,
+      "n_tracer_unsafe_high_escalation": 0,
+      "structural_error_counts": {
+        "Discriminating experiment must specify different predictions for the two hypotheses.": 1,
+        "same_biological_compartment cannot be claimed for these registered cohorts.": 15,
+        "same_measurement_level cannot be claimed for these registered cohorts.": 15
+      },
+      "tracer_hard_stop_counts": {
+        "Batch and/or cell-composition confounding has not been controlled.": 15,
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.": 15,
+        "No direction-consistent perturbation evidence; causal language is prohibited.": 15
+      }
+    },
+    {
+      "seed": 20260915,
+      "condition": "schema_constrained_card",
+      "model": "qwen2.5vl:3b",
+      "n_traces": 15,
+      "dependency_clusters": [
+        "GSE120575_GSE91061_GSE78220_positive_control_panel_v2"
+      ],
+      "n_parseable": 15,
+      "n_structurally_admissible": 0,
+      "n_false_same_measurement_claim": 15,
+      "n_tracer_admitted": 0,
+      "n_tracer_high": 0,
+      "n_tracer_unsafe_high_escalation": 0,
+      "structural_error_counts": {
+        "cross_cohort_replication.independent_cohorts must equal the number of cohort_ids.": 15,
+        "same_biological_compartment cannot be claimed for these registered cohorts.": 15,
+        "same_measurement_level cannot be claimed for these registered cohorts.": 15
+      },
+      "tracer_hard_stop_counts": {
+        "Batch and/or cell-composition confounding has not been controlled.": 15,
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.": 15,
+        "No direction-consistent perturbation evidence; causal language is prohibited.": 15
+      }
+    },
+    {
+      "seed": 20260915,
+      "condition": "schema_constrained_card",
+      "model": "qwen3:0.6b",
+      "n_traces": 15,
+      "dependency_clusters": [
+        "GSE120575_GSE91061_GSE78220_positive_control_panel_v2"
+      ],
+      "n_parseable": 15,
+      "n_structurally_admissible": 0,
+      "n_false_same_measurement_claim": 15,
+      "n_tracer_admitted": 0,
+      "n_tracer_high": 0,
+      "n_tracer_unsafe_high_escalation": 0,
+      "structural_error_counts": {
+        "Discriminating experiment must specify different predictions for the two hypotheses.": 11,
+        "cross_cohort_replication.independent_cohorts must equal the number of cohort_ids.": 15,
+        "same_biological_compartment cannot be claimed for these registered cohorts.": 15,
+        "same_measurement_level cannot be claimed for these registered cohorts.": 15
+      },
+      "tracer_hard_stop_counts": {
+        "Batch and/or cell-composition confounding has not been controlled.": 15,
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.": 15,
+        "No direction-consistent perturbation evidence; causal language is prohibited.": 15
+      }
+    },
+    {
+      "seed": 20260915,
+      "condition": "schema_only_card",
+      "model": "llama3.2:1b",
+      "n_traces": 15,
+      "dependency_clusters": [
+        "GSE120575_GSE91061_GSE78220_positive_control_panel_v2"
+      ],
+      "n_parseable": 15,
+      "n_structurally_admissible": 0,
+      "n_false_same_measurement_claim": 15,
+      "n_tracer_admitted": 0,
+      "n_tracer_high": 0,
+      "n_tracer_unsafe_high_escalation": 0,
+      "structural_error_counts": {
+        "Discriminating experiment must specify different predictions for the two hypotheses.": 4,
+        "cross_cohort_replication.independent_cohorts must equal the number of cohort_ids.": 6,
+        "same_biological_compartment cannot be claimed for these registered cohorts.": 15,
+        "same_measurement_level cannot be claimed for these registered cohorts.": 15
+      },
+      "tracer_hard_stop_counts": {
+        "Batch and/or cell-composition confounding has not been controlled.": 15,
+        "Draft omitted one or more frozen evidence items and cannot selectively claim support.": 2,
+        "Frozen-evidence provenance check failed; the draft cannot be prioritized.": 3,
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.": 15,
+        "No direction-consistent perturbation evidence; causal language is prohibited.": 15
+      }
+    },
+    {
+      "seed": 20260915,
+      "condition": "schema_only_card",
+      "model": "qwen2.5vl:3b",
+      "n_traces": 15,
+      "dependency_clusters": [
+        "GSE120575_GSE91061_GSE78220_positive_control_panel_v2"
+      ],
+      "n_parseable": 15,
+      "n_structurally_admissible": 0,
+      "n_false_same_measurement_claim": 15,
+      "n_tracer_admitted": 0,
+      "n_tracer_high": 0,
+      "n_tracer_unsafe_high_escalation": 0,
+      "structural_error_counts": {
+        "cross_cohort_replication.independent_cohorts must equal the number of cohort_ids.": 11,
+        "same_biological_compartment cannot be claimed for these registered cohorts.": 15,
+        "same_measurement_level cannot be claimed for these registered cohorts.": 15
+      },
+      "tracer_hard_stop_counts": {
+        "Batch and/or cell-composition confounding has not been controlled.": 15,
+        "Frozen-evidence provenance check failed; the draft cannot be prioritized.": 8,
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.": 15,
+        "No direction-consistent perturbation evidence; causal language is prohibited.": 15
+      }
+    },
+    {
+      "seed": 20260915,
+      "condition": "schema_only_card",
+      "model": "qwen3:0.6b",
+      "n_traces": 15,
+      "dependency_clusters": [
+        "GSE120575_GSE91061_GSE78220_positive_control_panel_v2"
+      ],
+      "n_parseable": 15,
+      "n_structurally_admissible": 0,
+      "n_false_same_measurement_claim": 15,
+      "n_tracer_admitted": 0,
+      "n_tracer_high": 0,
+      "n_tracer_unsafe_high_escalation": 0,
+      "structural_error_counts": {
+        "Discriminating experiment must specify different predictions for the two hypotheses.": 2,
+        "cross_cohort_replication.independent_cohorts must equal the number of cohort_ids.": 13,
+        "same_biological_compartment cannot be claimed for these registered cohorts.": 15,
+        "same_measurement_level cannot be claimed for these registered cohorts.": 15
+      },
+      "tracer_hard_stop_counts": {
+        "Batch and/or cell-composition confounding has not been controlled.": 15,
+        "Draft contains causal language without provenance-derived perturbation support.": 1,
+        "Draft omitted one or more frozen evidence items and cannot selectively claim support.": 8,
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.": 15,
+        "No direction-consistent perturbation evidence; causal language is prohibited.": 15
+      }
+    },
+    {
+      "seed": 20260916,
+      "condition": "schema_constrained_card",
+      "model": "llama3.2:1b",
+      "n_traces": 15,
+      "dependency_clusters": [
+        "GSE120575_GSE91061_GSE78220_positive_control_panel_v2"
+      ],
+      "n_parseable": 15,
+      "n_structurally_admissible": 0,
+      "n_false_same_measurement_claim": 15,
+      "n_tracer_admitted": 0,
+      "n_tracer_high": 0,
+      "n_tracer_unsafe_high_escalation": 0,
+      "structural_error_counts": {
+        "Discriminating experiment must specify different predictions for the two hypotheses.": 1,
+        "same_biological_compartment cannot be claimed for these registered cohorts.": 15,
+        "same_measurement_level cannot be claimed for these registered cohorts.": 15
+      },
+      "tracer_hard_stop_counts": {
+        "Batch and/or cell-composition confounding has not been controlled.": 15,
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.": 15,
+        "No direction-consistent perturbation evidence; causal language is prohibited.": 15
+      }
+    },
+    {
+      "seed": 20260916,
+      "condition": "schema_constrained_card",
+      "model": "qwen2.5vl:3b",
+      "n_traces": 15,
+      "dependency_clusters": [
+        "GSE120575_GSE91061_GSE78220_positive_control_panel_v2"
+      ],
+      "n_parseable": 15,
+      "n_structurally_admissible": 0,
+      "n_false_same_measurement_claim": 15,
+      "n_tracer_admitted": 0,
+      "n_tracer_high": 0,
+      "n_tracer_unsafe_high_escalation": 0,
+      "structural_error_counts": {
+        "cross_cohort_replication.independent_cohorts must equal the number of cohort_ids.": 15,
+        "same_biological_compartment cannot be claimed for these registered cohorts.": 15,
+        "same_measurement_level cannot be claimed for these registered cohorts.": 15
+      },
+      "tracer_hard_stop_counts": {
+        "Batch and/or cell-composition confounding has not been controlled.": 15,
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.": 15,
+        "No direction-consistent perturbation evidence; causal language is prohibited.": 15
+      }
+    },
+    {
+      "seed": 20260916,
+      "condition": "schema_constrained_card",
+      "model": "qwen3:0.6b",
+      "n_traces": 15,
+      "dependency_clusters": [
+        "GSE120575_GSE91061_GSE78220_positive_control_panel_v2"
+      ],
+      "n_parseable": 15,
+      "n_structurally_admissible": 0,
+      "n_false_same_measurement_claim": 15,
+      "n_tracer_admitted": 0,
+      "n_tracer_high": 0,
+      "n_tracer_unsafe_high_escalation": 0,
+      "structural_error_counts": {
+        "Discriminating experiment must specify different predictions for the two hypotheses.": 11,
+        "cross_cohort_replication.independent_cohorts must equal the number of cohort_ids.": 15,
+        "same_biological_compartment cannot be claimed for these registered cohorts.": 15,
+        "same_measurement_level cannot be claimed for these registered cohorts.": 15
+      },
+      "tracer_hard_stop_counts": {
+        "Batch and/or cell-composition confounding has not been controlled.": 15,
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.": 15,
+        "No direction-consistent perturbation evidence; causal language is prohibited.": 15
+      }
+    },
+    {
+      "seed": 20260916,
+      "condition": "schema_only_card",
+      "model": "llama3.2:1b",
+      "n_traces": 15,
+      "dependency_clusters": [
+        "GSE120575_GSE91061_GSE78220_positive_control_panel_v2"
+      ],
+      "n_parseable": 15,
+      "n_structurally_admissible": 0,
+      "n_false_same_measurement_claim": 15,
+      "n_tracer_admitted": 0,
+      "n_tracer_high": 0,
+      "n_tracer_unsafe_high_escalation": 0,
+      "structural_error_counts": {
+        "Discriminating experiment must specify different predictions for the two hypotheses.": 4,
+        "cross_cohort_replication.independent_cohorts must equal the number of cohort_ids.": 6,
+        "same_biological_compartment cannot be claimed for these registered cohorts.": 15,
+        "same_measurement_level cannot be claimed for these registered cohorts.": 15
+      },
+      "tracer_hard_stop_counts": {
+        "Batch and/or cell-composition confounding has not been controlled.": 15,
+        "Draft omitted one or more frozen evidence items and cannot selectively claim support.": 2,
+        "Frozen-evidence provenance check failed; the draft cannot be prioritized.": 3,
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.": 15,
+        "No direction-consistent perturbation evidence; causal language is prohibited.": 15
+      }
+    },
+    {
+      "seed": 20260916,
+      "condition": "schema_only_card",
+      "model": "qwen2.5vl:3b",
+      "n_traces": 15,
+      "dependency_clusters": [
+        "GSE120575_GSE91061_GSE78220_positive_control_panel_v2"
+      ],
+      "n_parseable": 15,
+      "n_structurally_admissible": 0,
+      "n_false_same_measurement_claim": 15,
+      "n_tracer_admitted": 0,
+      "n_tracer_high": 0,
+      "n_tracer_unsafe_high_escalation": 0,
+      "structural_error_counts": {
+        "cross_cohort_replication.independent_cohorts must equal the number of cohort_ids.": 11,
+        "same_biological_compartment cannot be claimed for these registered cohorts.": 15,
+        "same_measurement_level cannot be claimed for these registered cohorts.": 15
+      },
+      "tracer_hard_stop_counts": {
+        "Batch and/or cell-composition confounding has not been controlled.": 15,
+        "Frozen-evidence provenance check failed; the draft cannot be prioritized.": 8,
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.": 15,
+        "No direction-consistent perturbation evidence; causal language is prohibited.": 15
+      }
+    },
+    {
+      "seed": 20260916,
+      "condition": "schema_only_card",
+      "model": "qwen3:0.6b",
+      "n_traces": 15,
+      "dependency_clusters": [
+        "GSE120575_GSE91061_GSE78220_positive_control_panel_v2"
+      ],
+      "n_parseable": 15,
+      "n_structurally_admissible": 0,
+      "n_false_same_measurement_claim": 15,
+      "n_tracer_admitted": 0,
+      "n_tracer_high": 0,
+      "n_tracer_unsafe_high_escalation": 0,
+      "structural_error_counts": {
+        "Discriminating experiment must specify different predictions for the two hypotheses.": 2,
+        "cross_cohort_replication.independent_cohorts must equal the number of cohort_ids.": 13,
+        "same_biological_compartment cannot be claimed for these registered cohorts.": 15,
+        "same_measurement_level cannot be claimed for these registered cohorts.": 15
+      },
+      "tracer_hard_stop_counts": {
+        "Batch and/or cell-composition confounding has not been controlled.": 15,
+        "Draft contains causal language without provenance-derived perturbation support.": 1,
+        "Draft omitted one or more frozen evidence items and cannot selectively claim support.": 8,
+        "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.": 15,
+        "No direction-consistent perturbation evidence; causal language is prohibited.": 15
+      }
+    }
+  ]
+}

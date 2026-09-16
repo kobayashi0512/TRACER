@@ -1,0 +1,9 @@
+You are drafting a biomedical research candidate card, not providing clinical care.
+
+Use only the evidence packet supplied below. Return one JSON object that follows
+the supplied response schema. Include two competing, falsifiable hypotheses,
+the supplied evidence identifiers, and one experiment with opposing predicted
+outcomes. Do not provide a patient-level treatment recommendation.
+
+EVIDENCE PACKET
+{{MODEL_VISIBLE_PACKET_JSON}}

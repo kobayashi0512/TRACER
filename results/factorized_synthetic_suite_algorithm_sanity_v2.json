@@ -1,0 +1,3745 @@
+{
+  "schema": "icb-disambiguate-factorized-synthetic-suite-sanity-v2",
+  "interpretation": "Deterministic synthetic implementation verification only. It is not evidence of a biomedical mechanism, clinical utility, LLM performance, or population safety.",
+  "suite_id": "tracer-factorized-synthetic-safety-suite-v2",
+  "n_packets": 32,
+  "n_deterministic_draft_evaluations": 96,
+  "n_complete_matches_expected": 32,
+  "n_factor_derivations_matching_fixture": 32,
+  "n_omissions_blocked_by_coverage": 32,
+  "n_coverage_ablation_matches_non_provenance_factors": 32,
+  "n_transport_ablation_matches_non_transport_factors": 32,
+  "n_transport_gate_unsafe_high_counterfactuals": 1,
+  "n_source_independence_ablation_matches_non_source_factors": 32,
+  "n_source_independence_gate_unsafe_high_counterfactuals": 1,
+  "n_all_cohort_fdr_ablation_matches_non_fdr_factors": 32,
+  "n_all_cohort_fdr_gate_unsafe_high_counterfactuals": 1,
+  "n_naive_counting_matches_predeclared_rule": 32,
+  "n_naive_counting_unsafe_high_counterfactuals": 7,
+  "records": [
+    {
+      "packet_id": "SYNTH-FCT-T0-I0-F0-P0-C0",
+      "factors": {
+        "transport_eligible": false,
+        "source_independent": false,
+        "all_replication_fdr_pass": false,
+        "perturbation_present": false,
+        "confounding_controlled": false
+      },
+      "llm_pilot_subset": false,
+      "expected_complete_draft_high_priority": false,
+      "observed_factor_state": {
+        "transport_eligible": false,
+        "source_independent": false,
+        "all_replication_fdr_pass": false,
+        "perturbation_present": false,
+        "confounding_controlled": false
+      },
+      "factor_derivation_matches": true,
+      "complete_draft": {
+        "level": "LOW",
+        "priority_score": 0.2,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "No direction-consistent perturbation evidence; causal language is prohibited.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 1,
+        "uncited_packet_source_ids": []
+      },
+      "transport_gate_ablation": {
+        "level": "LOW",
+        "priority_score": 0.2,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "No direction-consistent perturbation evidence; causal language is prohibited.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 1,
+        "uncited_packet_source_ids": []
+      },
+      "source_independence_ablation": {
+        "level": "LOW",
+        "priority_score": 0.2,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "No direction-consistent perturbation evidence; causal language is prohibited.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "all_cohort_fdr_ablation": {
+        "level": "LOW",
+        "priority_score": 0.2,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "No direction-consistent perturbation evidence; causal language is prohibited.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 1,
+        "uncited_packet_source_ids": []
+      },
+      "naive_counting_baseline": {
+        "level": "LOW",
+        "priority_score": 0.45,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "No direction-consistent perturbation evidence; causal language is prohibited.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "omission_attack": {
+        "omitted_evidence_id": "literature-2",
+        "full_tracer": {
+          "level": "LOW",
+          "priority_score": 0.1,
+          "draft_admissible_for_review": false,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+            "No direction-consistent perturbation evidence; causal language is prohibited.",
+            "Batch and/or cell-composition confounding has not been controlled.",
+            "Draft omitted one or more frozen evidence items and cannot selectively claim support."
+          ],
+          "transport_eligible": false,
+          "independent_source_count": 1,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        },
+        "without_provenance_coverage": {
+          "level": "LOW",
+          "priority_score": 0.1,
+          "draft_admissible_for_review": true,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+            "No direction-consistent perturbation evidence; causal language is prohibited.",
+            "Batch and/or cell-composition confounding has not been controlled."
+          ],
+          "transport_eligible": false,
+          "independent_source_count": 1,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        }
+      },
+      "complete_matches_expected": true,
+      "coverage_blocks_omission": true,
+      "coverage_ablation_matches_non_provenance_factors": true,
+      "transport_ablation_matches_non_transport_factors": true,
+      "source_ablation_matches_non_source_factors": true,
+      "fdr_ablation_matches_non_fdr_factors": true,
+      "naive_counting_matches_predeclared_rule": true
+    },
+    {
+      "packet_id": "SYNTH-FCT-T0-I0-F0-P0-C1",
+      "factors": {
+        "transport_eligible": false,
+        "source_independent": false,
+        "all_replication_fdr_pass": false,
+        "perturbation_present": false,
+        "confounding_controlled": true
+      },
+      "llm_pilot_subset": false,
+      "expected_complete_draft_high_priority": false,
+      "observed_factor_state": {
+        "transport_eligible": false,
+        "source_independent": false,
+        "all_replication_fdr_pass": false,
+        "perturbation_present": false,
+        "confounding_controlled": true
+      },
+      "factor_derivation_matches": true,
+      "complete_draft": {
+        "level": "LOW",
+        "priority_score": 0.3,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "No direction-consistent perturbation evidence; causal language is prohibited."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 1,
+        "uncited_packet_source_ids": []
+      },
+      "transport_gate_ablation": {
+        "level": "LOW",
+        "priority_score": 0.3,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "No direction-consistent perturbation evidence; causal language is prohibited."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 1,
+        "uncited_packet_source_ids": []
+      },
+      "source_independence_ablation": {
+        "level": "LOW",
+        "priority_score": 0.3,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "No direction-consistent perturbation evidence; causal language is prohibited."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "all_cohort_fdr_ablation": {
+        "level": "LOW",
+        "priority_score": 0.3,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "No direction-consistent perturbation evidence; causal language is prohibited."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 1,
+        "uncited_packet_source_ids": []
+      },
+      "naive_counting_baseline": {
+        "level": "MODERATE",
+        "priority_score": 0.55,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "No direction-consistent perturbation evidence; causal language is prohibited."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "omission_attack": {
+        "omitted_evidence_id": "literature-2",
+        "full_tracer": {
+          "level": "LOW",
+          "priority_score": 0.2,
+          "draft_admissible_for_review": false,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+            "No direction-consistent perturbation evidence; causal language is prohibited.",
+            "Draft omitted one or more frozen evidence items and cannot selectively claim support."
+          ],
+          "transport_eligible": false,
+          "independent_source_count": 1,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        },
+        "without_provenance_coverage": {
+          "level": "LOW",
+          "priority_score": 0.2,
+          "draft_admissible_for_review": true,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+            "No direction-consistent perturbation evidence; causal language is prohibited."
+          ],
+          "transport_eligible": false,
+          "independent_source_count": 1,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        }
+      },
+      "complete_matches_expected": true,
+      "coverage_blocks_omission": true,
+      "coverage_ablation_matches_non_provenance_factors": true,
+      "transport_ablation_matches_non_transport_factors": true,
+      "source_ablation_matches_non_source_factors": true,
+      "fdr_ablation_matches_non_fdr_factors": true,
+      "naive_counting_matches_predeclared_rule": true
+    },
+    {
+      "packet_id": "SYNTH-FCT-T0-I0-F0-P1-C0",
+      "factors": {
+        "transport_eligible": false,
+        "source_independent": false,
+        "all_replication_fdr_pass": false,
+        "perturbation_present": true,
+        "confounding_controlled": false
+      },
+      "llm_pilot_subset": false,
+      "expected_complete_draft_high_priority": false,
+      "observed_factor_state": {
+        "transport_eligible": false,
+        "source_independent": false,
+        "all_replication_fdr_pass": false,
+        "perturbation_present": true,
+        "confounding_controlled": false
+      },
+      "factor_derivation_matches": true,
+      "complete_draft": {
+        "level": "LOW",
+        "priority_score": 0.65,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 1,
+        "uncited_packet_source_ids": []
+      },
+      "transport_gate_ablation": {
+        "level": "LOW",
+        "priority_score": 0.65,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 1,
+        "uncited_packet_source_ids": []
+      },
+      "source_independence_ablation": {
+        "level": "LOW",
+        "priority_score": 0.65,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "all_cohort_fdr_ablation": {
+        "level": "LOW",
+        "priority_score": 0.65,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 1,
+        "uncited_packet_source_ids": []
+      },
+      "naive_counting_baseline": {
+        "level": "LOW",
+        "priority_score": 0.9,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "omission_attack": {
+        "omitted_evidence_id": "literature-2",
+        "full_tracer": {
+          "level": "LOW",
+          "priority_score": 0.55,
+          "draft_admissible_for_review": false,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+            "Batch and/or cell-composition confounding has not been controlled.",
+            "Draft omitted one or more frozen evidence items and cannot selectively claim support."
+          ],
+          "transport_eligible": false,
+          "independent_source_count": 1,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        },
+        "without_provenance_coverage": {
+          "level": "LOW",
+          "priority_score": 0.55,
+          "draft_admissible_for_review": true,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+            "Batch and/or cell-composition confounding has not been controlled."
+          ],
+          "transport_eligible": false,
+          "independent_source_count": 1,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        }
+      },
+      "complete_matches_expected": true,
+      "coverage_blocks_omission": true,
+      "coverage_ablation_matches_non_provenance_factors": true,
+      "transport_ablation_matches_non_transport_factors": true,
+      "source_ablation_matches_non_source_factors": true,
+      "fdr_ablation_matches_non_fdr_factors": true,
+      "naive_counting_matches_predeclared_rule": true
+    },
+    {
+      "packet_id": "SYNTH-FCT-T0-I0-F0-P1-C1",
+      "factors": {
+        "transport_eligible": false,
+        "source_independent": false,
+        "all_replication_fdr_pass": false,
+        "perturbation_present": true,
+        "confounding_controlled": true
+      },
+      "llm_pilot_subset": false,
+      "expected_complete_draft_high_priority": false,
+      "observed_factor_state": {
+        "transport_eligible": false,
+        "source_independent": false,
+        "all_replication_fdr_pass": false,
+        "perturbation_present": true,
+        "confounding_controlled": true
+      },
+      "factor_derivation_matches": true,
+      "complete_draft": {
+        "level": "LOW",
+        "priority_score": 0.75,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 1,
+        "uncited_packet_source_ids": []
+      },
+      "transport_gate_ablation": {
+        "level": "LOW",
+        "priority_score": 0.75,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 1,
+        "uncited_packet_source_ids": []
+      },
+      "source_independence_ablation": {
+        "level": "LOW",
+        "priority_score": 0.75,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "all_cohort_fdr_ablation": {
+        "level": "LOW",
+        "priority_score": 0.75,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 1,
+        "uncited_packet_source_ids": []
+      },
+      "naive_counting_baseline": {
+        "level": "HIGH",
+        "priority_score": 1.0,
+        "draft_admissible_for_review": true,
+        "hard_stops": [],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "omission_attack": {
+        "omitted_evidence_id": "literature-2",
+        "full_tracer": {
+          "level": "LOW",
+          "priority_score": 0.65,
+          "draft_admissible_for_review": false,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+            "Draft omitted one or more frozen evidence items and cannot selectively claim support."
+          ],
+          "transport_eligible": false,
+          "independent_source_count": 1,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        },
+        "without_provenance_coverage": {
+          "level": "LOW",
+          "priority_score": 0.65,
+          "draft_admissible_for_review": true,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant."
+          ],
+          "transport_eligible": false,
+          "independent_source_count": 1,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        }
+      },
+      "complete_matches_expected": true,
+      "coverage_blocks_omission": true,
+      "coverage_ablation_matches_non_provenance_factors": true,
+      "transport_ablation_matches_non_transport_factors": true,
+      "source_ablation_matches_non_source_factors": true,
+      "fdr_ablation_matches_non_fdr_factors": true,
+      "naive_counting_matches_predeclared_rule": true
+    },
+    {
+      "packet_id": "SYNTH-FCT-T0-I0-F1-P0-C0",
+      "factors": {
+        "transport_eligible": false,
+        "source_independent": false,
+        "all_replication_fdr_pass": true,
+        "perturbation_present": false,
+        "confounding_controlled": false
+      },
+      "llm_pilot_subset": false,
+      "expected_complete_draft_high_priority": false,
+      "observed_factor_state": {
+        "transport_eligible": false,
+        "source_independent": false,
+        "all_replication_fdr_pass": true,
+        "perturbation_present": false,
+        "confounding_controlled": false
+      },
+      "factor_derivation_matches": true,
+      "complete_draft": {
+        "level": "LOW",
+        "priority_score": 0.2,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "No direction-consistent perturbation evidence; causal language is prohibited.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 1,
+        "uncited_packet_source_ids": []
+      },
+      "transport_gate_ablation": {
+        "level": "LOW",
+        "priority_score": 0.2,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "No direction-consistent perturbation evidence; causal language is prohibited.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 1,
+        "uncited_packet_source_ids": []
+      },
+      "source_independence_ablation": {
+        "level": "LOW",
+        "priority_score": 0.2,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "No direction-consistent perturbation evidence; causal language is prohibited.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "all_cohort_fdr_ablation": {
+        "level": "LOW",
+        "priority_score": 0.2,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "No direction-consistent perturbation evidence; causal language is prohibited.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 1,
+        "uncited_packet_source_ids": []
+      },
+      "naive_counting_baseline": {
+        "level": "LOW",
+        "priority_score": 0.45,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "No direction-consistent perturbation evidence; causal language is prohibited.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "omission_attack": {
+        "omitted_evidence_id": "literature-2",
+        "full_tracer": {
+          "level": "LOW",
+          "priority_score": 0.1,
+          "draft_admissible_for_review": false,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+            "No direction-consistent perturbation evidence; causal language is prohibited.",
+            "Batch and/or cell-composition confounding has not been controlled.",
+            "Draft omitted one or more frozen evidence items and cannot selectively claim support."
+          ],
+          "transport_eligible": false,
+          "independent_source_count": 1,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        },
+        "without_provenance_coverage": {
+          "level": "LOW",
+          "priority_score": 0.1,
+          "draft_admissible_for_review": true,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+            "No direction-consistent perturbation evidence; causal language is prohibited.",
+            "Batch and/or cell-composition confounding has not been controlled."
+          ],
+          "transport_eligible": false,
+          "independent_source_count": 1,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        }
+      },
+      "complete_matches_expected": true,
+      "coverage_blocks_omission": true,
+      "coverage_ablation_matches_non_provenance_factors": true,
+      "transport_ablation_matches_non_transport_factors": true,
+      "source_ablation_matches_non_source_factors": true,
+      "fdr_ablation_matches_non_fdr_factors": true,
+      "naive_counting_matches_predeclared_rule": true
+    },
+    {
+      "packet_id": "SYNTH-FCT-T0-I0-F1-P0-C1",
+      "factors": {
+        "transport_eligible": false,
+        "source_independent": false,
+        "all_replication_fdr_pass": true,
+        "perturbation_present": false,
+        "confounding_controlled": true
+      },
+      "llm_pilot_subset": false,
+      "expected_complete_draft_high_priority": false,
+      "observed_factor_state": {
+        "transport_eligible": false,
+        "source_independent": false,
+        "all_replication_fdr_pass": true,
+        "perturbation_present": false,
+        "confounding_controlled": true
+      },
+      "factor_derivation_matches": true,
+      "complete_draft": {
+        "level": "LOW",
+        "priority_score": 0.3,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "No direction-consistent perturbation evidence; causal language is prohibited."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 1,
+        "uncited_packet_source_ids": []
+      },
+      "transport_gate_ablation": {
+        "level": "LOW",
+        "priority_score": 0.3,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "No direction-consistent perturbation evidence; causal language is prohibited."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 1,
+        "uncited_packet_source_ids": []
+      },
+      "source_independence_ablation": {
+        "level": "LOW",
+        "priority_score": 0.3,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "No direction-consistent perturbation evidence; causal language is prohibited."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "all_cohort_fdr_ablation": {
+        "level": "LOW",
+        "priority_score": 0.3,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "No direction-consistent perturbation evidence; causal language is prohibited."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 1,
+        "uncited_packet_source_ids": []
+      },
+      "naive_counting_baseline": {
+        "level": "MODERATE",
+        "priority_score": 0.55,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "No direction-consistent perturbation evidence; causal language is prohibited."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "omission_attack": {
+        "omitted_evidence_id": "literature-2",
+        "full_tracer": {
+          "level": "LOW",
+          "priority_score": 0.2,
+          "draft_admissible_for_review": false,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+            "No direction-consistent perturbation evidence; causal language is prohibited.",
+            "Draft omitted one or more frozen evidence items and cannot selectively claim support."
+          ],
+          "transport_eligible": false,
+          "independent_source_count": 1,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        },
+        "without_provenance_coverage": {
+          "level": "LOW",
+          "priority_score": 0.2,
+          "draft_admissible_for_review": true,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+            "No direction-consistent perturbation evidence; causal language is prohibited."
+          ],
+          "transport_eligible": false,
+          "independent_source_count": 1,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        }
+      },
+      "complete_matches_expected": true,
+      "coverage_blocks_omission": true,
+      "coverage_ablation_matches_non_provenance_factors": true,
+      "transport_ablation_matches_non_transport_factors": true,
+      "source_ablation_matches_non_source_factors": true,
+      "fdr_ablation_matches_non_fdr_factors": true,
+      "naive_counting_matches_predeclared_rule": true
+    },
+    {
+      "packet_id": "SYNTH-FCT-T0-I0-F1-P1-C0",
+      "factors": {
+        "transport_eligible": false,
+        "source_independent": false,
+        "all_replication_fdr_pass": true,
+        "perturbation_present": true,
+        "confounding_controlled": false
+      },
+      "llm_pilot_subset": false,
+      "expected_complete_draft_high_priority": false,
+      "observed_factor_state": {
+        "transport_eligible": false,
+        "source_independent": false,
+        "all_replication_fdr_pass": true,
+        "perturbation_present": true,
+        "confounding_controlled": false
+      },
+      "factor_derivation_matches": true,
+      "complete_draft": {
+        "level": "LOW",
+        "priority_score": 0.65,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 1,
+        "uncited_packet_source_ids": []
+      },
+      "transport_gate_ablation": {
+        "level": "LOW",
+        "priority_score": 0.65,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 1,
+        "uncited_packet_source_ids": []
+      },
+      "source_independence_ablation": {
+        "level": "LOW",
+        "priority_score": 0.65,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "all_cohort_fdr_ablation": {
+        "level": "LOW",
+        "priority_score": 0.65,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 1,
+        "uncited_packet_source_ids": []
+      },
+      "naive_counting_baseline": {
+        "level": "LOW",
+        "priority_score": 0.9,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "omission_attack": {
+        "omitted_evidence_id": "literature-2",
+        "full_tracer": {
+          "level": "LOW",
+          "priority_score": 0.55,
+          "draft_admissible_for_review": false,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+            "Batch and/or cell-composition confounding has not been controlled.",
+            "Draft omitted one or more frozen evidence items and cannot selectively claim support."
+          ],
+          "transport_eligible": false,
+          "independent_source_count": 1,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        },
+        "without_provenance_coverage": {
+          "level": "LOW",
+          "priority_score": 0.55,
+          "draft_admissible_for_review": true,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+            "Batch and/or cell-composition confounding has not been controlled."
+          ],
+          "transport_eligible": false,
+          "independent_source_count": 1,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        }
+      },
+      "complete_matches_expected": true,
+      "coverage_blocks_omission": true,
+      "coverage_ablation_matches_non_provenance_factors": true,
+      "transport_ablation_matches_non_transport_factors": true,
+      "source_ablation_matches_non_source_factors": true,
+      "fdr_ablation_matches_non_fdr_factors": true,
+      "naive_counting_matches_predeclared_rule": true
+    },
+    {
+      "packet_id": "SYNTH-FCT-T0-I0-F1-P1-C1",
+      "factors": {
+        "transport_eligible": false,
+        "source_independent": false,
+        "all_replication_fdr_pass": true,
+        "perturbation_present": true,
+        "confounding_controlled": true
+      },
+      "llm_pilot_subset": true,
+      "expected_complete_draft_high_priority": false,
+      "observed_factor_state": {
+        "transport_eligible": false,
+        "source_independent": false,
+        "all_replication_fdr_pass": true,
+        "perturbation_present": true,
+        "confounding_controlled": true
+      },
+      "factor_derivation_matches": true,
+      "complete_draft": {
+        "level": "LOW",
+        "priority_score": 0.75,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 1,
+        "uncited_packet_source_ids": []
+      },
+      "transport_gate_ablation": {
+        "level": "LOW",
+        "priority_score": 0.75,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 1,
+        "uncited_packet_source_ids": []
+      },
+      "source_independence_ablation": {
+        "level": "LOW",
+        "priority_score": 0.75,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "all_cohort_fdr_ablation": {
+        "level": "LOW",
+        "priority_score": 0.75,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 1,
+        "uncited_packet_source_ids": []
+      },
+      "naive_counting_baseline": {
+        "level": "HIGH",
+        "priority_score": 1.0,
+        "draft_admissible_for_review": true,
+        "hard_stops": [],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "omission_attack": {
+        "omitted_evidence_id": "literature-2",
+        "full_tracer": {
+          "level": "LOW",
+          "priority_score": 0.65,
+          "draft_admissible_for_review": false,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+            "Draft omitted one or more frozen evidence items and cannot selectively claim support."
+          ],
+          "transport_eligible": false,
+          "independent_source_count": 1,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        },
+        "without_provenance_coverage": {
+          "level": "LOW",
+          "priority_score": 0.65,
+          "draft_admissible_for_review": true,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant."
+          ],
+          "transport_eligible": false,
+          "independent_source_count": 1,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        }
+      },
+      "complete_matches_expected": true,
+      "coverage_blocks_omission": true,
+      "coverage_ablation_matches_non_provenance_factors": true,
+      "transport_ablation_matches_non_transport_factors": true,
+      "source_ablation_matches_non_source_factors": true,
+      "fdr_ablation_matches_non_fdr_factors": true,
+      "naive_counting_matches_predeclared_rule": true
+    },
+    {
+      "packet_id": "SYNTH-FCT-T0-I1-F0-P0-C0",
+      "factors": {
+        "transport_eligible": false,
+        "source_independent": true,
+        "all_replication_fdr_pass": false,
+        "perturbation_present": false,
+        "confounding_controlled": false
+      },
+      "llm_pilot_subset": false,
+      "expected_complete_draft_high_priority": false,
+      "observed_factor_state": {
+        "transport_eligible": false,
+        "source_independent": true,
+        "all_replication_fdr_pass": false,
+        "perturbation_present": false,
+        "confounding_controlled": false
+      },
+      "factor_derivation_matches": true,
+      "complete_draft": {
+        "level": "LOW",
+        "priority_score": 0.2,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "No direction-consistent perturbation evidence; causal language is prohibited.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "transport_gate_ablation": {
+        "level": "LOW",
+        "priority_score": 0.2,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "No direction-consistent perturbation evidence; causal language is prohibited.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "source_independence_ablation": {
+        "level": "LOW",
+        "priority_score": 0.2,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "No direction-consistent perturbation evidence; causal language is prohibited.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "all_cohort_fdr_ablation": {
+        "level": "LOW",
+        "priority_score": 0.2,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "No direction-consistent perturbation evidence; causal language is prohibited.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "naive_counting_baseline": {
+        "level": "LOW",
+        "priority_score": 0.45,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "No direction-consistent perturbation evidence; causal language is prohibited.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "omission_attack": {
+        "omitted_evidence_id": "literature-2",
+        "full_tracer": {
+          "level": "LOW",
+          "priority_score": 0.1,
+          "draft_admissible_for_review": false,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+            "No direction-consistent perturbation evidence; causal language is prohibited.",
+            "Batch and/or cell-composition confounding has not been controlled.",
+            "Draft omitted one or more frozen evidence items and cannot selectively claim support."
+          ],
+          "transport_eligible": false,
+          "independent_source_count": 3,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        },
+        "without_provenance_coverage": {
+          "level": "LOW",
+          "priority_score": 0.1,
+          "draft_admissible_for_review": true,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+            "No direction-consistent perturbation evidence; causal language is prohibited.",
+            "Batch and/or cell-composition confounding has not been controlled."
+          ],
+          "transport_eligible": false,
+          "independent_source_count": 3,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        }
+      },
+      "complete_matches_expected": true,
+      "coverage_blocks_omission": true,
+      "coverage_ablation_matches_non_provenance_factors": true,
+      "transport_ablation_matches_non_transport_factors": true,
+      "source_ablation_matches_non_source_factors": true,
+      "fdr_ablation_matches_non_fdr_factors": true,
+      "naive_counting_matches_predeclared_rule": true
+    },
+    {
+      "packet_id": "SYNTH-FCT-T0-I1-F0-P0-C1",
+      "factors": {
+        "transport_eligible": false,
+        "source_independent": true,
+        "all_replication_fdr_pass": false,
+        "perturbation_present": false,
+        "confounding_controlled": true
+      },
+      "llm_pilot_subset": false,
+      "expected_complete_draft_high_priority": false,
+      "observed_factor_state": {
+        "transport_eligible": false,
+        "source_independent": true,
+        "all_replication_fdr_pass": false,
+        "perturbation_present": false,
+        "confounding_controlled": true
+      },
+      "factor_derivation_matches": true,
+      "complete_draft": {
+        "level": "LOW",
+        "priority_score": 0.3,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "No direction-consistent perturbation evidence; causal language is prohibited."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "transport_gate_ablation": {
+        "level": "LOW",
+        "priority_score": 0.3,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "No direction-consistent perturbation evidence; causal language is prohibited."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "source_independence_ablation": {
+        "level": "LOW",
+        "priority_score": 0.3,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "No direction-consistent perturbation evidence; causal language is prohibited."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "all_cohort_fdr_ablation": {
+        "level": "LOW",
+        "priority_score": 0.3,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "No direction-consistent perturbation evidence; causal language is prohibited."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "naive_counting_baseline": {
+        "level": "MODERATE",
+        "priority_score": 0.55,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "No direction-consistent perturbation evidence; causal language is prohibited."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "omission_attack": {
+        "omitted_evidence_id": "literature-2",
+        "full_tracer": {
+          "level": "LOW",
+          "priority_score": 0.2,
+          "draft_admissible_for_review": false,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+            "No direction-consistent perturbation evidence; causal language is prohibited.",
+            "Draft omitted one or more frozen evidence items and cannot selectively claim support."
+          ],
+          "transport_eligible": false,
+          "independent_source_count": 3,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        },
+        "without_provenance_coverage": {
+          "level": "LOW",
+          "priority_score": 0.2,
+          "draft_admissible_for_review": true,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+            "No direction-consistent perturbation evidence; causal language is prohibited."
+          ],
+          "transport_eligible": false,
+          "independent_source_count": 3,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        }
+      },
+      "complete_matches_expected": true,
+      "coverage_blocks_omission": true,
+      "coverage_ablation_matches_non_provenance_factors": true,
+      "transport_ablation_matches_non_transport_factors": true,
+      "source_ablation_matches_non_source_factors": true,
+      "fdr_ablation_matches_non_fdr_factors": true,
+      "naive_counting_matches_predeclared_rule": true
+    },
+    {
+      "packet_id": "SYNTH-FCT-T0-I1-F0-P1-C0",
+      "factors": {
+        "transport_eligible": false,
+        "source_independent": true,
+        "all_replication_fdr_pass": false,
+        "perturbation_present": true,
+        "confounding_controlled": false
+      },
+      "llm_pilot_subset": false,
+      "expected_complete_draft_high_priority": false,
+      "observed_factor_state": {
+        "transport_eligible": false,
+        "source_independent": true,
+        "all_replication_fdr_pass": false,
+        "perturbation_present": true,
+        "confounding_controlled": false
+      },
+      "factor_derivation_matches": true,
+      "complete_draft": {
+        "level": "LOW",
+        "priority_score": 0.65,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "transport_gate_ablation": {
+        "level": "LOW",
+        "priority_score": 0.65,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "source_independence_ablation": {
+        "level": "LOW",
+        "priority_score": 0.65,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "all_cohort_fdr_ablation": {
+        "level": "LOW",
+        "priority_score": 0.65,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "naive_counting_baseline": {
+        "level": "LOW",
+        "priority_score": 0.9,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "omission_attack": {
+        "omitted_evidence_id": "literature-2",
+        "full_tracer": {
+          "level": "LOW",
+          "priority_score": 0.55,
+          "draft_admissible_for_review": false,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+            "Batch and/or cell-composition confounding has not been controlled.",
+            "Draft omitted one or more frozen evidence items and cannot selectively claim support."
+          ],
+          "transport_eligible": false,
+          "independent_source_count": 3,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        },
+        "without_provenance_coverage": {
+          "level": "LOW",
+          "priority_score": 0.55,
+          "draft_admissible_for_review": true,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+            "Batch and/or cell-composition confounding has not been controlled."
+          ],
+          "transport_eligible": false,
+          "independent_source_count": 3,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        }
+      },
+      "complete_matches_expected": true,
+      "coverage_blocks_omission": true,
+      "coverage_ablation_matches_non_provenance_factors": true,
+      "transport_ablation_matches_non_transport_factors": true,
+      "source_ablation_matches_non_source_factors": true,
+      "fdr_ablation_matches_non_fdr_factors": true,
+      "naive_counting_matches_predeclared_rule": true
+    },
+    {
+      "packet_id": "SYNTH-FCT-T0-I1-F0-P1-C1",
+      "factors": {
+        "transport_eligible": false,
+        "source_independent": true,
+        "all_replication_fdr_pass": false,
+        "perturbation_present": true,
+        "confounding_controlled": true
+      },
+      "llm_pilot_subset": true,
+      "expected_complete_draft_high_priority": false,
+      "observed_factor_state": {
+        "transport_eligible": false,
+        "source_independent": true,
+        "all_replication_fdr_pass": false,
+        "perturbation_present": true,
+        "confounding_controlled": true
+      },
+      "factor_derivation_matches": true,
+      "complete_draft": {
+        "level": "LOW",
+        "priority_score": 0.75,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "transport_gate_ablation": {
+        "level": "LOW",
+        "priority_score": 0.75,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "source_independence_ablation": {
+        "level": "LOW",
+        "priority_score": 0.75,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "all_cohort_fdr_ablation": {
+        "level": "LOW",
+        "priority_score": 0.75,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "naive_counting_baseline": {
+        "level": "HIGH",
+        "priority_score": 1.0,
+        "draft_admissible_for_review": true,
+        "hard_stops": [],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "omission_attack": {
+        "omitted_evidence_id": "literature-2",
+        "full_tracer": {
+          "level": "LOW",
+          "priority_score": 0.65,
+          "draft_admissible_for_review": false,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+            "Draft omitted one or more frozen evidence items and cannot selectively claim support."
+          ],
+          "transport_eligible": false,
+          "independent_source_count": 3,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        },
+        "without_provenance_coverage": {
+          "level": "LOW",
+          "priority_score": 0.65,
+          "draft_admissible_for_review": true,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant."
+          ],
+          "transport_eligible": false,
+          "independent_source_count": 3,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        }
+      },
+      "complete_matches_expected": true,
+      "coverage_blocks_omission": true,
+      "coverage_ablation_matches_non_provenance_factors": true,
+      "transport_ablation_matches_non_transport_factors": true,
+      "source_ablation_matches_non_source_factors": true,
+      "fdr_ablation_matches_non_fdr_factors": true,
+      "naive_counting_matches_predeclared_rule": true
+    },
+    {
+      "packet_id": "SYNTH-FCT-T0-I1-F1-P0-C0",
+      "factors": {
+        "transport_eligible": false,
+        "source_independent": true,
+        "all_replication_fdr_pass": true,
+        "perturbation_present": false,
+        "confounding_controlled": false
+      },
+      "llm_pilot_subset": false,
+      "expected_complete_draft_high_priority": false,
+      "observed_factor_state": {
+        "transport_eligible": false,
+        "source_independent": true,
+        "all_replication_fdr_pass": true,
+        "perturbation_present": false,
+        "confounding_controlled": false
+      },
+      "factor_derivation_matches": true,
+      "complete_draft": {
+        "level": "LOW",
+        "priority_score": 0.2,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "No direction-consistent perturbation evidence; causal language is prohibited.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "transport_gate_ablation": {
+        "level": "LOW",
+        "priority_score": 0.45,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "No direction-consistent perturbation evidence; causal language is prohibited.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "source_independence_ablation": {
+        "level": "LOW",
+        "priority_score": 0.2,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "No direction-consistent perturbation evidence; causal language is prohibited.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "all_cohort_fdr_ablation": {
+        "level": "LOW",
+        "priority_score": 0.2,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "No direction-consistent perturbation evidence; causal language is prohibited.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "naive_counting_baseline": {
+        "level": "LOW",
+        "priority_score": 0.45,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "No direction-consistent perturbation evidence; causal language is prohibited.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "omission_attack": {
+        "omitted_evidence_id": "literature-2",
+        "full_tracer": {
+          "level": "LOW",
+          "priority_score": 0.1,
+          "draft_admissible_for_review": false,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+            "No direction-consistent perturbation evidence; causal language is prohibited.",
+            "Batch and/or cell-composition confounding has not been controlled.",
+            "Draft omitted one or more frozen evidence items and cannot selectively claim support."
+          ],
+          "transport_eligible": false,
+          "independent_source_count": 3,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        },
+        "without_provenance_coverage": {
+          "level": "LOW",
+          "priority_score": 0.1,
+          "draft_admissible_for_review": true,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+            "No direction-consistent perturbation evidence; causal language is prohibited.",
+            "Batch and/or cell-composition confounding has not been controlled."
+          ],
+          "transport_eligible": false,
+          "independent_source_count": 3,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        }
+      },
+      "complete_matches_expected": true,
+      "coverage_blocks_omission": true,
+      "coverage_ablation_matches_non_provenance_factors": true,
+      "transport_ablation_matches_non_transport_factors": true,
+      "source_ablation_matches_non_source_factors": true,
+      "fdr_ablation_matches_non_fdr_factors": true,
+      "naive_counting_matches_predeclared_rule": true
+    },
+    {
+      "packet_id": "SYNTH-FCT-T0-I1-F1-P0-C1",
+      "factors": {
+        "transport_eligible": false,
+        "source_independent": true,
+        "all_replication_fdr_pass": true,
+        "perturbation_present": false,
+        "confounding_controlled": true
+      },
+      "llm_pilot_subset": true,
+      "expected_complete_draft_high_priority": false,
+      "observed_factor_state": {
+        "transport_eligible": false,
+        "source_independent": true,
+        "all_replication_fdr_pass": true,
+        "perturbation_present": false,
+        "confounding_controlled": true
+      },
+      "factor_derivation_matches": true,
+      "complete_draft": {
+        "level": "LOW",
+        "priority_score": 0.3,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "No direction-consistent perturbation evidence; causal language is prohibited."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "transport_gate_ablation": {
+        "level": "MODERATE",
+        "priority_score": 0.55,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "No direction-consistent perturbation evidence; causal language is prohibited."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "source_independence_ablation": {
+        "level": "LOW",
+        "priority_score": 0.3,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "No direction-consistent perturbation evidence; causal language is prohibited."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "all_cohort_fdr_ablation": {
+        "level": "LOW",
+        "priority_score": 0.3,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "No direction-consistent perturbation evidence; causal language is prohibited."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "naive_counting_baseline": {
+        "level": "MODERATE",
+        "priority_score": 0.55,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "No direction-consistent perturbation evidence; causal language is prohibited."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "omission_attack": {
+        "omitted_evidence_id": "literature-2",
+        "full_tracer": {
+          "level": "LOW",
+          "priority_score": 0.2,
+          "draft_admissible_for_review": false,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+            "No direction-consistent perturbation evidence; causal language is prohibited.",
+            "Draft omitted one or more frozen evidence items and cannot selectively claim support."
+          ],
+          "transport_eligible": false,
+          "independent_source_count": 3,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        },
+        "without_provenance_coverage": {
+          "level": "LOW",
+          "priority_score": 0.2,
+          "draft_admissible_for_review": true,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+            "No direction-consistent perturbation evidence; causal language is prohibited."
+          ],
+          "transport_eligible": false,
+          "independent_source_count": 3,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        }
+      },
+      "complete_matches_expected": true,
+      "coverage_blocks_omission": true,
+      "coverage_ablation_matches_non_provenance_factors": true,
+      "transport_ablation_matches_non_transport_factors": true,
+      "source_ablation_matches_non_source_factors": true,
+      "fdr_ablation_matches_non_fdr_factors": true,
+      "naive_counting_matches_predeclared_rule": true
+    },
+    {
+      "packet_id": "SYNTH-FCT-T0-I1-F1-P1-C0",
+      "factors": {
+        "transport_eligible": false,
+        "source_independent": true,
+        "all_replication_fdr_pass": true,
+        "perturbation_present": true,
+        "confounding_controlled": false
+      },
+      "llm_pilot_subset": true,
+      "expected_complete_draft_high_priority": false,
+      "observed_factor_state": {
+        "transport_eligible": false,
+        "source_independent": true,
+        "all_replication_fdr_pass": true,
+        "perturbation_present": true,
+        "confounding_controlled": false
+      },
+      "factor_derivation_matches": true,
+      "complete_draft": {
+        "level": "LOW",
+        "priority_score": 0.65,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "transport_gate_ablation": {
+        "level": "LOW",
+        "priority_score": 0.9,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "source_independence_ablation": {
+        "level": "LOW",
+        "priority_score": 0.65,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "all_cohort_fdr_ablation": {
+        "level": "LOW",
+        "priority_score": 0.65,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "naive_counting_baseline": {
+        "level": "LOW",
+        "priority_score": 0.9,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "omission_attack": {
+        "omitted_evidence_id": "literature-2",
+        "full_tracer": {
+          "level": "LOW",
+          "priority_score": 0.55,
+          "draft_admissible_for_review": false,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+            "Batch and/or cell-composition confounding has not been controlled.",
+            "Draft omitted one or more frozen evidence items and cannot selectively claim support."
+          ],
+          "transport_eligible": false,
+          "independent_source_count": 3,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        },
+        "without_provenance_coverage": {
+          "level": "LOW",
+          "priority_score": 0.55,
+          "draft_admissible_for_review": true,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+            "Batch and/or cell-composition confounding has not been controlled."
+          ],
+          "transport_eligible": false,
+          "independent_source_count": 3,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        }
+      },
+      "complete_matches_expected": true,
+      "coverage_blocks_omission": true,
+      "coverage_ablation_matches_non_provenance_factors": true,
+      "transport_ablation_matches_non_transport_factors": true,
+      "source_ablation_matches_non_source_factors": true,
+      "fdr_ablation_matches_non_fdr_factors": true,
+      "naive_counting_matches_predeclared_rule": true
+    },
+    {
+      "packet_id": "SYNTH-FCT-T0-I1-F1-P1-C1",
+      "factors": {
+        "transport_eligible": false,
+        "source_independent": true,
+        "all_replication_fdr_pass": true,
+        "perturbation_present": true,
+        "confounding_controlled": true
+      },
+      "llm_pilot_subset": true,
+      "expected_complete_draft_high_priority": false,
+      "observed_factor_state": {
+        "transport_eligible": false,
+        "source_independent": true,
+        "all_replication_fdr_pass": true,
+        "perturbation_present": true,
+        "confounding_controlled": true
+      },
+      "factor_derivation_matches": true,
+      "complete_draft": {
+        "level": "LOW",
+        "priority_score": 0.75,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "transport_gate_ablation": {
+        "level": "HIGH",
+        "priority_score": 1.0,
+        "draft_admissible_for_review": true,
+        "hard_stops": [],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "source_independence_ablation": {
+        "level": "LOW",
+        "priority_score": 0.75,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "all_cohort_fdr_ablation": {
+        "level": "LOW",
+        "priority_score": 0.75,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "naive_counting_baseline": {
+        "level": "HIGH",
+        "priority_score": 1.0,
+        "draft_admissible_for_review": true,
+        "hard_stops": [],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "omission_attack": {
+        "omitted_evidence_id": "literature-2",
+        "full_tracer": {
+          "level": "LOW",
+          "priority_score": 0.65,
+          "draft_admissible_for_review": false,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+            "Draft omitted one or more frozen evidence items and cannot selectively claim support."
+          ],
+          "transport_eligible": false,
+          "independent_source_count": 3,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        },
+        "without_provenance_coverage": {
+          "level": "LOW",
+          "priority_score": 0.65,
+          "draft_admissible_for_review": true,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant."
+          ],
+          "transport_eligible": false,
+          "independent_source_count": 3,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        }
+      },
+      "complete_matches_expected": true,
+      "coverage_blocks_omission": true,
+      "coverage_ablation_matches_non_provenance_factors": true,
+      "transport_ablation_matches_non_transport_factors": true,
+      "source_ablation_matches_non_source_factors": true,
+      "fdr_ablation_matches_non_fdr_factors": true,
+      "naive_counting_matches_predeclared_rule": true
+    },
+    {
+      "packet_id": "SYNTH-FCT-T1-I0-F0-P0-C0",
+      "factors": {
+        "transport_eligible": true,
+        "source_independent": false,
+        "all_replication_fdr_pass": false,
+        "perturbation_present": false,
+        "confounding_controlled": false
+      },
+      "llm_pilot_subset": false,
+      "expected_complete_draft_high_priority": false,
+      "observed_factor_state": {
+        "transport_eligible": true,
+        "source_independent": false,
+        "all_replication_fdr_pass": false,
+        "perturbation_present": false,
+        "confounding_controlled": false
+      },
+      "factor_derivation_matches": true,
+      "complete_draft": {
+        "level": "LOW",
+        "priority_score": 0.2,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "No direction-consistent perturbation evidence; causal language is prohibited.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 1,
+        "uncited_packet_source_ids": []
+      },
+      "transport_gate_ablation": {
+        "level": "LOW",
+        "priority_score": 0.2,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "No direction-consistent perturbation evidence; causal language is prohibited.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 1,
+        "uncited_packet_source_ids": []
+      },
+      "source_independence_ablation": {
+        "level": "LOW",
+        "priority_score": 0.2,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "No direction-consistent perturbation evidence; causal language is prohibited.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "all_cohort_fdr_ablation": {
+        "level": "LOW",
+        "priority_score": 0.2,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "No direction-consistent perturbation evidence; causal language is prohibited.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 1,
+        "uncited_packet_source_ids": []
+      },
+      "naive_counting_baseline": {
+        "level": "LOW",
+        "priority_score": 0.45,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "No direction-consistent perturbation evidence; causal language is prohibited.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "omission_attack": {
+        "omitted_evidence_id": "literature-2",
+        "full_tracer": {
+          "level": "LOW",
+          "priority_score": 0.1,
+          "draft_admissible_for_review": false,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+            "No direction-consistent perturbation evidence; causal language is prohibited.",
+            "Batch and/or cell-composition confounding has not been controlled.",
+            "Draft omitted one or more frozen evidence items and cannot selectively claim support."
+          ],
+          "transport_eligible": false,
+          "independent_source_count": 1,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        },
+        "without_provenance_coverage": {
+          "level": "LOW",
+          "priority_score": 0.1,
+          "draft_admissible_for_review": true,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+            "No direction-consistent perturbation evidence; causal language is prohibited.",
+            "Batch and/or cell-composition confounding has not been controlled."
+          ],
+          "transport_eligible": false,
+          "independent_source_count": 1,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        }
+      },
+      "complete_matches_expected": true,
+      "coverage_blocks_omission": true,
+      "coverage_ablation_matches_non_provenance_factors": true,
+      "transport_ablation_matches_non_transport_factors": true,
+      "source_ablation_matches_non_source_factors": true,
+      "fdr_ablation_matches_non_fdr_factors": true,
+      "naive_counting_matches_predeclared_rule": true
+    },
+    {
+      "packet_id": "SYNTH-FCT-T1-I0-F0-P0-C1",
+      "factors": {
+        "transport_eligible": true,
+        "source_independent": false,
+        "all_replication_fdr_pass": false,
+        "perturbation_present": false,
+        "confounding_controlled": true
+      },
+      "llm_pilot_subset": false,
+      "expected_complete_draft_high_priority": false,
+      "observed_factor_state": {
+        "transport_eligible": true,
+        "source_independent": false,
+        "all_replication_fdr_pass": false,
+        "perturbation_present": false,
+        "confounding_controlled": true
+      },
+      "factor_derivation_matches": true,
+      "complete_draft": {
+        "level": "LOW",
+        "priority_score": 0.3,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "No direction-consistent perturbation evidence; causal language is prohibited."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 1,
+        "uncited_packet_source_ids": []
+      },
+      "transport_gate_ablation": {
+        "level": "LOW",
+        "priority_score": 0.3,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "No direction-consistent perturbation evidence; causal language is prohibited."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 1,
+        "uncited_packet_source_ids": []
+      },
+      "source_independence_ablation": {
+        "level": "LOW",
+        "priority_score": 0.3,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "No direction-consistent perturbation evidence; causal language is prohibited."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "all_cohort_fdr_ablation": {
+        "level": "LOW",
+        "priority_score": 0.3,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "No direction-consistent perturbation evidence; causal language is prohibited."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 1,
+        "uncited_packet_source_ids": []
+      },
+      "naive_counting_baseline": {
+        "level": "MODERATE",
+        "priority_score": 0.55,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "No direction-consistent perturbation evidence; causal language is prohibited."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "omission_attack": {
+        "omitted_evidence_id": "literature-2",
+        "full_tracer": {
+          "level": "LOW",
+          "priority_score": 0.2,
+          "draft_admissible_for_review": false,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+            "No direction-consistent perturbation evidence; causal language is prohibited.",
+            "Draft omitted one or more frozen evidence items and cannot selectively claim support."
+          ],
+          "transport_eligible": false,
+          "independent_source_count": 1,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        },
+        "without_provenance_coverage": {
+          "level": "LOW",
+          "priority_score": 0.2,
+          "draft_admissible_for_review": true,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+            "No direction-consistent perturbation evidence; causal language is prohibited."
+          ],
+          "transport_eligible": false,
+          "independent_source_count": 1,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        }
+      },
+      "complete_matches_expected": true,
+      "coverage_blocks_omission": true,
+      "coverage_ablation_matches_non_provenance_factors": true,
+      "transport_ablation_matches_non_transport_factors": true,
+      "source_ablation_matches_non_source_factors": true,
+      "fdr_ablation_matches_non_fdr_factors": true,
+      "naive_counting_matches_predeclared_rule": true
+    },
+    {
+      "packet_id": "SYNTH-FCT-T1-I0-F0-P1-C0",
+      "factors": {
+        "transport_eligible": true,
+        "source_independent": false,
+        "all_replication_fdr_pass": false,
+        "perturbation_present": true,
+        "confounding_controlled": false
+      },
+      "llm_pilot_subset": false,
+      "expected_complete_draft_high_priority": false,
+      "observed_factor_state": {
+        "transport_eligible": true,
+        "source_independent": false,
+        "all_replication_fdr_pass": false,
+        "perturbation_present": true,
+        "confounding_controlled": false
+      },
+      "factor_derivation_matches": true,
+      "complete_draft": {
+        "level": "LOW",
+        "priority_score": 0.65,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 1,
+        "uncited_packet_source_ids": []
+      },
+      "transport_gate_ablation": {
+        "level": "LOW",
+        "priority_score": 0.65,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 1,
+        "uncited_packet_source_ids": []
+      },
+      "source_independence_ablation": {
+        "level": "LOW",
+        "priority_score": 0.65,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "all_cohort_fdr_ablation": {
+        "level": "LOW",
+        "priority_score": 0.65,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 1,
+        "uncited_packet_source_ids": []
+      },
+      "naive_counting_baseline": {
+        "level": "LOW",
+        "priority_score": 0.9,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "omission_attack": {
+        "omitted_evidence_id": "literature-2",
+        "full_tracer": {
+          "level": "LOW",
+          "priority_score": 0.55,
+          "draft_admissible_for_review": false,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+            "Batch and/or cell-composition confounding has not been controlled.",
+            "Draft omitted one or more frozen evidence items and cannot selectively claim support."
+          ],
+          "transport_eligible": false,
+          "independent_source_count": 1,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        },
+        "without_provenance_coverage": {
+          "level": "LOW",
+          "priority_score": 0.55,
+          "draft_admissible_for_review": true,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+            "Batch and/or cell-composition confounding has not been controlled."
+          ],
+          "transport_eligible": false,
+          "independent_source_count": 1,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        }
+      },
+      "complete_matches_expected": true,
+      "coverage_blocks_omission": true,
+      "coverage_ablation_matches_non_provenance_factors": true,
+      "transport_ablation_matches_non_transport_factors": true,
+      "source_ablation_matches_non_source_factors": true,
+      "fdr_ablation_matches_non_fdr_factors": true,
+      "naive_counting_matches_predeclared_rule": true
+    },
+    {
+      "packet_id": "SYNTH-FCT-T1-I0-F0-P1-C1",
+      "factors": {
+        "transport_eligible": true,
+        "source_independent": false,
+        "all_replication_fdr_pass": false,
+        "perturbation_present": true,
+        "confounding_controlled": true
+      },
+      "llm_pilot_subset": true,
+      "expected_complete_draft_high_priority": false,
+      "observed_factor_state": {
+        "transport_eligible": true,
+        "source_independent": false,
+        "all_replication_fdr_pass": false,
+        "perturbation_present": true,
+        "confounding_controlled": true
+      },
+      "factor_derivation_matches": true,
+      "complete_draft": {
+        "level": "LOW",
+        "priority_score": 0.75,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 1,
+        "uncited_packet_source_ids": []
+      },
+      "transport_gate_ablation": {
+        "level": "LOW",
+        "priority_score": 0.75,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 1,
+        "uncited_packet_source_ids": []
+      },
+      "source_independence_ablation": {
+        "level": "LOW",
+        "priority_score": 0.75,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "all_cohort_fdr_ablation": {
+        "level": "LOW",
+        "priority_score": 0.75,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 1,
+        "uncited_packet_source_ids": []
+      },
+      "naive_counting_baseline": {
+        "level": "HIGH",
+        "priority_score": 1.0,
+        "draft_admissible_for_review": true,
+        "hard_stops": [],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "omission_attack": {
+        "omitted_evidence_id": "literature-2",
+        "full_tracer": {
+          "level": "LOW",
+          "priority_score": 0.65,
+          "draft_admissible_for_review": false,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+            "Draft omitted one or more frozen evidence items and cannot selectively claim support."
+          ],
+          "transport_eligible": false,
+          "independent_source_count": 1,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        },
+        "without_provenance_coverage": {
+          "level": "LOW",
+          "priority_score": 0.65,
+          "draft_admissible_for_review": true,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant."
+          ],
+          "transport_eligible": false,
+          "independent_source_count": 1,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        }
+      },
+      "complete_matches_expected": true,
+      "coverage_blocks_omission": true,
+      "coverage_ablation_matches_non_provenance_factors": true,
+      "transport_ablation_matches_non_transport_factors": true,
+      "source_ablation_matches_non_source_factors": true,
+      "fdr_ablation_matches_non_fdr_factors": true,
+      "naive_counting_matches_predeclared_rule": true
+    },
+    {
+      "packet_id": "SYNTH-FCT-T1-I0-F1-P0-C0",
+      "factors": {
+        "transport_eligible": true,
+        "source_independent": false,
+        "all_replication_fdr_pass": true,
+        "perturbation_present": false,
+        "confounding_controlled": false
+      },
+      "llm_pilot_subset": false,
+      "expected_complete_draft_high_priority": false,
+      "observed_factor_state": {
+        "transport_eligible": true,
+        "source_independent": false,
+        "all_replication_fdr_pass": true,
+        "perturbation_present": false,
+        "confounding_controlled": false
+      },
+      "factor_derivation_matches": true,
+      "complete_draft": {
+        "level": "LOW",
+        "priority_score": 0.2,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "No direction-consistent perturbation evidence; causal language is prohibited.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 1,
+        "uncited_packet_source_ids": []
+      },
+      "transport_gate_ablation": {
+        "level": "LOW",
+        "priority_score": 0.2,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "No direction-consistent perturbation evidence; causal language is prohibited.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 1,
+        "uncited_packet_source_ids": []
+      },
+      "source_independence_ablation": {
+        "level": "LOW",
+        "priority_score": 0.45,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "No direction-consistent perturbation evidence; causal language is prohibited.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "all_cohort_fdr_ablation": {
+        "level": "LOW",
+        "priority_score": 0.2,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "No direction-consistent perturbation evidence; causal language is prohibited.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 1,
+        "uncited_packet_source_ids": []
+      },
+      "naive_counting_baseline": {
+        "level": "LOW",
+        "priority_score": 0.45,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "No direction-consistent perturbation evidence; causal language is prohibited.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "omission_attack": {
+        "omitted_evidence_id": "literature-2",
+        "full_tracer": {
+          "level": "LOW",
+          "priority_score": 0.1,
+          "draft_admissible_for_review": false,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+            "No direction-consistent perturbation evidence; causal language is prohibited.",
+            "Batch and/or cell-composition confounding has not been controlled.",
+            "Draft omitted one or more frozen evidence items and cannot selectively claim support."
+          ],
+          "transport_eligible": false,
+          "independent_source_count": 1,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        },
+        "without_provenance_coverage": {
+          "level": "LOW",
+          "priority_score": 0.1,
+          "draft_admissible_for_review": true,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+            "No direction-consistent perturbation evidence; causal language is prohibited.",
+            "Batch and/or cell-composition confounding has not been controlled."
+          ],
+          "transport_eligible": false,
+          "independent_source_count": 1,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        }
+      },
+      "complete_matches_expected": true,
+      "coverage_blocks_omission": true,
+      "coverage_ablation_matches_non_provenance_factors": true,
+      "transport_ablation_matches_non_transport_factors": true,
+      "source_ablation_matches_non_source_factors": true,
+      "fdr_ablation_matches_non_fdr_factors": true,
+      "naive_counting_matches_predeclared_rule": true
+    },
+    {
+      "packet_id": "SYNTH-FCT-T1-I0-F1-P0-C1",
+      "factors": {
+        "transport_eligible": true,
+        "source_independent": false,
+        "all_replication_fdr_pass": true,
+        "perturbation_present": false,
+        "confounding_controlled": true
+      },
+      "llm_pilot_subset": false,
+      "expected_complete_draft_high_priority": false,
+      "observed_factor_state": {
+        "transport_eligible": true,
+        "source_independent": false,
+        "all_replication_fdr_pass": true,
+        "perturbation_present": false,
+        "confounding_controlled": true
+      },
+      "factor_derivation_matches": true,
+      "complete_draft": {
+        "level": "LOW",
+        "priority_score": 0.3,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "No direction-consistent perturbation evidence; causal language is prohibited."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 1,
+        "uncited_packet_source_ids": []
+      },
+      "transport_gate_ablation": {
+        "level": "LOW",
+        "priority_score": 0.3,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "No direction-consistent perturbation evidence; causal language is prohibited."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 1,
+        "uncited_packet_source_ids": []
+      },
+      "source_independence_ablation": {
+        "level": "MODERATE",
+        "priority_score": 0.55,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "No direction-consistent perturbation evidence; causal language is prohibited."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "all_cohort_fdr_ablation": {
+        "level": "LOW",
+        "priority_score": 0.3,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "No direction-consistent perturbation evidence; causal language is prohibited."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 1,
+        "uncited_packet_source_ids": []
+      },
+      "naive_counting_baseline": {
+        "level": "MODERATE",
+        "priority_score": 0.55,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "No direction-consistent perturbation evidence; causal language is prohibited."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "omission_attack": {
+        "omitted_evidence_id": "literature-2",
+        "full_tracer": {
+          "level": "LOW",
+          "priority_score": 0.2,
+          "draft_admissible_for_review": false,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+            "No direction-consistent perturbation evidence; causal language is prohibited.",
+            "Draft omitted one or more frozen evidence items and cannot selectively claim support."
+          ],
+          "transport_eligible": false,
+          "independent_source_count": 1,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        },
+        "without_provenance_coverage": {
+          "level": "LOW",
+          "priority_score": 0.2,
+          "draft_admissible_for_review": true,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+            "No direction-consistent perturbation evidence; causal language is prohibited."
+          ],
+          "transport_eligible": false,
+          "independent_source_count": 1,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        }
+      },
+      "complete_matches_expected": true,
+      "coverage_blocks_omission": true,
+      "coverage_ablation_matches_non_provenance_factors": true,
+      "transport_ablation_matches_non_transport_factors": true,
+      "source_ablation_matches_non_source_factors": true,
+      "fdr_ablation_matches_non_fdr_factors": true,
+      "naive_counting_matches_predeclared_rule": true
+    },
+    {
+      "packet_id": "SYNTH-FCT-T1-I0-F1-P1-C0",
+      "factors": {
+        "transport_eligible": true,
+        "source_independent": false,
+        "all_replication_fdr_pass": true,
+        "perturbation_present": true,
+        "confounding_controlled": false
+      },
+      "llm_pilot_subset": false,
+      "expected_complete_draft_high_priority": false,
+      "observed_factor_state": {
+        "transport_eligible": true,
+        "source_independent": false,
+        "all_replication_fdr_pass": true,
+        "perturbation_present": true,
+        "confounding_controlled": false
+      },
+      "factor_derivation_matches": true,
+      "complete_draft": {
+        "level": "LOW",
+        "priority_score": 0.65,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 1,
+        "uncited_packet_source_ids": []
+      },
+      "transport_gate_ablation": {
+        "level": "LOW",
+        "priority_score": 0.65,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 1,
+        "uncited_packet_source_ids": []
+      },
+      "source_independence_ablation": {
+        "level": "LOW",
+        "priority_score": 0.9,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "all_cohort_fdr_ablation": {
+        "level": "LOW",
+        "priority_score": 0.65,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 1,
+        "uncited_packet_source_ids": []
+      },
+      "naive_counting_baseline": {
+        "level": "LOW",
+        "priority_score": 0.9,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "omission_attack": {
+        "omitted_evidence_id": "literature-2",
+        "full_tracer": {
+          "level": "LOW",
+          "priority_score": 0.55,
+          "draft_admissible_for_review": false,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+            "Batch and/or cell-composition confounding has not been controlled.",
+            "Draft omitted one or more frozen evidence items and cannot selectively claim support."
+          ],
+          "transport_eligible": false,
+          "independent_source_count": 1,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        },
+        "without_provenance_coverage": {
+          "level": "LOW",
+          "priority_score": 0.55,
+          "draft_admissible_for_review": true,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+            "Batch and/or cell-composition confounding has not been controlled."
+          ],
+          "transport_eligible": false,
+          "independent_source_count": 1,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        }
+      },
+      "complete_matches_expected": true,
+      "coverage_blocks_omission": true,
+      "coverage_ablation_matches_non_provenance_factors": true,
+      "transport_ablation_matches_non_transport_factors": true,
+      "source_ablation_matches_non_source_factors": true,
+      "fdr_ablation_matches_non_fdr_factors": true,
+      "naive_counting_matches_predeclared_rule": true
+    },
+    {
+      "packet_id": "SYNTH-FCT-T1-I0-F1-P1-C1",
+      "factors": {
+        "transport_eligible": true,
+        "source_independent": false,
+        "all_replication_fdr_pass": true,
+        "perturbation_present": true,
+        "confounding_controlled": true
+      },
+      "llm_pilot_subset": true,
+      "expected_complete_draft_high_priority": false,
+      "observed_factor_state": {
+        "transport_eligible": true,
+        "source_independent": false,
+        "all_replication_fdr_pass": true,
+        "perturbation_present": true,
+        "confounding_controlled": true
+      },
+      "factor_derivation_matches": true,
+      "complete_draft": {
+        "level": "LOW",
+        "priority_score": 0.75,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 1,
+        "uncited_packet_source_ids": []
+      },
+      "transport_gate_ablation": {
+        "level": "LOW",
+        "priority_score": 0.75,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 1,
+        "uncited_packet_source_ids": []
+      },
+      "source_independence_ablation": {
+        "level": "HIGH",
+        "priority_score": 1.0,
+        "draft_admissible_for_review": true,
+        "hard_stops": [],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "all_cohort_fdr_ablation": {
+        "level": "LOW",
+        "priority_score": 0.75,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant."
+        ],
+        "transport_eligible": false,
+        "independent_source_count": 1,
+        "uncited_packet_source_ids": []
+      },
+      "naive_counting_baseline": {
+        "level": "HIGH",
+        "priority_score": 1.0,
+        "draft_admissible_for_review": true,
+        "hard_stops": [],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "omission_attack": {
+        "omitted_evidence_id": "literature-2",
+        "full_tracer": {
+          "level": "LOW",
+          "priority_score": 0.65,
+          "draft_admissible_for_review": false,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+            "Draft omitted one or more frozen evidence items and cannot selectively claim support."
+          ],
+          "transport_eligible": false,
+          "independent_source_count": 1,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        },
+        "without_provenance_coverage": {
+          "level": "LOW",
+          "priority_score": 0.65,
+          "draft_admissible_for_review": true,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant."
+          ],
+          "transport_eligible": false,
+          "independent_source_count": 1,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        }
+      },
+      "complete_matches_expected": true,
+      "coverage_blocks_omission": true,
+      "coverage_ablation_matches_non_provenance_factors": true,
+      "transport_ablation_matches_non_transport_factors": true,
+      "source_ablation_matches_non_source_factors": true,
+      "fdr_ablation_matches_non_fdr_factors": true,
+      "naive_counting_matches_predeclared_rule": true
+    },
+    {
+      "packet_id": "SYNTH-FCT-T1-I1-F0-P0-C0",
+      "factors": {
+        "transport_eligible": true,
+        "source_independent": true,
+        "all_replication_fdr_pass": false,
+        "perturbation_present": false,
+        "confounding_controlled": false
+      },
+      "llm_pilot_subset": false,
+      "expected_complete_draft_high_priority": false,
+      "observed_factor_state": {
+        "transport_eligible": true,
+        "source_independent": true,
+        "all_replication_fdr_pass": false,
+        "perturbation_present": false,
+        "confounding_controlled": false
+      },
+      "factor_derivation_matches": true,
+      "complete_draft": {
+        "level": "LOW",
+        "priority_score": 0.2,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "No direction-consistent perturbation evidence; causal language is prohibited.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "transport_gate_ablation": {
+        "level": "LOW",
+        "priority_score": 0.2,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "No direction-consistent perturbation evidence; causal language is prohibited.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "source_independence_ablation": {
+        "level": "LOW",
+        "priority_score": 0.2,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "No direction-consistent perturbation evidence; causal language is prohibited.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "all_cohort_fdr_ablation": {
+        "level": "LOW",
+        "priority_score": 0.45,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "No direction-consistent perturbation evidence; causal language is prohibited.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "naive_counting_baseline": {
+        "level": "LOW",
+        "priority_score": 0.45,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "No direction-consistent perturbation evidence; causal language is prohibited.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "omission_attack": {
+        "omitted_evidence_id": "literature-2",
+        "full_tracer": {
+          "level": "LOW",
+          "priority_score": 0.1,
+          "draft_admissible_for_review": false,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+            "No direction-consistent perturbation evidence; causal language is prohibited.",
+            "Batch and/or cell-composition confounding has not been controlled.",
+            "Draft omitted one or more frozen evidence items and cannot selectively claim support."
+          ],
+          "transport_eligible": true,
+          "independent_source_count": 3,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        },
+        "without_provenance_coverage": {
+          "level": "LOW",
+          "priority_score": 0.1,
+          "draft_admissible_for_review": true,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+            "No direction-consistent perturbation evidence; causal language is prohibited.",
+            "Batch and/or cell-composition confounding has not been controlled."
+          ],
+          "transport_eligible": true,
+          "independent_source_count": 3,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        }
+      },
+      "complete_matches_expected": true,
+      "coverage_blocks_omission": true,
+      "coverage_ablation_matches_non_provenance_factors": true,
+      "transport_ablation_matches_non_transport_factors": true,
+      "source_ablation_matches_non_source_factors": true,
+      "fdr_ablation_matches_non_fdr_factors": true,
+      "naive_counting_matches_predeclared_rule": true
+    },
+    {
+      "packet_id": "SYNTH-FCT-T1-I1-F0-P0-C1",
+      "factors": {
+        "transport_eligible": true,
+        "source_independent": true,
+        "all_replication_fdr_pass": false,
+        "perturbation_present": false,
+        "confounding_controlled": true
+      },
+      "llm_pilot_subset": false,
+      "expected_complete_draft_high_priority": false,
+      "observed_factor_state": {
+        "transport_eligible": true,
+        "source_independent": true,
+        "all_replication_fdr_pass": false,
+        "perturbation_present": false,
+        "confounding_controlled": true
+      },
+      "factor_derivation_matches": true,
+      "complete_draft": {
+        "level": "LOW",
+        "priority_score": 0.3,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "No direction-consistent perturbation evidence; causal language is prohibited."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "transport_gate_ablation": {
+        "level": "LOW",
+        "priority_score": 0.3,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "No direction-consistent perturbation evidence; causal language is prohibited."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "source_independence_ablation": {
+        "level": "LOW",
+        "priority_score": 0.3,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "No direction-consistent perturbation evidence; causal language is prohibited."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "all_cohort_fdr_ablation": {
+        "level": "MODERATE",
+        "priority_score": 0.55,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "No direction-consistent perturbation evidence; causal language is prohibited."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "naive_counting_baseline": {
+        "level": "MODERATE",
+        "priority_score": 0.55,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "No direction-consistent perturbation evidence; causal language is prohibited."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "omission_attack": {
+        "omitted_evidence_id": "literature-2",
+        "full_tracer": {
+          "level": "LOW",
+          "priority_score": 0.2,
+          "draft_admissible_for_review": false,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+            "No direction-consistent perturbation evidence; causal language is prohibited.",
+            "Draft omitted one or more frozen evidence items and cannot selectively claim support."
+          ],
+          "transport_eligible": true,
+          "independent_source_count": 3,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        },
+        "without_provenance_coverage": {
+          "level": "LOW",
+          "priority_score": 0.2,
+          "draft_admissible_for_review": true,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+            "No direction-consistent perturbation evidence; causal language is prohibited."
+          ],
+          "transport_eligible": true,
+          "independent_source_count": 3,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        }
+      },
+      "complete_matches_expected": true,
+      "coverage_blocks_omission": true,
+      "coverage_ablation_matches_non_provenance_factors": true,
+      "transport_ablation_matches_non_transport_factors": true,
+      "source_ablation_matches_non_source_factors": true,
+      "fdr_ablation_matches_non_fdr_factors": true,
+      "naive_counting_matches_predeclared_rule": true
+    },
+    {
+      "packet_id": "SYNTH-FCT-T1-I1-F0-P1-C0",
+      "factors": {
+        "transport_eligible": true,
+        "source_independent": true,
+        "all_replication_fdr_pass": false,
+        "perturbation_present": true,
+        "confounding_controlled": false
+      },
+      "llm_pilot_subset": false,
+      "expected_complete_draft_high_priority": false,
+      "observed_factor_state": {
+        "transport_eligible": true,
+        "source_independent": true,
+        "all_replication_fdr_pass": false,
+        "perturbation_present": true,
+        "confounding_controlled": false
+      },
+      "factor_derivation_matches": true,
+      "complete_draft": {
+        "level": "LOW",
+        "priority_score": 0.65,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "transport_gate_ablation": {
+        "level": "LOW",
+        "priority_score": 0.65,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "source_independence_ablation": {
+        "level": "LOW",
+        "priority_score": 0.65,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "all_cohort_fdr_ablation": {
+        "level": "LOW",
+        "priority_score": 0.9,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "naive_counting_baseline": {
+        "level": "LOW",
+        "priority_score": 0.9,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "omission_attack": {
+        "omitted_evidence_id": "literature-2",
+        "full_tracer": {
+          "level": "LOW",
+          "priority_score": 0.55,
+          "draft_admissible_for_review": false,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+            "Batch and/or cell-composition confounding has not been controlled.",
+            "Draft omitted one or more frozen evidence items and cannot selectively claim support."
+          ],
+          "transport_eligible": true,
+          "independent_source_count": 3,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        },
+        "without_provenance_coverage": {
+          "level": "LOW",
+          "priority_score": 0.55,
+          "draft_admissible_for_review": true,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+            "Batch and/or cell-composition confounding has not been controlled."
+          ],
+          "transport_eligible": true,
+          "independent_source_count": 3,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        }
+      },
+      "complete_matches_expected": true,
+      "coverage_blocks_omission": true,
+      "coverage_ablation_matches_non_provenance_factors": true,
+      "transport_ablation_matches_non_transport_factors": true,
+      "source_ablation_matches_non_source_factors": true,
+      "fdr_ablation_matches_non_fdr_factors": true,
+      "naive_counting_matches_predeclared_rule": true
+    },
+    {
+      "packet_id": "SYNTH-FCT-T1-I1-F0-P1-C1",
+      "factors": {
+        "transport_eligible": true,
+        "source_independent": true,
+        "all_replication_fdr_pass": false,
+        "perturbation_present": true,
+        "confounding_controlled": true
+      },
+      "llm_pilot_subset": true,
+      "expected_complete_draft_high_priority": false,
+      "observed_factor_state": {
+        "transport_eligible": true,
+        "source_independent": true,
+        "all_replication_fdr_pass": false,
+        "perturbation_present": true,
+        "confounding_controlled": true
+      },
+      "factor_derivation_matches": true,
+      "complete_draft": {
+        "level": "LOW",
+        "priority_score": 0.75,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "transport_gate_ablation": {
+        "level": "LOW",
+        "priority_score": 0.75,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "source_independence_ablation": {
+        "level": "LOW",
+        "priority_score": 0.75,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "all_cohort_fdr_ablation": {
+        "level": "HIGH",
+        "priority_score": 1.0,
+        "draft_admissible_for_review": true,
+        "hard_stops": [],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "naive_counting_baseline": {
+        "level": "HIGH",
+        "priority_score": 1.0,
+        "draft_admissible_for_review": true,
+        "hard_stops": [],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "omission_attack": {
+        "omitted_evidence_id": "literature-2",
+        "full_tracer": {
+          "level": "LOW",
+          "priority_score": 0.65,
+          "draft_admissible_for_review": false,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant.",
+            "Draft omitted one or more frozen evidence items and cannot selectively claim support."
+          ],
+          "transport_eligible": true,
+          "independent_source_count": 3,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        },
+        "without_provenance_coverage": {
+          "level": "LOW",
+          "priority_score": 0.65,
+          "draft_admissible_for_review": true,
+          "hard_stops": [
+            "Independent same-compartment, same-measurement-level replication is absent, inconsistent, or not significant."
+          ],
+          "transport_eligible": true,
+          "independent_source_count": 3,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        }
+      },
+      "complete_matches_expected": true,
+      "coverage_blocks_omission": true,
+      "coverage_ablation_matches_non_provenance_factors": true,
+      "transport_ablation_matches_non_transport_factors": true,
+      "source_ablation_matches_non_source_factors": true,
+      "fdr_ablation_matches_non_fdr_factors": true,
+      "naive_counting_matches_predeclared_rule": true
+    },
+    {
+      "packet_id": "SYNTH-FCT-T1-I1-F1-P0-C0",
+      "factors": {
+        "transport_eligible": true,
+        "source_independent": true,
+        "all_replication_fdr_pass": true,
+        "perturbation_present": false,
+        "confounding_controlled": false
+      },
+      "llm_pilot_subset": true,
+      "expected_complete_draft_high_priority": false,
+      "observed_factor_state": {
+        "transport_eligible": true,
+        "source_independent": true,
+        "all_replication_fdr_pass": true,
+        "perturbation_present": false,
+        "confounding_controlled": false
+      },
+      "factor_derivation_matches": true,
+      "complete_draft": {
+        "level": "LOW",
+        "priority_score": 0.45,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "No direction-consistent perturbation evidence; causal language is prohibited.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "transport_gate_ablation": {
+        "level": "LOW",
+        "priority_score": 0.45,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "No direction-consistent perturbation evidence; causal language is prohibited.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "source_independence_ablation": {
+        "level": "LOW",
+        "priority_score": 0.45,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "No direction-consistent perturbation evidence; causal language is prohibited.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "all_cohort_fdr_ablation": {
+        "level": "LOW",
+        "priority_score": 0.45,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "No direction-consistent perturbation evidence; causal language is prohibited.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "naive_counting_baseline": {
+        "level": "LOW",
+        "priority_score": 0.45,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "No direction-consistent perturbation evidence; causal language is prohibited.",
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "omission_attack": {
+        "omitted_evidence_id": "literature-2",
+        "full_tracer": {
+          "level": "LOW",
+          "priority_score": 0.35,
+          "draft_admissible_for_review": false,
+          "hard_stops": [
+            "No direction-consistent perturbation evidence; causal language is prohibited.",
+            "Batch and/or cell-composition confounding has not been controlled.",
+            "Draft omitted one or more frozen evidence items and cannot selectively claim support."
+          ],
+          "transport_eligible": true,
+          "independent_source_count": 3,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        },
+        "without_provenance_coverage": {
+          "level": "LOW",
+          "priority_score": 0.35,
+          "draft_admissible_for_review": true,
+          "hard_stops": [
+            "No direction-consistent perturbation evidence; causal language is prohibited.",
+            "Batch and/or cell-composition confounding has not been controlled."
+          ],
+          "transport_eligible": true,
+          "independent_source_count": 3,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        }
+      },
+      "complete_matches_expected": true,
+      "coverage_blocks_omission": true,
+      "coverage_ablation_matches_non_provenance_factors": true,
+      "transport_ablation_matches_non_transport_factors": true,
+      "source_ablation_matches_non_source_factors": true,
+      "fdr_ablation_matches_non_fdr_factors": true,
+      "naive_counting_matches_predeclared_rule": true
+    },
+    {
+      "packet_id": "SYNTH-FCT-T1-I1-F1-P0-C1",
+      "factors": {
+        "transport_eligible": true,
+        "source_independent": true,
+        "all_replication_fdr_pass": true,
+        "perturbation_present": false,
+        "confounding_controlled": true
+      },
+      "llm_pilot_subset": true,
+      "expected_complete_draft_high_priority": false,
+      "observed_factor_state": {
+        "transport_eligible": true,
+        "source_independent": true,
+        "all_replication_fdr_pass": true,
+        "perturbation_present": false,
+        "confounding_controlled": true
+      },
+      "factor_derivation_matches": true,
+      "complete_draft": {
+        "level": "MODERATE",
+        "priority_score": 0.55,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "No direction-consistent perturbation evidence; causal language is prohibited."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "transport_gate_ablation": {
+        "level": "MODERATE",
+        "priority_score": 0.55,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "No direction-consistent perturbation evidence; causal language is prohibited."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "source_independence_ablation": {
+        "level": "MODERATE",
+        "priority_score": 0.55,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "No direction-consistent perturbation evidence; causal language is prohibited."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "all_cohort_fdr_ablation": {
+        "level": "MODERATE",
+        "priority_score": 0.55,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "No direction-consistent perturbation evidence; causal language is prohibited."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "naive_counting_baseline": {
+        "level": "MODERATE",
+        "priority_score": 0.55,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "No direction-consistent perturbation evidence; causal language is prohibited."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "omission_attack": {
+        "omitted_evidence_id": "literature-2",
+        "full_tracer": {
+          "level": "LOW",
+          "priority_score": 0.45,
+          "draft_admissible_for_review": false,
+          "hard_stops": [
+            "No direction-consistent perturbation evidence; causal language is prohibited.",
+            "Draft omitted one or more frozen evidence items and cannot selectively claim support."
+          ],
+          "transport_eligible": true,
+          "independent_source_count": 3,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        },
+        "without_provenance_coverage": {
+          "level": "LOW",
+          "priority_score": 0.45,
+          "draft_admissible_for_review": true,
+          "hard_stops": [
+            "No direction-consistent perturbation evidence; causal language is prohibited."
+          ],
+          "transport_eligible": true,
+          "independent_source_count": 3,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        }
+      },
+      "complete_matches_expected": true,
+      "coverage_blocks_omission": true,
+      "coverage_ablation_matches_non_provenance_factors": true,
+      "transport_ablation_matches_non_transport_factors": true,
+      "source_ablation_matches_non_source_factors": true,
+      "fdr_ablation_matches_non_fdr_factors": true,
+      "naive_counting_matches_predeclared_rule": true
+    },
+    {
+      "packet_id": "SYNTH-FCT-T1-I1-F1-P1-C0",
+      "factors": {
+        "transport_eligible": true,
+        "source_independent": true,
+        "all_replication_fdr_pass": true,
+        "perturbation_present": true,
+        "confounding_controlled": false
+      },
+      "llm_pilot_subset": true,
+      "expected_complete_draft_high_priority": false,
+      "observed_factor_state": {
+        "transport_eligible": true,
+        "source_independent": true,
+        "all_replication_fdr_pass": true,
+        "perturbation_present": true,
+        "confounding_controlled": false
+      },
+      "factor_derivation_matches": true,
+      "complete_draft": {
+        "level": "LOW",
+        "priority_score": 0.9,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "transport_gate_ablation": {
+        "level": "LOW",
+        "priority_score": 0.9,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "source_independence_ablation": {
+        "level": "LOW",
+        "priority_score": 0.9,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "all_cohort_fdr_ablation": {
+        "level": "LOW",
+        "priority_score": 0.9,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "naive_counting_baseline": {
+        "level": "LOW",
+        "priority_score": 0.9,
+        "draft_admissible_for_review": true,
+        "hard_stops": [
+          "Batch and/or cell-composition confounding has not been controlled."
+        ],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "omission_attack": {
+        "omitted_evidence_id": "literature-2",
+        "full_tracer": {
+          "level": "LOW",
+          "priority_score": 0.8,
+          "draft_admissible_for_review": false,
+          "hard_stops": [
+            "Batch and/or cell-composition confounding has not been controlled.",
+            "Draft omitted one or more frozen evidence items and cannot selectively claim support."
+          ],
+          "transport_eligible": true,
+          "independent_source_count": 3,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        },
+        "without_provenance_coverage": {
+          "level": "LOW",
+          "priority_score": 0.8,
+          "draft_admissible_for_review": true,
+          "hard_stops": [
+            "Batch and/or cell-composition confounding has not been controlled."
+          ],
+          "transport_eligible": true,
+          "independent_source_count": 3,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        }
+      },
+      "complete_matches_expected": true,
+      "coverage_blocks_omission": true,
+      "coverage_ablation_matches_non_provenance_factors": true,
+      "transport_ablation_matches_non_transport_factors": true,
+      "source_ablation_matches_non_source_factors": true,
+      "fdr_ablation_matches_non_fdr_factors": true,
+      "naive_counting_matches_predeclared_rule": true
+    },
+    {
+      "packet_id": "SYNTH-FCT-T1-I1-F1-P1-C1",
+      "factors": {
+        "transport_eligible": true,
+        "source_independent": true,
+        "all_replication_fdr_pass": true,
+        "perturbation_present": true,
+        "confounding_controlled": true
+      },
+      "llm_pilot_subset": true,
+      "expected_complete_draft_high_priority": true,
+      "observed_factor_state": {
+        "transport_eligible": true,
+        "source_independent": true,
+        "all_replication_fdr_pass": true,
+        "perturbation_present": true,
+        "confounding_controlled": true
+      },
+      "factor_derivation_matches": true,
+      "complete_draft": {
+        "level": "HIGH",
+        "priority_score": 1.0,
+        "draft_admissible_for_review": true,
+        "hard_stops": [],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "transport_gate_ablation": {
+        "level": "HIGH",
+        "priority_score": 1.0,
+        "draft_admissible_for_review": true,
+        "hard_stops": [],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "source_independence_ablation": {
+        "level": "HIGH",
+        "priority_score": 1.0,
+        "draft_admissible_for_review": true,
+        "hard_stops": [],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "all_cohort_fdr_ablation": {
+        "level": "HIGH",
+        "priority_score": 1.0,
+        "draft_admissible_for_review": true,
+        "hard_stops": [],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "naive_counting_baseline": {
+        "level": "HIGH",
+        "priority_score": 1.0,
+        "draft_admissible_for_review": true,
+        "hard_stops": [],
+        "transport_eligible": true,
+        "independent_source_count": 3,
+        "uncited_packet_source_ids": []
+      },
+      "omission_attack": {
+        "omitted_evidence_id": "literature-2",
+        "full_tracer": {
+          "level": "LOW",
+          "priority_score": 0.9,
+          "draft_admissible_for_review": false,
+          "hard_stops": [
+            "Draft omitted one or more frozen evidence items and cannot selectively claim support."
+          ],
+          "transport_eligible": true,
+          "independent_source_count": 3,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        },
+        "without_provenance_coverage": {
+          "level": "HIGH",
+          "priority_score": 0.9,
+          "draft_admissible_for_review": true,
+          "hard_stops": [],
+          "transport_eligible": true,
+          "independent_source_count": 3,
+          "uncited_packet_source_ids": [
+            "literature-2"
+          ]
+        }
+      },
+      "complete_matches_expected": true,
+      "coverage_blocks_omission": true,
+      "coverage_ablation_matches_non_provenance_factors": true,
+      "transport_ablation_matches_non_transport_factors": true,
+      "source_ablation_matches_non_source_factors": true,
+      "fdr_ablation_matches_non_fdr_factors": true,
+      "naive_counting_matches_predeclared_rule": true
+    }
+  ]
+}

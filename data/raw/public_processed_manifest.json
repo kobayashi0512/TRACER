@@ -1,0 +1,62 @@
+{
+  "retrieved_at_utc": "2026-09-14T02:18:39.390092+00:00",
+  "scope": "Public processed GEO files only; no controlled-access raw reads.",
+  "files": [
+    {
+      "filename": "GSE120575_Sade_Feldman_melanoma_single_cells_TPM_GEO.txt.gz",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE120nnn/GSE120575/suppl/GSE120575_Sade_Feldman_melanoma_single_cells_TPM_GEO.txt.gz",
+      "action": "reused_existing",
+      "bytes": 126721504,
+      "sha256": "43fa3d50acd151be89aa8e94ac83cc730dbbf7623473339c5534b77c16d48e3f"
+    },
+    {
+      "filename": "GSE120575_patient_ID_single_cells.txt.gz",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE120nnn/GSE120575/suppl/GSE120575_patient_ID_single_cells.txt.gz",
+      "action": "reused_existing",
+      "bytes": 83035,
+      "sha256": "6a228029df713006fb465f02cc3e1e17540b0ddaf4b69374b116aeb135cdf73f"
+    },
+    {
+      "filename": "GSE115978_tpm.csv.gz",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE115nnn/GSE115978/suppl/GSE115978_tpm.csv.gz",
+      "action": "reused_existing",
+      "bytes": 238431804,
+      "sha256": "25af4c8215c9f3c334233056406fc53a0d2c58d421de88e7dcc74f2b1145925e"
+    },
+    {
+      "filename": "GSE115978_cell.annotations.csv.gz",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE115nnn/GSE115978/suppl/GSE115978_cell.annotations.csv.gz",
+      "action": "reused_existing",
+      "bytes": 101286,
+      "sha256": "b83dd0ba7eb913e98d953dcf9dbb71752aaef57795b86364ff51d61167a5d46a"
+    },
+    {
+      "filename": "GSE91061_BMS038109Sample.hg19KnownGene.rld.csv.gz",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE91nnn/GSE91061/suppl/GSE91061_BMS038109Sample.hg19KnownGene.rld.csv.gz",
+      "action": "reused_existing",
+      "bytes": 19253751,
+      "sha256": "d05f37f3b0bba0b7ad5ea825af9b4a2eda1ee209668618f9f228213e70bc03fe"
+    },
+    {
+      "filename": "GSE91061_family.soft.gz",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE91nnn/GSE91061/soft/GSE91061_family.soft.gz",
+      "action": "reused_existing",
+      "bytes": 7357,
+      "sha256": "2ecd5f064b076fdce58fd651b0a3404cc01ef889c5cfb8d760dc5c7a01adeaf9"
+    },
+    {
+      "filename": "GSE78220_PatientFPKM.xlsx",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE78nnn/GSE78220/suppl/GSE78220_PatientFPKM.xlsx",
+      "action": "downloaded",
+      "bytes": 7145318,
+      "sha256": "ae3b044f23a0a4cd2859da36726a220856c35216a169c17f93dfc3bd20b04de6"
+    },
+    {
+      "filename": "GSE78220_family.soft.gz",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE78nnn/GSE78220/soft/GSE78220_family.soft.gz",
+      "action": "downloaded",
+      "bytes": 4753,
+      "sha256": "ed47c48810839ede910542b73002bff1506e70d5adeea5bd16367ecc9fe64c6d"
+    }
+  ]
+}

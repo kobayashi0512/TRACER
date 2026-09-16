@@ -1,0 +1,30 @@
+{
+  "cohort_id": "gse120575-primary-v1",
+  "source": "GSE120575 GEO supplementary metadata parsed by 04_build_gse120575_metadata.py",
+  "unit": "Lesion-level pseudo-bulk, with patient token retained for dependency checks.",
+  "inclusion": {
+    "timepoint": "pre_treatment",
+    "therapy": "anti-PD1",
+    "response_values": ["Responder", "Non-responder"]
+  },
+  "exclusion": [
+    "on-treatment lesions",
+    "anti-CTLA4 monotherapy",
+    "anti-CTLA4+PD1 combination treatment in primary analysis",
+    "individual cells as independent clinical replicates"
+  ],
+  "sensitivity_only": {
+    "timepoint": "pre_treatment",
+    "therapy": "anti-CTLA4+PD1"
+  },
+  "external_bulk_validation": {
+    "accession": "GSE91061",
+    "unit": "Pre-treatment bulk-RNA sample; patient token retained for duplicate checks.",
+    "include_visit": "Pre",
+    "responder_source_label": ["PRCR"],
+    "non_responder_source_labels": ["PD", "SD"],
+    "exclude_source_label": ["UNK"],
+    "purpose": "Independent direction check for pre-specified programs only; not model training or clinical-performance estimation."
+  },
+  "guardrail": "This cohort supports a feasibility study and ranking prototype only; it is not a model-training set or a stand-alone causal discovery cohort."
+}

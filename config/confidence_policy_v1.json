@@ -1,0 +1,31 @@
+{
+  "policy_id": "icb-disambiguate-confidence-v1",
+  "purpose": "Research-priority evidence assessment; not a causal or clinical probability.",
+  "weights": {
+    "cross_cohort_replication": 0.25,
+    "perturbation_support": 0.30,
+    "orthogonal_evidence": 0.15,
+    "curated_literature_evidence": 0.10,
+    "confounding_robustness": 0.10,
+    "discriminating_experiment": 0.10
+  },
+  "levels": {
+    "HIGH": {"min_score": 0.8, "meaning": "Eligible for prioritized experimental validation; not a causal conclusion."},
+    "MODERATE": {"min_score": 0.55, "meaning": "Plausible candidate requiring evidence completion before validation."},
+    "LOW": {"min_score": 0.0, "meaning": "Insufficient or non-robust evidence; do not prioritize."}
+  },
+  "hard_stops": {
+    "one_independent_cohort_max_level": "LOW",
+    "cross_modality_or_cross_compartment_max_level": "LOW",
+    "missing_confounding_control_max_level": "LOW",
+    "no_discriminating_experiment_blocks_ready": true,
+    "no_perturbation_blocks_causal_language": true
+  },
+  "required_experiment_fields": [
+    "intervention",
+    "comparator",
+    "readout",
+    "prediction_if_hypothesis_a",
+    "prediction_if_hypothesis_b"
+  ]
+}

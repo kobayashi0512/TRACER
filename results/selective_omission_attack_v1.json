@@ -1,0 +1,203 @@
+{
+  "schema": "icb-disambiguate-selective-omission-attack-v1",
+  "interpretation": "Deterministic synthetic counterfactual attack only. It proves an implementation-level coverage property, not model behavior or a biomedical claim.",
+  "omitted_evidence_id": "sc-conflict",
+  "full_tracer": {
+    "assessment": {
+      "candidate_id": "COMPLETE-DRAFT-SYNTH-SELECTIVE-OMISSION-001",
+      "priority_score": 1.0,
+      "level": "LOW",
+      "ready_for_validation": false,
+      "causal_language_permitted": false,
+      "reasons": [
+        "Direction and FDR thresholds replicate across at least two independent cohorts.",
+        "At least one independent perturbation result supports the proposed direction.",
+        "At least two orthogonal evidence modalities agree in direction.",
+        "At least two independently curated sources support the constrained claim.",
+        "Batch and cell-composition confounding were both assessed.",
+        "A pre-specified experiment can discriminate the competing hypotheses."
+      ],
+      "hard_stops": [
+        "Draft omitted one or more frozen evidence items and cannot selectively claim support."
+      ],
+      "interpretation": "Evidence-graph-derived research priority, not a causal probability, clinical prediction, or treatment recommendation.",
+      "operational_decision": "REJECT_DRAFT"
+    },
+    "canonical_card": {
+      "candidate_id": "COMPLETE-DRAFT-SYNTH-SELECTIVE-OMISSION-001",
+      "cross_cohort_replication": {
+        "independent_cohorts": 2,
+        "cohort_ids": [
+          "SYN-SC-A",
+          "SYN-SC-B"
+        ],
+        "effect_direction_consistent": true,
+        "same_biological_compartment": true,
+        "same_measurement_level": true,
+        "discovery_fdr": 0.01,
+        "validation_fdr": 0.02,
+        "fdr_by_cohort": {
+          "SYN-SC-A": 0.01,
+          "SYN-SC-B": 0.02
+        }
+      },
+      "perturbation_support": {
+        "tested": true,
+        "direction_consistent": true,
+        "independent_studies": 1
+      },
+      "orthogonal_evidence": {
+        "modalities": 2,
+        "direction_consistent": true
+      },
+      "curated_literature_evidence": {
+        "independent_sources": 2,
+        "supports_claim": true
+      },
+      "confounding_robustness": {
+        "batch_controlled": true,
+        "composition_controlled": true
+      },
+      "discriminating_experiment": {
+        "intervention": "Pre-specified composition-aware reanalysis followed by a matched functional perturbation",
+        "comparator": "Composition-dependent versus within-state persistence models",
+        "readout": "Direction and magnitude of the lesion-level signal",
+        "prediction_if_hypothesis_a": "The signal attenuates after composition-aware reanalysis.",
+        "prediction_if_hypothesis_b": "The signal persists within the pre-specified immune state."
+      }
+    },
+    "graph": {
+      "grounded_source_count": 5,
+      "replication_source_count": 2,
+      "packet_source_count": 6,
+      "cohort_ids": [
+        "SYN-SC-A",
+        "SYN-SC-B"
+      ],
+      "source_independence_groups": [
+        "synthetic_study_a",
+        "synthetic_study_b"
+      ],
+      "independence_audit_complete": true,
+      "independent_source_count": 2,
+      "measurement_levels": [
+        "single_cell_rna"
+      ],
+      "compartments": [
+        "tumor_cd45_positive_cells"
+      ],
+      "baseline_response_eligible": true,
+      "modules": {
+        "provenance_coverage": true,
+        "transport_aware_replication": true
+      },
+      "transport_eligible": true,
+      "provenance_errors": [],
+      "uncited_packet_source_ids": [
+        "sc-conflict"
+      ],
+      "draft_causal_language_detected": false
+    },
+    "draft_admissible_for_review": false,
+    "draft_rejection_reasons": [
+      "Draft omitted one or more frozen evidence items and cannot selectively claim support."
+    ]
+  },
+  "without_provenance_coverage": {
+    "assessment": {
+      "candidate_id": "COMPLETE-DRAFT-SYNTH-SELECTIVE-OMISSION-001",
+      "priority_score": 1.0,
+      "level": "HIGH",
+      "ready_for_validation": true,
+      "causal_language_permitted": true,
+      "reasons": [
+        "Direction and FDR thresholds replicate across at least two independent cohorts.",
+        "At least one independent perturbation result supports the proposed direction.",
+        "At least two orthogonal evidence modalities agree in direction.",
+        "At least two independently curated sources support the constrained claim.",
+        "Batch and cell-composition confounding were both assessed.",
+        "A pre-specified experiment can discriminate the competing hypotheses."
+      ],
+      "hard_stops": [],
+      "interpretation": "Evidence-graph-derived research priority, not a causal probability, clinical prediction, or treatment recommendation.",
+      "operational_decision": "ADMIT_FOR_HUMAN_REVIEW"
+    },
+    "canonical_card": {
+      "candidate_id": "COMPLETE-DRAFT-SYNTH-SELECTIVE-OMISSION-001",
+      "cross_cohort_replication": {
+        "independent_cohorts": 2,
+        "cohort_ids": [
+          "SYN-SC-A",
+          "SYN-SC-B"
+        ],
+        "effect_direction_consistent": true,
+        "same_biological_compartment": true,
+        "same_measurement_level": true,
+        "discovery_fdr": 0.01,
+        "validation_fdr": 0.02,
+        "fdr_by_cohort": {
+          "SYN-SC-A": 0.01,
+          "SYN-SC-B": 0.02
+        }
+      },
+      "perturbation_support": {
+        "tested": true,
+        "direction_consistent": true,
+        "independent_studies": 1
+      },
+      "orthogonal_evidence": {
+        "modalities": 2,
+        "direction_consistent": true
+      },
+      "curated_literature_evidence": {
+        "independent_sources": 2,
+        "supports_claim": true
+      },
+      "confounding_robustness": {
+        "batch_controlled": true,
+        "composition_controlled": true
+      },
+      "discriminating_experiment": {
+        "intervention": "Pre-specified composition-aware reanalysis followed by a matched functional perturbation",
+        "comparator": "Composition-dependent versus within-state persistence models",
+        "readout": "Direction and magnitude of the lesion-level signal",
+        "prediction_if_hypothesis_a": "The signal attenuates after composition-aware reanalysis.",
+        "prediction_if_hypothesis_b": "The signal persists within the pre-specified immune state."
+      }
+    },
+    "graph": {
+      "grounded_source_count": 5,
+      "replication_source_count": 2,
+      "packet_source_count": 6,
+      "cohort_ids": [
+        "SYN-SC-A",
+        "SYN-SC-B"
+      ],
+      "source_independence_groups": [
+        "synthetic_study_a",
+        "synthetic_study_b"
+      ],
+      "independence_audit_complete": true,
+      "independent_source_count": 2,
+      "measurement_levels": [
+        "single_cell_rna"
+      ],
+      "compartments": [
+        "tumor_cd45_positive_cells"
+      ],
+      "baseline_response_eligible": true,
+      "modules": {
+        "provenance_coverage": false,
+        "transport_aware_replication": true
+      },
+      "transport_eligible": true,
+      "provenance_errors": [],
+      "uncited_packet_source_ids": [
+        "sc-conflict"
+      ],
+      "draft_causal_language_detected": false
+    },
+    "draft_admissible_for_review": true,
+    "draft_rejection_reasons": []
+  }
+}

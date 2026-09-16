@@ -1,0 +1,6 @@
+You are assisting with a biomedical research discussion, not clinical care.
+
+Using only the evidence packet below, provide a concise prose analysis. Identify plausible interpretations, important uncertainty, and one useful next research step. Do not provide a patient-level treatment recommendation.
+
+EVIDENCE PACKET
+{{MODEL_VISIBLE_PACKET_JSON}}

@@ -1,0 +1,49 @@
+{
+  "packet_id": "ICB-CROSS-MODALITY-001",
+  "scope": {
+    "disease": "Melanoma",
+    "treatment": "Pre-treatment anti-PD-1 monotherapy",
+    "analysis_unit": "Lesion-level summary"
+  },
+  "question": "Do the observed memory/exhaustion control-program differences establish a cell-state mechanism of anti-PD-1 response?",
+  "evidence_items": [
+    {
+      "id": "discovery-memory-exhaustion",
+      "cohort_id": "GSE120575",
+      "result_type": "single_cell_lesion_pseudobulk_control_screen",
+      "statement": "All 15 pre-specified control features had their expected responder/non-responder direction in the frozen discovery analysis.",
+      "effect_direction": "pre_registered_expected_direction",
+      "source_identifier": "results/positive_control_screen_v1.tsv",
+      "evidence_kind": "observational_association",
+      "direction_status": "consistent",
+      "confounding_assessed": false,
+      "fdr": 0.0485
+    },
+    {
+      "id": "external-bulk-direction-check",
+      "cohort_id": "GSE91061",
+      "result_type": "bulk_rna_direction_check",
+      "statement": "Eight of 15 pre-specified control features matched the discovery direction; the exhausted program was directionally opposite overall.",
+      "effect_direction": "mixed_or_opposite",
+      "source_identifier": "results/gse91061_positive_control_direction_check_v1.tsv",
+      "evidence_kind": "observational_association",
+      "direction_status": "mixed",
+      "confounding_assessed": false,
+      "fdr": null
+    }
+  ],
+  "reference_standard": {
+    "evaluator_only": true,
+    "eligible_for_high_priority": false,
+    "prohibited_claim_types": [
+      "causal cell-state mechanism",
+      "same-measurement external replication",
+      "clinical treatment recommendation"
+    ],
+    "reason_codes": [
+      "cross_modality_direction_disagreement",
+      "no_direction_consistent_perturbation",
+      "composition_not_resolved"
+    ]
+  }
+}

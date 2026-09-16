@@ -1,0 +1,14 @@
+{
+  "analysis": "Independent pre-treatment bulk-RNA direction check of frozen GSE120575 positive controls",
+  "cohort": "GSE78220",
+  "data_transform": "log2(FPKM + 1) per gene; program score is the mean within-cohort gene z-score.",
+  "n_baseline_columns": 27,
+  "response_counts": {
+    "Non-responder": 12,
+    "Responder": 15
+  },
+  "tested_features": 15,
+  "features_matching_expected_direction": 10,
+  "result_path": "results/gse78220_positive_control_direction_check_v1.tsv",
+  "interpretation_limit": "Bulk direction check only: no inference about immune-cell identity, cell-state abundance, cell-cell interaction, causal mechanism, or clinical utility. This result is one cohort-level check and does not resolve participant-level dependence in matrix labels."
+}

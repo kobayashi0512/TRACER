@@ -1,0 +1,34 @@
+{
+  "contract_id": "icb-disambiguate-evidence-packet-v1",
+  "purpose": "Versioned LLM input plus evaluator-only evidence-eligibility reference standard. The reference standard must never be shown to the model.",
+  "required_top_level_fields": [
+    "packet_id",
+    "scope",
+    "question",
+    "evidence_items",
+    "reference_standard"
+  ],
+  "scope_required_fields": ["disease", "treatment", "analysis_unit"],
+  "evidence_item_required_fields": [
+    "id",
+    "cohort_id",
+    "result_type",
+    "statement",
+    "effect_direction",
+    "source_identifier",
+    "evidence_kind",
+    "direction_status",
+    "confounding_assessed",
+    "fdr"
+  ],
+  "evidence_kind_values": ["observational_association", "replication", "perturbation", "literature"],
+  "direction_status_values": ["consistent", "mixed", "opposite", "unknown", "not_applicable"],
+  "reference_standard_required_fields": [
+    "evaluator_only",
+    "eligible_for_high_priority",
+    "prohibited_claim_types",
+    "reason_codes"
+  ],
+  "model_visible_fields": ["packet_id", "scope", "question", "evidence_items"],
+  "forbidden_model_visible_fields": ["reference_standard"]
+}

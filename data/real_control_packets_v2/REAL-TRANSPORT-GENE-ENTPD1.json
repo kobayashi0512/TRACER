@@ -1,0 +1,64 @@
+{
+  "packet_id": "REAL-TRANSPORT-GENE-ENTPD1",
+  "packet_role": "real_data_multi_cohort_transport_hard_negative",
+  "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+  "scope": {
+    "disease": "Melanoma",
+    "treatment": "Pre-treatment anti-PD-1 monotherapy across audited cohorts",
+    "analysis_unit": "Discovery lesion-level single-cell summary plus two independent bulk-RNA sample summaries"
+  },
+  "question": "Do the observed gene:ENTPD1 directions across one single-cell discovery and two bulk response cohorts establish a replicated cell-state mechanism of anti-PD-1 response?",
+  "evidence_items": [
+    {
+      "id": "gse120575-discovery",
+      "cohort_id": "GSE120575",
+      "result_type": "lesion_level_single_cell_pseudobulk_positive_control",
+      "statement": "For gene:ENTPD1, responder minus non-responder was -1.74693 and the observed higher group was Non-responder (pre-specified expected group: Non-responder; panel BH q=0.048486).",
+      "effect_direction": "Non-responder",
+      "source_identifier": "results/positive_control_screen_v1.tsv#feature=gene:ENTPD1",
+      "evidence_kind": "observational_association",
+      "direction_status": "consistent",
+      "confounding_assessed": false,
+      "fdr": 0.048486
+    },
+    {
+      "id": "gse91061-bulk-direction-check",
+      "cohort_id": "GSE91061",
+      "result_type": "pre_treatment_bulk_rna_direction_check",
+      "statement": "For gene:ENTPD1, GSE91061 bulk RNA observed Non-responder versus the pre-specified expected group Non-responder (panel BH q=0.930811).",
+      "effect_direction": "Non-responder",
+      "source_identifier": "results/gse91061_positive_control_direction_check_v1.tsv#feature=gene:ENTPD1",
+      "evidence_kind": "observational_association",
+      "direction_status": "consistent",
+      "confounding_assessed": false,
+      "fdr": 0.930811
+    },
+    {
+      "id": "gse78220-bulk-direction-check",
+      "cohort_id": "GSE78220",
+      "result_type": "pre_treatment_bulk_rna_direction_check",
+      "statement": "For gene:ENTPD1, GSE78220 bulk RNA observed Responder versus the pre-specified expected group Non-responder (panel BH q=0.980536).",
+      "effect_direction": "Responder",
+      "source_identifier": "results/gse78220_positive_control_direction_check_v1.tsv#feature=gene:ENTPD1",
+      "evidence_kind": "observational_association",
+      "direction_status": "mixed",
+      "confounding_assessed": false,
+      "fdr": 0.980536
+    }
+  ],
+  "reference_standard": {
+    "evaluator_only": true,
+    "eligible_for_high_priority": false,
+    "prohibited_claim_types": [
+      "causal cell-state mechanism",
+      "same-measurement external replication",
+      "clinical treatment recommendation"
+    ],
+    "reason_codes": [
+      "single_cell_to_bulk_transport_gap",
+      "no_direction_consistent_perturbation",
+      "cell_composition_not_controlled",
+      "shared_positive_control_dependency_cluster"
+    ]
+  }
+}

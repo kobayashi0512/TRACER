@@ -1,0 +1,17 @@
+{
+  "analysis": "Independent pre-treatment bulk-RNA direction check of pre-specified GSE120575 positive controls",
+  "cohort": "GSE91061",
+  "n_samples": 49,
+  "response_counts": {
+    "Non-responder": 39,
+    "Responder": 10
+  },
+  "tested_features": 15,
+  "features_matching_expected_direction": 8,
+  "program_direction_matches": {
+    "program:dysfunctional_exhausted_t_cell": false,
+    "program:memory_like_t_cell": true
+  },
+  "result_path": "results/gse91061_positive_control_direction_check_v1.tsv",
+  "interpretation_limit": "Bulk direction check only: no inference about immune-cell identity, cell-state abundance, cell-cell interaction, causal mechanism, or clinical utility."
+}

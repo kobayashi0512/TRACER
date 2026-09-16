@@ -1,0 +1,58 @@
+{
+  "candidate_id": "CONTROL-MEMORY-EXHAUSTION-TRANSPORT",
+  "scope": {
+    "disease": "Melanoma",
+    "treatment": "Pre-treatment anti-PD-1 monotherapy",
+    "analysis_unit": "Lesion-level pseudo-bulk across CD45-positive cells"
+  },
+  "hypotheses": [
+    {
+      "id": "A",
+      "statement": "The observed memory/exhaustion program difference is driven primarily by immune-cell composition across lesions.",
+      "falsifiable_prediction": "After cell-type-aware aggregation, the lesion-level program difference will substantially attenuate."
+    },
+    {
+      "id": "B",
+      "statement": "The observed program difference persists within matched immune cell states and reflects a cell-state shift.",
+      "falsifiable_prediction": "Within a prespecified immune cell type, the program difference will retain its direction after lesion-aware analysis."
+    }
+  ],
+  "evidence_sources": [
+    {
+      "id": "discovery-memory-exhaustion",
+      "source_type": "dataset_result",
+      "identifier": "results/positive_control_screen_v1.tsv",
+      "supports_or_refutes": "mixed"
+    },
+    {
+      "id": "external-bulk-direction-check",
+      "source_type": "dataset_result",
+      "identifier": "results/gse91061_positive_control_direction_check_v1.tsv",
+      "supports_or_refutes": "mixed"
+    }
+  ],
+  "cross_cohort_replication": {
+    "independent_cohorts": 2,
+    "cohort_ids": ["GSE120575", "GSE91061"],
+    "effect_direction_consistent": false,
+    "same_biological_compartment": false,
+    "same_measurement_level": false,
+    "discovery_fdr": 0.0485,
+    "validation_fdr": 1.0
+  },
+  "perturbation_support": {
+    "tested": false,
+    "direction_consistent": false,
+    "independent_studies": 0
+  },
+  "orthogonal_evidence": {"modalities": 1, "direction_consistent": false},
+  "curated_literature_evidence": {"independent_sources": 0, "supports_claim": false},
+  "confounding_robustness": {"batch_controlled": false, "composition_controlled": false},
+  "discriminating_experiment": {
+    "intervention": "Cell-type-aware pseudo-bulk reanalysis of the frozen primary cohort",
+    "comparator": "All-CD45 lesion pseudo-bulk versus within-cell-type lesion pseudo-bulk",
+    "readout": "Direction and magnitude of pre-registered memory and exhaustion program scores",
+    "prediction_if_hypothesis_a": "Program separation attenuates after composition-aware aggregation.",
+    "prediction_if_hypothesis_b": "Program separation remains directionally concordant within at least one prespecified immune cell type."
+  }
+}

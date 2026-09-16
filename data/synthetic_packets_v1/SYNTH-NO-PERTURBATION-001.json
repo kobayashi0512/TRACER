@@ -1,0 +1,12 @@
+{
+  "packet_id": "SYNTH-NO-PERTURBATION-001",
+  "scope": {"disease": "Synthetic melanoma", "treatment": "Synthetic baseline anti-PD-1", "analysis_unit": "Lesion-level pseudo-bulk"},
+  "question": "Can reproducible observational evidence without perturbation establish a causal immune-state mechanism?",
+  "evidence_items": [
+    {"id": "sc-discovery", "cohort_id": "SYN-SC-A", "result_type": "synthetic_single_cell_pseudobulk", "statement": "Discovery cohort association is direction-consistent.", "effect_direction": "positive", "source_identifier": "synthetic://no-perturb/sc-discovery", "evidence_kind": "observational_association", "direction_status": "consistent", "confounding_assessed": true, "fdr": 0.01},
+    {"id": "sc-replication", "cohort_id": "SYN-SC-B", "result_type": "synthetic_single_cell_pseudobulk", "statement": "Independent same-compartment replication is direction-consistent.", "effect_direction": "positive", "source_identifier": "synthetic://no-perturb/sc-replication", "evidence_kind": "replication", "direction_status": "consistent", "confounding_assessed": true, "fdr": 0.02},
+    {"id": "literature-1", "cohort_id": "SYN-LIT-1", "result_type": "synthetic_curated_literature", "statement": "Independent curated source supports the constrained claim.", "effect_direction": "positive", "source_identifier": "synthetic://no-perturb/literature-1", "evidence_kind": "literature", "direction_status": "consistent", "confounding_assessed": true, "fdr": null},
+    {"id": "literature-2", "cohort_id": "SYN-LIT-2", "result_type": "synthetic_curated_literature", "statement": "A second independent curated source supports the constrained claim.", "effect_direction": "positive", "source_identifier": "synthetic://no-perturb/literature-2", "evidence_kind": "literature", "direction_status": "consistent", "confounding_assessed": true, "fdr": null}
+  ],
+  "reference_standard": {"evaluator_only": true, "eligible_for_high_priority": false, "prohibited_claim_types": ["causal mechanism"], "reason_codes": ["no_direction_consistent_perturbation"]}
+}

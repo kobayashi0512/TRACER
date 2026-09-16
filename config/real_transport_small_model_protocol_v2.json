@@ -1,0 +1,33 @@
+{
+  "protocol_id": "real-transport-hard-negative-small-model-v2",
+  "supersedes_for_new_execution": "real-transport-hard-negative-multiseed-v1",
+  "status": "ACTIVE",
+  "purpose": "Resource-bounded repetition of the frozen real transport hard-negative pilot. It is a prompt/protocol stress test, not a biomedical validation or model-ranking study.",
+  "resource_safety": {
+    "maximum_permitted_local_model_disk_size_gb": 4.0,
+    "execution_mode": "one local model request at a time, with keep_alive=0 after every response",
+    "unload_model_immediately_after_each_response": true,
+    "prohibited_models": ["qwen3-vl:30b-a3b-instruct-q4_K_M"],
+    "prohibited_actions": ["large-model health checks", "parallel local model execution"]
+  },
+  "frozen_packet_directory": "data/real_control_packets_v2",
+  "frozen_manifest": "manifest_v1.json",
+  "n_frozen_packets": 15,
+  "cohort_registry": "config/cohort_registry_v2.json",
+  "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+  "models": ["qwen3:0.6b", "llama3.2:1b", "qwen2.5vl:3b"],
+  "conditions": ["schema_only_card", "schema_constrained_card"],
+  "reused_baseline_seed": 20260914,
+  "new_seeds": [20260915, 20260916],
+  "temperature": 0.0,
+  "max_tokens": 1600,
+  "response_schema": "config/candidate_card_json_schema_v1.json",
+  "analysis_unit": "generation nested within packet-model-condition; all 15 packets remain one dependent source panel and are not independent biomedical samples",
+  "excluded_data_rule": "Partial or completed runs of excluded models remain raw execution records only and must be excluded before scoring, aggregation, or interpretation.",
+  "prohibited_interpretations": [
+    "biomedical mechanism validation",
+    "clinical utility",
+    "model ranking",
+    "inferential statistics that treat gene/program packets as independent samples"
+  ]
+}

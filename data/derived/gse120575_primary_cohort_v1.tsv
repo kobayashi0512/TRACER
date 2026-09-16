@@ -1,0 +1,13 @@
+lesion_id	patient_token	timepoint	response	therapy	n_cells
+Pre_P12	P12	pre_treatment	Non-responder	anti-PD1	330
+Pre_P15	P15	pre_treatment	Non-responder	anti-PD1	304
+Pre_P2	P2	pre_treatment	Non-responder	anti-PD1	337
+Pre_P20	P20	pre_treatment	Non-responder	anti-PD1	323
+Pre_P24	P24	pre_treatment	Responder	anti-PD1	338
+Pre_P25	P25	pre_treatment	Non-responder	anti-PD1	371
+Pre_P27	P27	pre_treatment	Non-responder	anti-PD1	343
+Pre_P29	P29	pre_treatment	Responder	anti-PD1	163
+Pre_P3	P3	pre_treatment	Non-responder	anti-PD1	245
+Pre_P31	P31	pre_treatment	Non-responder	anti-PD1	351
+Pre_P33	P33	pre_treatment	Responder	anti-PD1	452
+Pre_P35	P35	pre_treatment	Responder	anti-PD1	238

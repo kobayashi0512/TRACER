@@ -1,0 +1,29 @@
+{
+  "analysis": "Lesion-level mean log2(TPM+1) positive-control screen",
+  "cohort": "gse120575-primary-v1",
+  "n_lesions": 12,
+  "response_counts": {
+    "Non-responder": 8,
+    "Responder": 4
+  },
+  "n_selected_cells": 3795,
+  "cell_counts_by_lesion": {
+    "Pre_P12": 330,
+    "Pre_P15": 304,
+    "Pre_P2": 337,
+    "Pre_P20": 323,
+    "Pre_P24": 338,
+    "Pre_P25": 371,
+    "Pre_P27": 343,
+    "Pre_P29": 163,
+    "Pre_P3": 245,
+    "Pre_P31": 351,
+    "Pre_P33": 452,
+    "Pre_P35": 238
+  },
+  "tested_features": 15,
+  "features_matching_expected_direction": 15,
+  "result_path": "results/positive_control_screen_v1.tsv",
+  "interpretation_limit": "Scores are composition-sensitive because the source matrix contains all CD45+ cells. Results do not establish a cell-intrinsic effect or a causal mechanism.",
+  "prohibited_claim": "No result in this file is a novel mechanism, cell-intrinsic association, causal effect, or clinical prediction."
+}

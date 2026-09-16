@@ -1,0 +1,127 @@
+{
+  "registry_id": "icb-disambiguate-cohort-registry-v2",
+  "supersedes": "icb-disambiguate-cohort-registry-v1",
+  "purpose": "Authoritative eligibility registry for candidate-card evaluation. v2 adds a source-independence audit field so separately named cohorts are not automatically treated as independent replication sources.",
+  "cohorts": {
+    "GSE120575": {
+      "accession": "GSE120575",
+      "role": "primary_discovery",
+      "disease": "melanoma",
+      "compartment": "tumor_cd45_positive_cells",
+      "measurement_level": "single_cell_rna",
+      "baseline_ici_response_association_eligible": true,
+      "same_measurement_replication_eligible": true,
+      "source_independence_group": "gse120575_public_cohort",
+      "access": "open",
+      "basis": "Primary metadata were parsed from the GEO SOFT record; the frozen primary subset is pre-treatment anti-PD-1 monotherapy. This accession is one audited source group, not multiple independent replications."
+    },
+    "GSE91061": {
+      "accession": "GSE91061",
+      "role": "external_direction_check_only",
+      "disease": "melanoma",
+      "compartment": "tumor_bulk",
+      "measurement_level": "bulk_rna",
+      "baseline_ici_response_association_eligible": true,
+      "same_measurement_replication_eligible": false,
+      "source_independence_group": "gse91061_public_cohort",
+      "access": "open",
+      "basis": "Treatment time point and RECIST labels were parsed from GEO SOFT. Bulk RNA cannot replicate a cell-state association at single-cell measurement level."
+    },
+    "GSE78220": {
+      "accession": "GSE78220",
+      "role": "external_direction_check_only",
+      "disease": "melanoma",
+      "compartment": "tumor_bulk",
+      "measurement_level": "bulk_rna",
+      "baseline_ici_response_association_eligible": true,
+      "same_measurement_replication_eligible": false,
+      "source_independence_group": "gse78220_public_cohort",
+      "access": "public_processed_data",
+      "basis": "Read-only audit v1 matched all 28 XLSX matrix headers to GEO SOFT sample titles. It retained 27 pre-treatment pembrolizumab columns (15 objective responders, 12 non-objective responders) and excluded one on-treatment column. Bulk RNA cannot replicate a single-cell cell-state association; source-level participant dependence remains unresolved."
+    },
+    "GSE115978": {
+      "accession": "GSE115978",
+      "role": "mechanistic_context_only",
+      "disease": "melanoma",
+      "compartment": "tumor_single_cell",
+      "measurement_level": "single_cell_rna",
+      "baseline_ici_response_association_eligible": false,
+      "same_measurement_replication_eligible": false,
+      "source_independence_group": "gse115978_public_cohort",
+      "access": "open",
+      "basis": "The locally acquired public cell annotation lacks a frozen patient-level baseline ICI response endpoint for this project."
+    },
+    "GSE72056": {
+      "accession": "GSE72056",
+      "role": "treatment_naive_context_only",
+      "disease": "melanoma",
+      "compartment": "tumor_single_cell",
+      "measurement_level": "single_cell_rna",
+      "baseline_ici_response_association_eligible": false,
+      "same_measurement_replication_eligible": false,
+      "source_independence_group": "gse72056_public_cohort",
+      "access": "open",
+      "basis": "Treatment-naive melanoma atlas; it does not supply a baseline ICI response comparison."
+    },
+    "GSE174401": {
+      "accession": "GSE174401",
+      "role": "anatomic_context_only",
+      "disease": "melanoma",
+      "compartment": "mixed_tumor_cns_csf",
+      "measurement_level": "single_cell_rna",
+      "baseline_ici_response_association_eligible": false,
+      "same_measurement_replication_eligible": false,
+      "source_independence_group": "gse174401_public_cohort",
+      "access": "open",
+      "basis": "The public study is an anatomic atlas of brain, leptomeningeal, and cutaneous metastases, not an audited baseline ICI response cohort."
+    },
+    "HRA005837": {
+      "accession": "HRA005837",
+      "role": "candidate_future_validation",
+      "disease": "melanoma",
+      "compartment": "tumor_or_lymph_node_single_cell",
+      "measurement_level": "single_cell_rna",
+      "baseline_ici_response_association_eligible": false,
+      "same_measurement_replication_eligible": false,
+      "source_independence_group": "hra005837_controlled_cohort",
+      "access": "controlled",
+      "basis": "A neoadjuvant anti-PD-1 single-cell study, but data access is controlled and response metadata have not been independently audited."
+    },
+    "GSE244983": {
+      "accession": "GSE244983",
+      "role": "post_progression_context_only",
+      "disease": "melanoma",
+      "compartment": "tumor_single_cell",
+      "measurement_level": "single_cell_rna",
+      "baseline_ici_response_association_eligible": false,
+      "same_measurement_replication_eligible": false,
+      "source_independence_group": "gse244983_public_cohort",
+      "access": "public_processed_data",
+      "basis": "GEO metadata describe four samples: two ICB-resistant/progression samples and two ICB-naive samples. This is not an independently audited pre-treatment responder/non-responder cohort."
+    },
+    "GSE273718": {
+      "accession": "GSE273718",
+      "role": "temporal_therapy_context_only",
+      "disease": "melanoma",
+      "compartment": "pbmc_and_tumor_cd45_positive_cells",
+      "measurement_level": "single_cell_rna_tcr",
+      "baseline_ici_response_association_eligible": false,
+      "same_measurement_replication_eligible": false,
+      "source_independence_group": "gse273718_public_cohort",
+      "access": "open",
+      "basis": "Public GEO summary reports temporal profiling across anti-PD-1, anti-CTLA-4, and combination therapy; available sample-level clinical response and baseline eligibility require independent audit before any response-association use."
+    },
+    "GSE211504": {
+      "accession": "GSE211504",
+      "role": "small_peripheral_blood_context_only",
+      "disease": "melanoma",
+      "compartment": "peripheral_blood_cd8_t_cells",
+      "measurement_level": "single_cell_rna_tcr",
+      "baseline_ici_response_association_eligible": false,
+      "same_measurement_replication_eligible": false,
+      "source_independence_group": "gse211504_public_cohort",
+      "access": "open",
+      "basis": "Public GEO summary describes peripheral CD8 T cells from two melanoma patients receiving checkpoint blockade; sample size, compartment, and treatment heterogeneity preclude response-replication use."
+    }
+  }
+}

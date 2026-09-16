@@ -1,0 +1,112 @@
+{
+  "suite_id": "real-multicohort-transport-hard-negative-suite-v2",
+  "purpose": "Real-data hard-negative suite for testing that multiple bulk direction checks do not become a same-measurement single-cell replication claim.",
+  "statistical_unit": "The entire dependency cluster, not individual feature packets or model traces.",
+  "packets": [
+    {
+      "packet_id": "REAL-TRANSPORT-GENE-CCR7",
+      "file": "REAL-TRANSPORT-GENE-CCR7.json",
+      "feature": "gene:CCR7",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "role": "real_data_multi_cohort_transport_hard_negative"
+    },
+    {
+      "packet_id": "REAL-TRANSPORT-GENE-CXCL13",
+      "file": "REAL-TRANSPORT-GENE-CXCL13.json",
+      "feature": "gene:CXCL13",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "role": "real_data_multi_cohort_transport_hard_negative"
+    },
+    {
+      "packet_id": "REAL-TRANSPORT-GENE-ENTPD1",
+      "file": "REAL-TRANSPORT-GENE-ENTPD1.json",
+      "feature": "gene:ENTPD1",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "role": "real_data_multi_cohort_transport_hard_negative"
+    },
+    {
+      "packet_id": "REAL-TRANSPORT-GENE-HAVCR2",
+      "file": "REAL-TRANSPORT-GENE-HAVCR2.json",
+      "feature": "gene:HAVCR2",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "role": "real_data_multi_cohort_transport_hard_negative"
+    },
+    {
+      "packet_id": "REAL-TRANSPORT-GENE-IL7R",
+      "file": "REAL-TRANSPORT-GENE-IL7R.json",
+      "feature": "gene:IL7R",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "role": "real_data_multi_cohort_transport_hard_negative"
+    },
+    {
+      "packet_id": "REAL-TRANSPORT-GENE-LAG3",
+      "file": "REAL-TRANSPORT-GENE-LAG3.json",
+      "feature": "gene:LAG3",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "role": "real_data_multi_cohort_transport_hard_negative"
+    },
+    {
+      "packet_id": "REAL-TRANSPORT-GENE-LEF1",
+      "file": "REAL-TRANSPORT-GENE-LEF1.json",
+      "feature": "gene:LEF1",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "role": "real_data_multi_cohort_transport_hard_negative"
+    },
+    {
+      "packet_id": "REAL-TRANSPORT-GENE-LTB",
+      "file": "REAL-TRANSPORT-GENE-LTB.json",
+      "feature": "gene:LTB",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "role": "real_data_multi_cohort_transport_hard_negative"
+    },
+    {
+      "packet_id": "REAL-TRANSPORT-GENE-PDCD1",
+      "file": "REAL-TRANSPORT-GENE-PDCD1.json",
+      "feature": "gene:PDCD1",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "role": "real_data_multi_cohort_transport_hard_negative"
+    },
+    {
+      "packet_id": "REAL-TRANSPORT-GENE-SELL",
+      "file": "REAL-TRANSPORT-GENE-SELL.json",
+      "feature": "gene:SELL",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "role": "real_data_multi_cohort_transport_hard_negative"
+    },
+    {
+      "packet_id": "REAL-TRANSPORT-GENE-TCF7",
+      "file": "REAL-TRANSPORT-GENE-TCF7.json",
+      "feature": "gene:TCF7",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "role": "real_data_multi_cohort_transport_hard_negative"
+    },
+    {
+      "packet_id": "REAL-TRANSPORT-GENE-TIGIT",
+      "file": "REAL-TRANSPORT-GENE-TIGIT.json",
+      "feature": "gene:TIGIT",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "role": "real_data_multi_cohort_transport_hard_negative"
+    },
+    {
+      "packet_id": "REAL-TRANSPORT-GENE-TOX",
+      "file": "REAL-TRANSPORT-GENE-TOX.json",
+      "feature": "gene:TOX",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "role": "real_data_multi_cohort_transport_hard_negative"
+    },
+    {
+      "packet_id": "REAL-TRANSPORT-PROGRAM-DYSFUNCTIONAL_EXHAUSTED_T_CELL",
+      "file": "REAL-TRANSPORT-PROGRAM-DYSFUNCTIONAL_EXHAUSTED_T_CELL.json",
+      "feature": "program:dysfunctional_exhausted_t_cell",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "role": "real_data_multi_cohort_transport_hard_negative"
+    },
+    {
+      "packet_id": "REAL-TRANSPORT-PROGRAM-MEMORY_LIKE_T_CELL",
+      "file": "REAL-TRANSPORT-PROGRAM-MEMORY_LIKE_T_CELL.json",
+      "feature": "program:memory_like_t_cell",
+      "dependency_cluster": "GSE120575_GSE91061_GSE78220_positive_control_panel_v2",
+      "role": "real_data_multi_cohort_transport_hard_negative"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "source": "GSE120575 GEO supplementary metadata",
+  "n_cells": 16291,
+  "n_lesions": 48,
+  "n_patient_tokens": 32,
+  "cell_metadata_path": "data/derived/gse120575_cell_metadata.tsv",
+  "lesion_metadata_path": "data/derived/gse120575_lesion_metadata.tsv",
+  "lesions_by_timepoint": {
+    "on_treatment": 29,
+    "pre_treatment": 19
+  },
+  "lesions_by_response": {
+    "Non-responder": 31,
+    "Responder": 17
+  },
+  "lesions_by_therapy": {
+    "anti-CTLA4": 2,
+    "anti-CTLA4+PD1": 11,
+    "anti-PD1": 35
+  },
+  "analysis_guardrail": "Use lesion/patient pseudo-bulk or paired models; do not use cell count as clinical sample size. Primary analysis must restrict to pre-treatment lesions and a frozen anti-PD-1-based therapy definition."
+}

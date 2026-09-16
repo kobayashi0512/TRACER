@@ -1,0 +1,12 @@
+{
+  "suite_id": "tracer-synthetic-stress-tests-v1",
+  "purpose": "Pre-specified synthetic safety tests for TRACER modules. Not biomedical evidence.",
+  "packets": [
+    {"packet_id": "SYNTH-HIGH-001", "file": "SYNTH-HIGH-001.json", "category": "complete_eligible_positive_control"},
+    {"packet_id": "SYNTH-CROSS-MODALITY-001", "file": "SYNTH-CROSS-MODALITY-001.json", "category": "transport_failure"},
+    {"packet_id": "SYNTH-SELECTIVE-OMISSION-001", "file": "SYNTH-SELECTIVE-OMISSION-001.json", "category": "provenance_coverage_failure"},
+    {"packet_id": "SYNTH-NO-PERTURBATION-001", "file": "SYNTH-NO-PERTURBATION-001.json", "category": "causal_evidence_failure"},
+    {"packet_id": "SYNTH-CONFOUNDING-001", "file": "SYNTH-CONFOUNDING-001.json", "category": "confounding_failure"},
+    {"packet_id": "SYNTH-SINGLE-COHORT-001", "file": "SYNTH-SINGLE-COHORT-001.json", "category": "replication_failure"}
+  ]
+}
